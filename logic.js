@@ -1,4 +1,4 @@
-let S={sl:{q1:null,q2:null,q3:null,q4:null,q5:null,q6:null,q7:null,q8:null,wmain:null,woff:null,helmet:null,armor:null,boots:null,backpack:null,lantern:null},bt:[],fc:[],qb:[],qset:1,skillPairs:{}};
+let S={sl:{q1:null,q2:null,q3:null,q4:null,q5:null,q6:null,q7:null,q8:null,wmain:null,woff:null,helmet:null,armor:null,boots:null,backpack:null,lantern:null},pool:[],bt:[],fc:[],qb:[],skillPairs:{}};
 let wF='all',qF='all';
 
 function fW(id){for(const k in WD){const f=WD[k].find(w=>w.id===id);if(f)return Object.assign({},f,{cat:k})}return null}
@@ -19,34 +19,105 @@ else{el.classList.remove('f');const d={q1:'·',q2:'·',q3:'·',q4:'·',q5:'·',q
 }
 
 function uQB(){
-let h='';
-const base=S.qset===1?1:5;
-for(let i=0;i<4;i++){const it=S.sl['q'+(base+i)];h+='<div class="ow-qb-sl">'+(it?esc(it.ic||it.i||'◆'):'·')+'<span class="k">'+(base+i)+'</span></div>'}
-h+='<div style="width:6px"></div>';
-const wm=S.sl.wmain,wo=S.sl.woff;
-h+='<div class="ow-qb-sl" style="border-color:#8b7355">'+(wm?esc(wm.ic||'⚔'):'·')+'<span class="k">R</span></div>';
-h+='<div class="ow-qb-sl" style="border-color:#8b7355">'+(wo?esc(wo.ic||'🛡'):'·')+'<span class="k">L</span></div>';
-document.getElementById('qbP').innerHTML=h;
-document.querySelectorAll('.ow-qset').forEach((b,i)=>{b.classList.toggle('on',(i+1)===S.qset)});
+// Панель крестом как в игре — обновляем слоты напрямую
+for(let i=1;i<=8;i++){uSUI('q'+i)}
+uSUI('wmain');uSUI('woff');
 }
 
-function populateArmorSelects(){
-const hSel=document.getElementById('selHelmet');
-const aSel=document.getElementById('selArmor');
-const bSel=document.getElementById('selBoots');
-const bpSel=document.getElementById('selBackpack');
-const lSel=document.getElementById('selLantern');
-HELMETS.forEach(h=>{const o=document.createElement('option');o.value=h.id;o.textContent=(h.ru||h.n);hSel.appendChild(o)});
-ARMORS.forEach(a=>{const o=document.createElement('option');o.value=a.id;o.textContent=(a.ru||a.n);aSel.appendChild(o)});
-BOOTS.forEach(b=>{const o=document.createElement('option');o.value=b.id;o.textContent=(b.ru||b.n);bSel.appendChild(o)});
-BACKPACKS.forEach(b=>{const o=document.createElement('option');o.value=b.id;o.textContent=(b.ru||b.n);bpSel.appendChild(o)});
-LANTERNS.forEach(l=>{const o=document.createElement('option');o.value=l.id;o.textContent=(l.ru||l.n);lSel.appendChild(o)});
-hSel.addEventListener('change',()=>{const h=HELMETS.find(x=>x.id===hSel.value);if(h)setS('helmet',{id:h.id,n:h.n,ru:h.ru,ic:'🪖',d:h.d+' '+(h.bo||'')});else clS('helmet');showArmorDetail()});
-aSel.addEventListener('change',()=>{const a=ARMORS.find(x=>x.id===aSel.value);if(a)setS('armor',{id:a.id,n:a.n,ru:a.ru,ic:'🛡',d:a.d+' '+(a.bo||'')});else clS('armor');showArmorDetail()});
-bSel.addEventListener('change',()=>{const b=BOOTS.find(x=>x.id===bSel.value);if(b)setS('boots',{id:b.id,n:b.n,ru:b.ru,ic:'🥾',d:b.d+' '+(b.bo||'')});else clS('boots');showArmorDetail()});
-bpSel.addEventListener('change',()=>{const b=BACKPACKS.find(x=>x.id===bpSel.value);if(b)setS('backpack',{id:b.id,n:b.n,ru:b.ru,ic:'🎒',d:b.st});else clS('backpack');showArmorDetail()});
-lSel.addEventListener('change',()=>{const l=LANTERNS.find(x=>x.id===lSel.value);if(l)setS('lantern',{id:l.id,n:l.n,ru:l.ru,ic:'🏮',d:l.st});else clS('lantern');showArmorDetail()});
+let armorSlot='helmet',armorFilter='all';
+
+function rPool(){
+updateTrainerLock();
+document.getElementById('poolItems').innerHTML=S.pool.map((x,i)=>
+'<div class="ow-pool-item" data-pi="'+i+'" title="'+esc(x.ru||x.n)+'">'
++esc(x.ic||'◆')
++'<span class="rm" data-rm="'+i+'">✕</span></div>').join('')||'<div style="color:#8b7355;font-size:.8em;padding:10px"><i>Пусто — добавьте навыки и расходники</i></div>';
+document.querySelectorAll('#poolItems .ow-pool-item').forEach(el=>{
+el.addEventListener('click',(e)=>{
+if(e.target.classList.contains('rm')){
+const idx=parseInt(e.target.dataset.rm);
+const item=S.pool[idx];
+if(item.src==='skill'&&fS(item.id)&&fS(item.id).pair){S.skillPairs[fS(item.id).pair]=null;rS()}
+S.pool.splice(idx,1);rPool();rC();return;
 }
+// Клик — на панель
+const idx=parseInt(el.dataset.pi);
+const item=S.pool[idx];
+// Ищем свободный слот
+for(let i=1;i<=8;i++){
+if(!S.sl['q'+i]){
+S.sl['q'+i]=item;
+S.pool.splice(idx,1);
+uSUI('q'+i);uQB();rPool();
+return;
+}
+}
+alert('Все 8 слотов заняты!');
+});
+});
+}
+
+function rArmor(){
+const slot=document.getElementById('armorSlot').value;
+armorSlot=slot;
+let items=[];
+if(slot==='helmet')items=HELMETS;
+else if(slot==='armor')items=ARMORS;
+else if(slot==='boots')items=BOOTS;
+else if(slot==='backpack')items=BACKPACKS;
+else if(slot==='lantern')items=LANTERNS;
+
+// Фильтр
+let filtered=items;
+if(armorFilter==='set')filtered=items.filter(x=>x.src&&x.src.indexOf('Set')>-1);
+else if(armorFilter==='unique')filtered=items.filter(x=>x.src==='Unique');
+else if(armorFilter==='craft')filtered=items.filter(x=>x.craft);
+else if(armorFilter==='legacy')filtered=items.filter(x=>x.legacy);
+
+const cur=S.sl[slot];
+document.getElementById('armorGrid').innerHTML=filtered.map(x=>{
+const isSel=cur&&cur.id===x.id;
+let stats='';
+if(slot==='backpack'||slot==='lantern'){stats='<span>📦 '+esc(x.st)+'</span>'}
+else{stats='<span>Физ:<b>'+x.ph+'</b></span><span>Имп:<b>'+x.im+'</b></span>'+(x.ma!==undefined?'<span>Маг:<b>'+(x.ma||0)+'</b></span>':'')+'<span>❄<b>'+x.co+'</b></span><span>🔥<b>'+x.he+'</b></span>'}
+let badges='';
+if(x.legacy)badges+='<span style="background:#ffd700;color:#000;padding:1px 5px;font-size:.6em;border-radius:2px;margin-right:4px">Наследие</span>';
+if(x.craft)badges+='<span style="background:#3498db;color:#fff;padding:1px 5px;font-size:.6em;border-radius:2px;margin-right:4px">Крафт</span>';
+if(x.src&&x.src.indexOf('Set')>-1)badges+='<span style="background:#9b59b6;color:#fff;padding:1px 5px;font-size:.6em;border-radius:2px;margin-right:4px">Сет</span>';
+return '<div class="ow-c'+(isSel?' sel':'')+'" data-aid="'+x.id+'">'
++(x.img?'<img class="img" src="'+x.img+'" loading="lazy" onerror="this.style.display=\'none\'">':'')
++'<h4>'+esc(x.ru||x.n)+'</h4>'
++'<div style="color:#8b7355;font-size:.7em">'+esc(x.n)+'</div>'
++'<div style="margin:4px 0">'+badges+'</div>'
++'<div class="s">'+stats+'</div>'
++'<div class="d">'+esc(x.d)+'</div>'
++(x.bo?'<div class="d" style="color:#9b59b6">'+esc(x.bo)+'</div>':'')
++(x.craftChain?'<div class="d" style="color:#3498db;font-size:.75em;margin-top:4px"><b>Крафт:</b> '+esc(x.craftChain)+'</div>':'')
++(x.legacyChain?'<div class="d" style="color:#ffd700;font-size:.75em;margin-top:4px"><b>Наследие:</b> '+esc(x.legacyChain)+'</div>':'')
++'</div>'}).join('');
+document.querySelectorAll('#armorGrid .ow-c').forEach(el=>{
+el.addEventListener('click',()=>{
+const id=el.dataset.aid;
+if(S.sl[slot]&&S.sl[slot].id===id){clS(slot)}
+else{
+const x=items.find(i=>i.id===id);
+const icons={helmet:'🪖',armor:'🛡',boots:'🥾',backpack:'🎒',lantern:'🏮'};
+setS(slot,{id:x.id,n:x.n,ru:x.ru,ic:icons[slot],d:x.d+' '+(x.bo||x.st||'')});
+}
+rArmor();uStats();
+});
+});
+}
+
+document.getElementById('armorSlot').addEventListener('change',rArmor);
+document.querySelectorAll('#armorFilters .ow-fb').forEach(btn=>{
+btn.addEventListener('click',()=>{
+armorFilter=btn.dataset.af;
+document.querySelectorAll('#armorFilters .ow-fb').forEach(b=>b.classList.remove('on'));
+btn.classList.add('on');
+rArmor();
+});
+});
 
 function showArmorDetail(){
 const h=HELMETS.find(x=>x.id===document.getElementById('selHelmet').value);
@@ -78,6 +149,36 @@ return '<div class="ow-c'+(im||io?' sel':'')+'" data-wid="'+w.id+'">'
 document.querySelectorAll('#wGr .ow-c').forEach(el=>{el.addEventListener('click',()=>pW(el.dataset.wid))});
 }
 
+const MAX_TRAINERS=3;
+let selectedTrainers=[];
+
+function getSkillTrainer(skillId){
+for(const k in SDD){
+if(SDD[k].sk.find(s=>s.id===skillId))return k;
+}
+return null;
+}
+
+function updateTrainerLock(){
+// Определяем выбранные профессии по навыкам в пуле и на панели
+const trainers=new Set();
+S.pool.forEach(x=>{const t=getSkillTrainer(x.id);if(t)trainers.add(t)});
+Object.keys(S.sl).forEach(k=>{if(S.sl[k]){const t=getSkillTrainer(S.sl[k].id);if(t)trainers.add(t)}});
+selectedTrainers=[...trainers];
+// Блокируем/разблокируем в UI
+document.querySelectorAll('#sCt .ow-tree').forEach(tree=>{
+const h4=tree.querySelector('h4');
+const trainerName=h4.textContent;
+const key=Object.keys(SDD).find(k=>SDD[k].ru===trainerName||SDD[k].name===trainerName);
+if(!key)return;
+const isLocked=selectedTrainers.length>=MAX_TRAINERS&&!selectedTrainers.includes(key);
+tree.style.opacity=isLocked?'0.4':'1';
+tree.style.pointerEvents=isLocked?'none':'auto';
+if(isLocked){h4.innerHTML=(SDD[key].ru||SDD[key].name)+' <span style="color:#c0392b;font-size:.7em">🔒 Макс. 3 профессии</span>'}
+else{h4.textContent=SDD[key].ru||SDD[key].name}
+});
+}
+
 function rS(){
 const tr=document.getElementById('sTr').value;
 const ks=tr==='all'?Object.keys(SDD):[tr];
@@ -105,37 +206,46 @@ html+='</div>';
 });
 document.getElementById('sCt').innerHTML=html;
 document.querySelectorAll('#sCt .ow-sk').forEach(el=>{el.addEventListener('click',()=>pS(el.dataset.sid))});
-const cnt=Object.keys(S.sl).filter(k=>k.charAt(0)==='q'&&S.sl[k]).length;
+const cnt=S.pool.length;
 document.getElementById('sCn').textContent=cnt;
+updateTrainerLock();
 }
 
 function skillHTML(s){
 const inSlot=Object.keys(S.sl).some(key=>S.sl[key]&&S.sl[key].id===s.id);
 const isLocked=s.pair&&S.skillPairs[s.pair]&&S.skillPairs[s.pair]!==s.id;
+let badge='';
+if(s.active)badge='<span style="background:#e74c3c;color:#fff;padding:1px 5px;font-size:.55em;border-radius:2px;margin-right:4px">АКТИВ</span>';
+else if(s.passive)badge='<span style="background:#27ae60;color:#fff;padding:1px 5px;font-size:.55em;border-radius:2px;margin-right:4px">ПАССИВ</span>';
 return '<div class="ow-sk'+(inSlot?' sel':'')+(isLocked?' locked':'')+'" data-sid="'+s.id+'">'
-+'<div class="ic">'+esc(s.i||'•')+'</div><div class="in"><div class="nm">'+esc(s.ru||s.n)+'</div><div style="color:#8b7355;font-size:.65em">'+esc(s.n)+'</div><div class="ds">'+esc(s.d)+'</div></div>'
++'<div class="ic">'+(s.img?'<img src="'+s.img+'" style="width:24px;height:24px;object-fit:contain" onerror="this.style.display=\'none\';this.parentNode.textContent=\''+esc(s.i||'•')+'\'">':esc(s.i||'•'))+'</div>'
++'<div class="in"><div class="nm">'+badge+esc(s.ru||s.n)+'</div><div style="color:#8b7355;font-size:.65em">'+esc(s.n)+'</div><div class="ds">'+esc(s.d)+'</div></div>'
 +'<span class="tb t'+s.t+'">T'+s.t+'</span><span class="cs">'+esc(s.c)+'</span></div>';
 }
 
 function pS(id){
 const s=fS(id);
+const trainer=getSkillTrainer(id);
+// Проверка лимита профессий
+if(trainer&&!selectedTrainers.includes(trainer)&&selectedTrainers.length>=MAX_TRAINERS){
+alert('Максимум 3 профессии! Сначала уберите навыки из одной из выбранных.');
+return;
+}
 if(s.pair){
 if(S.skillPairs[s.pair]===id){
 S.skillPairs[s.pair]=null;
-for(let i=1;i<=8;i++){if(S.sl['q'+i]&&S.sl['q'+i].id===id){clS('q'+i);break}}
-rS();rC();return;
+S.pool=S.pool.filter(x=>x.id!==id);
+rS();rPool();return;
 }
 if(S.skillPairs[s.pair]&&S.skillPairs[s.pair]!==id){alert('Можно выбрать только один из пары!');return}
-let freeSlot=-1;
-for(let i=1;i<=8;i++){if(!S.sl['q'+i]){freeSlot=i;break}}
-if(freeSlot===-1){alert('Все 8 слотов заняты!');return}
 S.skillPairs[s.pair]=id;
-setS('q'+freeSlot,{id:s.id,n:s.n,ru:s.ru,ic:s.i||'✨',d:s.d});
-rS();rC();return;
+S.pool.push({id:s.id,n:s.n,ru:s.ru,ic:s.i||'✨',d:s.d,src:'skill'});
+rS();rPool();return;
 }
-for(let i=1;i<=8;i++){if(S.sl['q'+i]&&S.sl['q'+i].id===id){clS('q'+i);rS();rC();return}}
-for(let i=1;i<=8;i++){if(!S.sl['q'+i]){setS('q'+i,{id:s.id,n:s.n,ru:s.ru,ic:s.i||'✨',d:s.d});rS();rC();return}}
-alert('Все 8 слотов заняты!');rS();
+// Уже в пуле?
+if(S.pool.find(x=>x.id===id)){S.pool=S.pool.filter(x=>x.id!==id);rS();rPool();return}
+S.pool.push({id:s.id,n:s.n,ru:s.ru,ic:s.i||'✨',d:s.d,src:'skill'});
+rS();rPool();
 }
 
 function rC(){
@@ -148,9 +258,9 @@ document.querySelectorAll('#cGr .ow-cc').forEach(el=>{el.addEventListener('click
 
 function pC(id){
 const c=fC(id);
-for(let i=1;i<=8;i++){if(S.sl['q'+i]&&S.sl['q'+i].id===id){clS('q'+i);rC();return}}
-for(let i=1;i<=8;i++){if(!S.sl['q'+i]){setS('q'+i,c);rC();return}}
-alert('Все слоты заняты!');rC();
+if(S.pool.find(x=>x.id===id)){S.pool=S.pool.filter(x=>x.id!==id);rC();rPool();return}
+S.pool.push({id:c.id,n:c.n,ru:c.ru,ic:c.ic,d:c.d,src:'cons'});
+rC();rPool();
 }
 
 function rBT(){
@@ -172,6 +282,7 @@ document.getElementById('facGr').innerHTML=FCDD.map(f=>{
 const isSelected=S.fc.indexOf(f.id)>-1;
 const isCompatible=checkFactionCompatible(f.id);
 return '<div class="ow-c'+(isSelected?' sel':'')+(isCompatible?'':' disabled')+'" data-fid="'+f.id+'">'
++(f.img?'<img class="img" src="'+f.img+'" loading="lazy" onerror="this.style.display=\'none\'">':'')
 +'<h4>'+esc(f.ru||f.n)+'</h4><div style="color:#8b7355;font-size:.7em">'+esc(f.n)+'</div>'
 +(f.conflicts.length===0?'<div style="color:#27ae60;font-size:.7em">✅ Совместима со всеми фракциями</div>':'')
 +'<div class="t" style="color:#c9a227">'+esc(f.b)+'</div><div class="d">'+esc(f.d)+'</div></div>'}).join('');
@@ -222,8 +333,12 @@ const f=qF==='all'?QBDD:QBDD.filter(q=>q.t===qF);
 document.getElementById('qLi').innerHTML=f.map(q=>{
 const isSelected=S.qb.indexOf(q.id)>-1;
 const isAvailable=checkQuestAvailable(q);
+let badge='';
+if(q.active)badge='<span style="background:#e74c3c;color:#fff;padding:1px 5px;font-size:.55em;border-radius:2px;margin-right:4px">АКТИВ</span>';
+else if(q.passive)badge='<span style="background:#27ae60;color:#fff;padding:1px 5px;font-size:.55em;border-radius:2px;margin-right:4px">ПАССИВ</span>';
 return '<div class="ow-q'+(isSelected?' sel':'')+(isAvailable?'':' disabled')+'" data-qid="'+q.id+'">'
-+'<div class="cb"></div><div class="qi"><div class="qn">'+esc(q.ru||q.n)+'</div>'
++(q.img?'<img src="'+q.img+'" style="width:40px;height:40px;object-fit:contain;flex-shrink:0" onerror="this.style.display=\'none\'">':'<div class="cb"></div>')
++'<div class="qi"><div class="qn">'+badge+esc(q.ru||q.n)+'</div>'
 +'<div style="color:#8b7355;font-size:.7em">'+esc(q.n)+'</div>'
 +'<div class="qs">'+esc(q.s)+'</div><div class="qd">'+esc(q.d)+'</div></div>'
 +'<span class="qt '+(q.t==='positive'?'pos':q.t==='negative'?'neg':'spc')+'">'+(q.t==='positive'?'ПОЗ':q.t==='negative'?'НЕГ':'ОСОБ')+'</span></div>'}).join('');
@@ -337,15 +452,10 @@ if(S.qb.length)t+='Quest: '+S.qb.map(id=>{const q=QBDD.find(x=>x.id===id);return
 navigator.clipboard.writeText(t).then(()=>alert('Скопировано!'))}
 
 function resetB(){
-S={sl:{q1:null,q2:null,q3:null,q4:null,q5:null,q6:null,q7:null,q8:null,wmain:null,woff:null,helmet:null,armor:null,boots:null,backpack:null,lantern:null},bt:[],fc:[],qb:[],qset:1,skillPairs:{}};
+S={sl:{q1:null,q2:null,q3:null,q4:null,q5:null,q6:null,q7:null,q8:null,wmain:null,woff:null,helmet:null,armor:null,boots:null,backpack:null,lantern:null},pool:[],bt:[],fc:[],qb:[],skillPairs:{}};
 for(const k in S.sl)uSUI(k);
-document.getElementById('selHelmet').value='';
-document.getElementById('selArmor').value='';
-document.getElementById('selBoots').value='';
-document.getElementById('selBackpack').value='';
-document.getElementById('selLantern').value='';
-document.getElementById('armorDetail').innerHTML='';
-rW();rS();rC();rBT();rF();rQ();uQB();uStats()}
+
+rArmor();rArmor();rW();rS();rC();rBT();rF();rQ();uQB();uStats()}
 
 function randB(){
 resetB();
@@ -354,36 +464,33 @@ const a=ARMORS[Math.floor(Math.random()*ARMORS.length)];
 const b=BOOTS[Math.floor(Math.random()*BOOTS.length)];
 const bp=BACKPACKS[Math.floor(Math.random()*BACKPACKS.length)];
 const l=LANTERNS[Math.floor(Math.random()*LANTERNS.length)];
-document.getElementById('selHelmet').value=h.id;
-document.getElementById('selArmor').value=a.id;
-document.getElementById('selBoots').value=b.id;
-document.getElementById('selBackpack').value=bp.id;
-document.getElementById('selLantern').value=l.id;
 setS('helmet',{id:h.id,n:h.n,ru:h.ru,ic:'🪖',d:h.d});
 setS('armor',{id:a.id,n:a.n,ru:a.ru,ic:'🛡',d:a.d});
 setS('boots',{id:b.id,n:b.n,ru:b.ru,ic:'🥾',d:b.d});
 setS('backpack',{id:bp.id,n:bp.n,ru:bp.ru,ic:'🎒',d:bp.st});
 setS('lantern',{id:l.id,n:l.n,ru:l.ru,ic:'🏮',d:l.st});
-showArmorDetail();
 const cats=Object.keys(WD);const c1=cats[Math.floor(Math.random()*cats.length)];
 S.sl.wmain=fW(WD[c1][Math.floor(Math.random()*WD[c1].length)].id);
 if(Math.random()>0.4){const c2=cats[Math.floor(Math.random()*cats.length)];S.sl.woff=fW(WD[c2][Math.floor(Math.random()*WD[c2].length)].id)}
 const allSkills=[];Object.values(SDD).forEach(t=>t.sk.forEach(s=>allSkills.push(s)));
 const shuffled=allSkills.sort(()=>0.5-Math.random());
-let slot=1;
 for(const s of shuffled){
-if(slot>8)break;
+if(S.pool.length>=8)break;
 if(s.pair){if(S.skillPairs[s.pair])continue;S.skillPairs[s.pair]=s.id}
-S.sl['q'+slot]={id:s.id,n:s.n,ru:s.ru,ic:s.i||'✨',d:s.d};
-slot++;
+S.pool.push({id:s.id,n:s.n,ru:s.ru,ic:s.i||'✨',d:s.d,src:'skill'});
 }
+// Размещаем на панели
+for(let i=0;i<Math.min(S.pool.length,8);i++){
+S.sl['q'+(i+1)]=S.pool[i];
+}
+S.pool=S.pool.slice(8);
 S.bt=BTDD.map(b=>b.id).sort(()=>0.5-Math.random()).slice(0,3);
 // Случайные совместимые фракции
 const facs=[...FCDD].sort(()=>0.5-Math.random());
 for(const f of facs){if(checkFactionCompatible(f.id)){S.fc.push(f.id);if(S.fc.length>=2)break}}
 S.qb=QBDD.filter(q=>q.t==='positive'&&checkQuestAvailable(q)).map(q=>q.id).sort(()=>0.5-Math.random()).slice(0,3);
 for(const k in S.sl)uSUI(k);
-rW();rS();rC();rBT();rF();rQ();uQB();uStats()}
+rArmor();rW();rS();rC();rBT();rF();rQ();uQB();uStats()}
 
 document.querySelectorAll('.ow-tab').forEach(btn=>{
 btn.addEventListener('click',()=>{
@@ -395,17 +502,22 @@ window.scrollTo({top:0,behavior:'smooth'});
 });
 });
 
-document.querySelectorAll('.ow-qset').forEach(btn=>{
-btn.addEventListener('click',()=>{
-S.qset=parseInt(btn.dataset.set);
-document.getElementById('qslots1').style.display=S.qset===1?'flex':'none';
-document.getElementById('qslots2').style.display=S.qset===2?'flex':'none';
-uQB();
-});
-});
+
 
 document.querySelectorAll('.ow-slot').forEach(el=>{
-el.addEventListener('click',()=>{clS(el.dataset.slot)});
+el.addEventListener('click',()=>{
+const slot=el.dataset.slot;
+if(slot==='wmain'||slot==='woff'){
+// Для оружия — открываем вкладку оружия
+document.querySelector('[data-pan=weapons]').click();
+}else if(['helmet','armor','boots','backpack','lantern'].indexOf(slot)>-1){
+// Для экипировки — открываем вкладку брони
+document.querySelector('[data-pan=armor]').click();
+}else{
+// Для слотов q1-q8 — очищаем
+clS(slot);
+}
+});
 });
 
 document.getElementById('wCat').addEventListener('change',rW);
@@ -433,5 +545,4 @@ document.getElementById('btnCopy').addEventListener('click',copyB);
 document.getElementById('btnReset').addEventListener('click',resetB);
 document.getElementById('btnRand').addEventListener('click',randB);
 
-populateArmorSelects();
-rW();rS();rC();rBT();rF();rQ();uQB();uStats();
+rArmor();rW();rS();rC();rBT();rF();rQ();rPool();uQB();uStats();
