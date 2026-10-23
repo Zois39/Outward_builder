@@ -30,4 +30,15 @@ const POTIONS=[
 {id:'quartz_potion',n:'Quartz Potion',ru:'Кварцевое Зелье',img:'https://outward.wiki.gg/images/thumb/8/8e/Quartz_Potion.png/150px-Quartz_Potion.png',ic:'🧪',d:'Сопротивление порче 2',dur:'∞',wt:0.5,dlc:'The Soroboreans'},
 {id:'illuminating_potion',n:'Illuminating Potion',ru:'Осветляющее Зелье',img:'https://outward.wiki.gg/images/thumb/8/8e/Illuminating_Potion.png/150px-Illuminating_Potion.png',ic:'🧪',d:'Экстремальное восстановление маны, +10% порчи',dur:'∞',wt:0.5,dlc:'The Soroboreans'},
 {id:'horrors_potion',n:"Horror's Potion",ru:'Зелье Ужаса',img:'https://outward.wiki.gg/images/thumb/8/8e/Horror%27s_Potion.png/150px-Horror%27s_Potion.png',ic:'🧪',d:'Восстанавливает 100% сгоревшего здоровья, маны и выносливости, +10% порчи, Восстановление здоровья 5',dur:'∞',wt:0.5,dlc:'The Soroboreans'}
+,
+{id:'fire_potion',n:'Fire Potion',ru:'Огненное Зелье',img:'https://outward.wiki.gg/images/thumb/8/8e/Fire_Potion.png/150px-Fire_Potion.png',ic:'🧪',d:'Боон Огня',dur:'∞',wt:0.5},
+{id:'ice_potion',n:'Ice Potion',ru:'Ледяное Зелье',img:'https://outward.wiki.gg/images/thumb/8/8e/Ice_Potion.png/150px-Ice_Potion.png',ic:'🧪',d:'Боон Мороза',dur:'∞',wt:0.5},
+{id:'bolt_potion',n:'Bolt Potion',ru:'Громовое Зелье',img:'https://outward.wiki.gg/images/thumb/8/8e/Bolt_Potion.png/150px-Bolt_Potion.png',ic:'🧪',d:'Боон Молнии',dur:'∞',wt:0.5},
+{id:'poison_potion',n:'Poison Potion',ru:'Ядовитое Зелье',img:'https://outward.wiki.gg/images/thumb/8/8e/Poison_Potion.png/150px-Poison_Potion.png',ic:'🧪',d:'Боон Яда',dur:'∞',wt:0.5},
+{id:'ethereal_potion',n:'Ethereal Potion',ru:'Эфирное Зелье',img:'https://outward.wiki.gg/images/thumb/8/8e/Ethereal_Potion.png/150px-Ethereal_Potion.png',ic:'🧪',d:'Боон Эфира',dur:'∞',wt:0.5},
+{id:'decay_potion',n:'Decay Potion',ru:'Зелье Разложения',img:'https://outward.wiki.gg/images/thumb/8/8e/Decay_Potion.png/150px-Decay_Potion.png',ic:'🧪',d:'Боон Разложения',dur:'∞',wt:0.5},
+{id:'physical_potion',n:'Physical Potion',ru:'Физическое Зелье',img:'https://outward.wiki.gg/images/thumb/8/8e/Physical_Potion.png/150px-Physical_Potion.png',ic:'🧪',d:'Боон Физической Атаки',dur:'∞',wt:0.5},
+{id:'impact_potion',n:'Impact Potion',ru:'Зелье Импакта',img:'https://outward.wiki.gg/images/thumb/8/8e/Impact_Potion.png/150px-Impact_Potion.png',ic:'🧪',d:'Боон Импакта',dur:'∞',wt:0.5},
+{id:'speed_potion',n:'Speed Potion',ru:'Зелье Скорости',img:'https://outward.wiki.gg/images/thumb/8/8e/Speed_Potion.png/150px-Speed_Potion.png',ic:'🧪',d:'Боон Скорости',dur:'∞',wt:0.5},
+{id:'protection_potion',n:'Protection Potion',ru:'Зелье Защиты',img:'https://outward.wiki.gg/images/thumb/8/8e/Protection_Potion.png/150px-Protection_Potion.png',ic:'🧪',d:'Боон Защиты',dur:'∞',wt:0.5}
 ];
