@@ -329,7 +329,8 @@ rF();rQ();uStats();
 
 // ============ КВЕСТОВЫЕ БОНУСЫ С ЛОГИКОЙ ФРАКЦИЙ ============
 function rQ(){
-const f=qF==='all'?QBDD:QBDD.filter(q=>q.t===qF);
+const allQ=QBDD.concat(ACTIVE_QBDD||[]);
+const f=qF==='all'?allQ:allQ.filter(q=>q.t===qF);
 document.getElementById('qLi').innerHTML=f.map(q=>{
 const isSelected=S.qb.indexOf(q.id)>-1;
 const isAvailable=checkQuestAvailable(q);
@@ -399,6 +400,12 @@ if(S.qb.indexOf('accept')>-1){cr+=8;hr+=8;bonuses.push(['📜 Принятие',
 if(S.qb.indexOf('sanct')>-1){df+=2;bonuses.push(['📜 Священная Защита','+2 защита'])}
 if(S.qb.indexOf('painful')>-1){st-=15;bonuses.push(['📜 Болезненная Жертва','-15 выносливости'])}
 if(S.qb.indexOf('sacrifice')>-1){st-=7;bonuses.push(['📜 Жертва','-7 выносливости'])}
+// Активные бонусы
+if(S.qb.indexOf('exalted')>-1){pd+=25;ed+=25;bonuses.push(['🔴 Возвышенный (АКТИВ)','x2 урон, -30% стоимость'])}
+if(S.qb.indexOf('defensive_stance')>-1){df+=5;bonuses.push(['🔴 Оборонительная Стойка (АКТИВ)','+20% защиты при блоке'])}
+if(S.qb.indexOf('aggressive_stance')>-1){pd+=10;df-=3;bonuses.push(['🔴 Атакующая Стойка (АКТИВ)','+15% урон, -10% защита'])}
+if(S.qb.indexOf('spirit_bond')>-1){mp+=10;bonuses.push(['🔴 Духовная Связь (АКТИВ)','+5 маны/сек у тотема'])}
+if(S.qb.indexOf('blood_pact')>-1){pd+=8;bonuses.push(['🔴 Кровавый Пакт (АКТИВ)','+10% урон, -5 HP/мин'])}
 // Фракции
 if(S.fc.indexOf('levant')>-1){pd+=15;ed+=15;bonuses.push(['🏰 Левант','+15% урон'])}
 if(S.fc.indexOf('blue')>-1){hp+=40;mp+=25;bonuses.push(['🏰 Синяя Палата','+40 HP, +25 маны'])}
