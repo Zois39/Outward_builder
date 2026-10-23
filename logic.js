@@ -58,7 +58,7 @@ for(let i=1;i<=8;i++){uSUI('q'+i)}
 uSUI('wmain');uSUI('woff');
 }
 
-let armorSlot='helmet',armorFilter='all';
+let armorSlot='helmet',armorFilter='all',armorCat='all';
 
 function rPool(){
 updateTrainerLock();
@@ -101,12 +101,17 @@ else if(slot==='boots')items=BOOTS;
 else if(slot==='backpack')items=BACKPACKS;
 else if(slot==='lantern')items=LANTERNS;
 
-// Фильтр
+// Фильтр по типу
 let filtered=items;
 if(armorFilter==='set')filtered=items.filter(x=>x.src&&x.src.indexOf('Set')>-1);
 else if(armorFilter==='unique')filtered=items.filter(x=>x.src==='Unique');
 else if(armorFilter==='craft')filtered=items.filter(x=>x.craft);
 else if(armorFilter==='legacy')filtered=items.filter(x=>x.legacy);
+
+// Фильтр по категории
+if(armorCat!=='all'){
+filtered=filtered.filter(x=>x.cat===armorCat);
+}
 
 const cur=S.sl[slot];
 document.getElementById('armorGrid').innerHTML=filtered.map(x=>{
@@ -115,6 +120,13 @@ let stats='';
 if(slot==='backpack'||slot==='lantern'){stats='<span>📦 '+esc(x.st)+'</span>'}
 else{stats='<span>Физ:<b>'+x.ph+'</b></span><span>Имп:<b>'+x.im+'</b></span>'+(x.ma!==undefined?'<span>Маг:<b>'+(x.ma||0)+'</b></span>':'')+'<span>❄<b>'+x.co+'</b></span><span>🔥<b>'+x.he+'</b></span>'}
 let badges='';
+const catNames={unique:'Уникальный',quest:'Квестовый',craft:'Крафтовый',set:'Сетовый',merchant:'Торговый',loot:'Лут',legacy:'Наследие'};
+const catColors={unique:'#e74c3c',quest:'#f39c12',craft:'#3498db',set:'#9b59b6',merchant:'#27ae60',loot:'#95a5a6',legacy:'#ffd700'};
+if(x.cat){
+const catName=catNames[x.cat]||x.cat;
+const catColor=catColors[x.cat]||'#888';
+badges+='<span style="background:'+catColor+';color:#fff;padding:1px 5px;font-size:.6em;border-radius:2px;margin-right:4px">'+catName+'</span>';
+}
 if(x.legacy)badges+='<span style="background:#ffd700;color:#000;padding:1px 5px;font-size:.6em;border-radius:2px;margin-right:4px">Наследие</span>';
 if(x.craft)badges+='<span style="background:#3498db;color:#fff;padding:1px 5px;font-size:.6em;border-radius:2px;margin-right:4px">Крафт</span>';
 if(x.src&&x.src.indexOf('Set')>-1)badges+='<span style="background:#9b59b6;color:#fff;padding:1px 5px;font-size:.6em;border-radius:2px;margin-right:4px">Сет</span>';
@@ -148,6 +160,16 @@ document.querySelectorAll('#armorFilters .ow-fb').forEach(btn=>{
 btn.addEventListener('click',()=>{
 armorFilter=btn.dataset.af;
 document.querySelectorAll('#armorFilters .ow-fb').forEach(b=>b.classList.remove('on'));
+btn.classList.add('on');
+rArmor();
+});
+});
+
+// Фильтр по категориям
+document.querySelectorAll('#armorCatFilters .ow-fb').forEach(btn=>{
+btn.addEventListener('click',()=>{
+armorCat=btn.dataset.cat;
+document.querySelectorAll('#armorCatFilters .ow-fb').forEach(b=>b.classList.remove('on'));
 btn.classList.add('on');
 rArmor();
 });
