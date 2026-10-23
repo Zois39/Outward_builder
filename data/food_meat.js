@@ -1,0 +1,15 @@
+const FOOD_MEAT=[
+{id:'bread',n:'Bread',ru:'Хлеб',img:'https://outward.wiki.gg/images/thumb/8/8e/Bread.png/150px-Bread.png',ic:'🍞',d:'',hunger:10,dur:'6 дней',wt:0.2},
+{id:'meat_stew',n:'Meat Stew',ru:'Мясное Рагу',img:'https://outward.wiki.gg/images/thumb/8/8e/Meat_Stew.png/150px-Meat_Stew.png',ic:'🍲',d:'Восстановление здоровья 3',hunger:27.5,dur:'9 дней 22 часа',wt:0.5},
+{id:'cooked_meat',n:'Cooked Meat',ru:'Приготовленное Мясо',img:'https://outward.wiki.gg/images/thumb/8/8e/Cooked_Meat.png/150px-Cooked_Meat.png',ic:'🍖',d:'Восстановление здоровья 2',hunger:15,dur:'6 дней',wt:0.5},
+{id:'raw_meat',n:'Raw Meat',ru:'Сырое Мясо',img:'https://outward.wiki.gg/images/thumb/8/8e/Raw_Meat.png/150px-Raw_Meat.png',ic:'🥩',d:'Восстановление здоровья 2, шанс расстройства желудка',hunger:15,dur:'2 дня 23 часа',wt:1.0},
+{id:'jerky',n:'Jerky',ru:'Вяленое Мясо',img:'https://outward.wiki.gg/images/thumb/8/8e/Jerky.png/150px-Jerky.png',ic:'🥓',d:'Восстановление здоровья 2',hunger:10,dur:'14 дней 21 час',wt:0.5},
+{id:'alpha_jerky',n:'Alpha Jerky',ru:'Вяленое Мясо Альфы',img:'https://outward.wiki.gg/images/thumb/8/8e/Alpha_Jerky.png/150px-Alpha_Jerky.png',ic:'🥓',d:'Восстановление здоровья 3, Ярость',hunger:10,dur:'14 дней 21 час',wt:0.5},
+{id:'alpha_sandwich',n:'Alpha Sandwich',ru:'Сэндвич Альфы',img:'https://outward.wiki.gg/images/thumb/8/8e/Alpha_Sandwich.png/150px-Alpha_Sandwich.png',ic:'🥪',d:'Ярость, Восстановление здоровья 4',hunger:20,dur:'9 дней 22 часа',wt:0.5},
+{id:'cooked_alpha_meat',n:'Cooked Alpha Meat',ru:'Приготовленное Мясо Альфы',img:'https://outward.wiki.gg/images/thumb/8/8e/Cooked_Alpha_Meat.png/150px-Cooked_Alpha_Meat.png',ic:'🍖',d:'Восстановление здоровья 3, Ярость',hunger:20,dur:'8 дней',wt:0.5},
+{id:'raw_alpha_meat',n:'Raw Alpha Meat',ru:'Сырое Мясо Альфы',img:'https://outward.wiki.gg/images/thumb/8/8e/Raw_Alpha_Meat.png/150px-Raw_Alpha_Meat.png',ic:'🥩',d:'Восстановление здоровья 3, Боон Ярости, шанс расстройства желудка',hunger:20,dur:'4 дня',wt:0.5},
+{id:'bird_egg',n:'Bird Egg',ru:'Птичье Яйцо',img:'https://outward.wiki.gg/images/thumb/8/8e/Bird_Egg.png/150px-Bird_Egg.png',ic:'🥚',d:'Восстановление здоровья 1, Восстановление выносливости 1, Расстройство желудка (40%)',hunger:7.5,dur:'5 дней',wt:0.2},
+{id:'cooked_bird_egg',n:'Cooked Bird Egg',ru:'Приготовленное Птичье Яйцо',img:'https://outward.wiki.gg/images/thumb/8/8e/Cooked_Bird_Egg.png/150px-Cooked_Bird_Egg.png',ic:'🍳',d:'Восстановление здоровья 1, Восстановление выносливости 1',hunger:7.5,dur:'8 дней',wt:0.2},
+{id:'larva_egg',n:'Larva Egg',ru:'Яйцо Личинки',img:'https://outward.wiki.gg/images/thumb/8/8e/Larva_Egg.png/150px-Larva_Egg.png',ic:'🥚',d:'Восстановление здоровья 2, Восстановление выносливости 2, шанс расстройства желудка',hunger:7.5,dur:'6 дней',wt:0.2},
+{id:'cooked_larva_egg',n:'Cooked Larva Egg',ru:'Приготовленное Яйцо Личинки',img:'https://outward.wiki.gg/images/thumb/8/8e/Cooked_Larva_Egg.png/150px-Cooked_Larva_Egg.png',ic:'🍳',d:'Восстановление здоровья 2, Восстановление выносливости 2',hunger:7.5,dur:'11 дней 21 час',wt:0.2}
+];
