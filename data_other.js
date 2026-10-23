@@ -31,31 +31,7 @@ const QBDD=[
 {id:'painful',n:'Painful Sacrifice',ru:'Болезненная Жертва',img:'https://outward.wiki.gg/images/thumb/8/8e/Painful_Sacrifice.png/150px-Painful_Sacrifice.png',s:'Святая Миссия — Questions and Corruption',d:'-15 макс. выносливости.',t:'negative',fac:'holy',passive:true},
 {id:'sacrifice',n:'Sacrifice',ru:'Жертва',s:'Святая Миссия',d:'-7 макс. выносливости.',t:'negative',fac:'holy'}];
 
-const CSD=[
-{id:'pot_h',n:'Life Potion',ru:'Зелье Жизни',ic:'🧪',d:'Восстанавливает 30 HP'},
-{id:'pot_s',n:'Endurance Potion',ru:'Зелье Выносливости',ic:'🧪',d:'Восстанавливает 30 выносливости'},
-{id:'pot_m',n:'Mana Potion',ru:'Зелье Маны',ic:'🧪',d:'Восстанавливает 30 маны'},
-{id:'band',n:'Bandage',ru:'Бинт',ic:'🩹',d:'Останавливает кровотечение'},
-{id:'anti',n:'Antidote',ru:'Противоядие',ic:'💊',d:'Снимает отравление'},
-{id:'bread',n:'Bread',ru:'Хлеб',ic:'🍞',d:'Еда. +10 сытости'},
-{id:'meat',n:'Meat',ru:'Мясо',ic:'🍖',d:'Еда. +25 сытости'},
-{id:'stew',n:'Meat Stew',ru:'Мясное Рагу',ic:'🍲',d:'Еда. +50 сытости, +10 HP'},
-{id:'water',n:'Waterskin',ru:'Фляга с Водой',ic:'💧',d:'Вода. +30 жажды'},
-{id:'wine',n:'Wine',ru:'Вино',ic:'🍷',d:'Алкоголь. +10 жажды, бафф'},
-{id:'torch',n:'Torch',ru:'Факел',ic:'🔥',d:'Освещение, поджигание'},
-{id:'trap',n:'Tripwire Trap',ru:'Растяжка',ic:'🪤',d:'Ловушка'},
-{id:'flint',n:'Flint & Steel',ru:'Кремень и Сталь',ic:'🔥',d:'Поджигание'},
-{id:'ammo',n:'Bullet',ru:'Пуля',ic:'🔸',d:'Боеприпасы для пистолета'},
-{id:'arrow',n:'Arrow',ru:'Стрела',ic:'➶',d:'Стрелы для лука'},
-{id:'fire_stone',n:'Fire Stone',ru:'Огненный Камень',ic:'🔥',d:'Для огненных заклинаний'},
-{id:'ice_stone',n:'Ice Stone',ru:'Ледяной Камень',ic:'❄️',d:'Для ледяных заклинаний'},
-{id:'lightning_stone',n:'Lightning Stone',ru:'Громовой Камень',ic:'⚡',d:'Для молний'},
-{id:'ethereal_stone',n:'Ethereal Stone',ru:'Эфирный Камень',ic:'✨',d:'Для эфирных заклинаний'},
-{id:'decay_stone',n:'Decay Stone',ru:'Камень Разложения',ic:'☠️',d:'Для разложения'},
-{id:'smoke_bomb',n:'Smoke Bomb',ru:'Дымовая Шашка',ic:'💨',d:'Дымовая шашка'},
-{id:'poison_bomb',n:'Poison Bomb',ru:'Ядовитая Бомба',ic:'☠️',d:'Отравляет врагов'},
-{id:'flash_bomb',n:'Flash Bomb',ru:'Световая Бомба',ic:'💥',d:'Ослепляет врагов'},
-{id:'explosive_bomb',n:'Explosive Bomb',ru:'Взрывная Бомба',ic:'💣',d:'Взрывной урон'}];
+
 // Активные эффекты из квестов (Active Effects)
 const ACTIVE_QBDD=[
 {id:'exalted_active',n:'Exalted (Active)',ru:'Возвышенный (Активный)',s:'Святая Миссия — Hallowed Peacemaker',d:'АКТИВНЫЙ: x2 урон, -30% стоимость навыков. Требует поддержания.',t:'special',fac:'holy'},
