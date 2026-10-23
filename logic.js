@@ -13,9 +13,48 @@ function uSUI(slot){
 const el=document.getElementById('sl-'+slot);
 if(!el)return;
 const tp=document.getElementById('tp-'+slot);
+const icEl=el.querySelector('.ic');
 const item=S.sl[slot];
-if(item){el.classList.add('f');el.querySelector('.ic').textContent=item.ic||item.i||'◆';if(tp)tp.innerHTML='<b style="color:#c9a227">'+esc(item.ru||item.n)+'</b><br><span style="color:#8b7355">'+esc(item.d||item.st||'')+'</span>'}
-else{el.classList.remove('f');const d={q1:'·',q2:'·',q3:'·',q4:'·',q5:'·',q6:'·',q7:'·',q8:'·',wmain:'⚔️',woff:'🛡️',helmet:'🪖',armor:'🛡️',boots:'🥾',backpack:'🎒',lantern:'🏮'};el.querySelector('.ic').textContent=d[slot]||'·';if(tp)tp.innerHTML=''}
+if(item){
+el.classList.add('f');
+el.classList.add('has-img');
+// Ищем картинку предмета
+let imgUrl=item.img;
+if(!imgUrl){
+// Ищем в данных
+const allData=[...HELMETS,...ARMORS,...BOOTS,...BACKPACKS,...LANTERNS];
+const found=allData.find(x=>x.id===item.id);
+if(found)imgUrl=found.img;
+// Для оружия
+if(!imgUrl){
+for(const k in WD){
+const w=WD[k].find(x=>x.id===item.id);
+if(w){imgUrl=w.img;break}
+}
+}
+// Для навыков
+if(!imgUrl){
+for(const k in SDD){
+const s=SDD[k].sk.find(x=>x.id===item.id);
+if(s){imgUrl=s.img;break}
+}
+}
+}
+if(imgUrl){
+icEl.innerHTML='<img src="'+imgUrl+'" onerror="this.parentNode.textContent=\''+(item.ic||item.i||'◆')+'\'">';
+}else{
+icEl.textContent=item.ic||item.i||'◆';
+el.classList.remove('has-img');
+}
+if(tp)tp.innerHTML='<b style="color:#c9a227">'+esc(item.ru||item.n)+'</b><br><span style="color:#8b7355">'+esc(item.d||item.st||'')+'</span>';
+}
+else{
+el.classList.remove('f');
+el.classList.remove('has-img');
+const d={q1:'·',q2:'·',q3:'·',q4:'·',q5:'·',q6:'·',q7:'·',q8:'·',q9:'·',q10:'·',wmain:'⚔️',woff:'🛡️',helmet:'🪖',armor:'🛡️',boots:'🥾',backpack:'🎒',lantern:'🏮'};
+icEl.textContent=d[slot]||'·';
+if(tp)tp.innerHTML='';
+}
 }
 
 function uQB(){
@@ -400,6 +439,16 @@ if(S.qb.indexOf('accept')>-1){cr+=8;hr+=8;bonuses.push(['📜 Принятие',
 if(S.qb.indexOf('sanct')>-1){df+=2;bonuses.push(['📜 Священная Защита','+2 защита'])}
 if(S.qb.indexOf('painful')>-1){st-=15;bonuses.push(['📜 Болезненная Жертва','-15 выносливости'])}
 if(S.qb.indexOf('sacrifice')>-1){st-=7;bonuses.push(['📜 Жертва','-7 выносливости'])}
+// Выбранные навыки
+S.pool.forEach(x=>{
+if(x.src==='skill'){
+const s=fS(x.id);
+if(s){
+const type=s.active?'🔴 АКТИВ':'🟢 ПАССИВ';
+bonuses.push(['✨ '+(s.ru||s.n)+' ('+type+')',s.d.substring(0,50)+(s.d.length>50?'...':'')]);
+}
+}
+});
 // Активные бонусы
 if(S.qb.indexOf('exalted')>-1){pd+=25;ed+=25;bonuses.push(['🔴 Возвышенный (АКТИВ)','x2 урон, -30% стоимость'])}
 if(S.qb.indexOf('defensive_stance')>-1){df+=5;bonuses.push(['🔴 Оборонительная Стойка (АКТИВ)','+20% защиты при блоке'])}
