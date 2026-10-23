@@ -235,7 +235,15 @@ axes:[
 {id:'vigilante_greatmace',n:'Vigilante Greatmace',ru:'Большая Булава Линчевателя',dmg:52,imp:42,sp:0.9,t:'Двуручный',e:'physical',d:'4 защиты',ic:'🔨',dlc:'The Three Brothers'},
 {id:'virgin_greatmace2',n:'Virgin Greatmace',ru:'Большая Булава Девы',dmg:38,imp:34,sp:1.0,t:'Двуручный',e:'physical',d:'',ic:'🔨',dlc:'The Soroboreans'},
 {id:'wolf_greatmace',n:'Wolf Greatmace',ru:'Волчья Большая Булава',dmg:43,imp:34,sp:1.0,t:'Двуручный',e:'physical',d:'Увечье',ic:'🔨'},
-{id:'zagis_greatmace',n:"Zagis' Greatmace",ru:'Большая Булава Загиса',dmg:40,imp:48,sp:0.8,t:'Двуручный',e:'physical',d:'Боль',ic:'🔨'}],spears:[
+{id:'zagis_greatmace',n:"Zagis' Greatmace",ru:'Большая Булава Загиса',dmg:40,imp:48,sp:0.8,t:'Двуручный',e:'physical',d:'Боль',ic:'🔨'},
+{id:'jade_mace',n:'Jade Mace',ru:'Нефритовая Булава',dmg:25,imp:21,sp:1.1,t:'Одноручный',e:'decay',d:'12.5 физ + 12.5 разложение',ic:'🔨'},
+{id:'kazite_mace',n:'Kazite Mace',ru:'Булава Казитов',dmg:26,imp:22,sp:1.0,t:'Одноручный',e:'physical',d:'Ослабление',ic:'🔨',dlc:'The Soroboreans'},
+{id:'tuanosaur_mace',n:'Tuanosaur Mace',ru:'Булава Туанозавра',dmg:30,imp:25,sp:1.1,t:'Одноручный',e:'physical',d:'Сильное кровотечение',ic:'🔨'},
+{id:'gold_lich_mace',n:'Gold-Lich Mace',ru:'Булава Золотого Лича',dmg:33,imp:23,sp:1.0,t:'Одноручный',e:'lightning',d:'24.75 физ + 8.25 молния',ic:'🔨'},
+{id:'jade_greatmace',n:'Jade Greatmace',ru:'Нефритовая Большая Булава',dmg:25,imp:21,sp:1.1,t:'Двуручный',e:'decay',d:'12.5 физ + 12.5 разложение',ic:'🔨'},
+{id:'kazite_greatmace',n:'Kazite Greatmace',ru:'Большая Булава Казитов',dmg:26,imp:22,sp:1.0,t:'Двуручный',e:'physical',d:'Ослабление',ic:'🔨',dlc:'The Soroboreans'},
+{id:'tuanosaur_greatmace',n:'Tuanosaur Greatmace',ru:'Большая Булава Туанозавра',dmg:30,imp:25,sp:1.1,t:'Двуручный',e:'physical',d:'Сильное кровотечение',ic:'🔨'},
+{id:'gold_lich_greatmace',n:'Gold-Lich Greatmace',ru:'Большая Булава Золотого Лича',dmg:33,imp:23,sp:1.0,t:'Двуручный',e:'lightning',d:'24.75 физ + 8.25 молния',ic:'🔨'}],spears:[
 {id:'chalcedony_spear',n:'Chalcedony Spear',ru:'Халцедоновое Копьё',img:'https://outward.wiki.gg/images/thumb/8/8e/Chalcedony_Spear.png/150px-Chalcedony_Spear.png',dmg:37,imp:28,sp:1.0,t:'Двуручный',e:'frost',d:'18.5 физ + 18.5 мороз, Замедление',ic:'🔱',dlc:'The Three Brothers'},
 {id:'damascene_spear',n:'Damascene Spear',ru:'Дамаскиновое Копьё',img:'https://outward.wiki.gg/images/thumb/8/8e/Damascene_Spear.png/150px-Damascene_Spear.png',dmg:42,imp:29,sp:1.0,t:'Двуручный',e:'physical',d:'Увеличивает урон навыков',ic:'🔱',dlc:'The Three Brothers'},
 {id:'fang_trident',n:'Fang Trident',ru:'Клыковый Трезубец',img:'https://outward.wiki.gg/images/thumb/8/8e/Fang_Trident.png/150px-Fang_Trident.png',dmg:28,imp:20,sp:1.1,t:'Двуручный',e:'physical',d:'Кровотечение',ic:'🔱'},
@@ -365,7 +373,11 @@ axes:[
 {id:'vampiric_pistol',n:'Vampiric Pistol',ru:'Вампирский Пистолет',img:'https://outward.wiki.gg/images/thumb/8/8e/Vampiric_Pistol.png/150px-Vampiric_Pistol.png',dmg:50,imp:15,sp:0.7,t:'Одноручный',e:'physical',d:'Высасывает здоровье',ic:'🔫',dlc:'The Soroboreans'},
 {id:'vigilante_pistol',n:'Vigilante Pistol',ru:'Пистолет Линчевателя',img:'https://outward.wiki.gg/images/thumb/8/8e/Vigilante_Pistol.png/150px-Vigilante_Pistol.png',dmg:52,imp:15,sp:0.7,t:'Одноручный',e:'physical',d:'2 защиты',ic:'🔫',dlc:'The Three Brothers'},
 {id:'virgin_pistol',n:'Virgin Pistol',ru:'Пистолет Девы',img:'https://outward.wiki.gg/images/thumb/8/8e/Virgin_Pistol.png/150px-Virgin_Pistol.png',dmg:40,imp:15,sp:0.7,t:'Одноручный',e:'physical',d:'',ic:'🔫',dlc:'The Soroboreans'}
-],staves:[
+,
+{id:'jade_pistol',n:'Jade Pistol',ru:'Нефритовый Пистолет',dmg:25,imp:15,sp:0.7,t:'Одноручный',e:'decay',d:'12.5 физ + 12.5 разложение',ic:'🔫'},
+{id:'kazite_pistol',n:'Kazite Pistol',ru:'Пистолет Казитов',dmg:26,imp:15,sp:0.7,t:'Одноручный',e:'physical',d:'Ослабление',ic:'🔫',dlc:'The Soroboreans'},
+{id:'tuanosaur_pistol',n:'Tuanosaur Pistol',ru:'Пистолет Туанозавра',dmg:30,imp:15,sp:0.7,t:'Одноручный',e:'physical',d:'Сильное кровотечение',ic:'🔫'},
+{id:'gold_lich_pistol',n:'Gold-Lich Pistol',ru:'Пистолет Золотого Лича',dmg:33,imp:15,sp:0.7,t:'Одноручный',e:'lightning',d:'24.75 физ + 8.25 молния',ic:'🔫'}],staves:[
 {id:'astral_staff',n:'Astral Staff',ru:'Астральный Посох',img:'https://outward.wiki.gg/images/thumb/8/8e/Astral_Staff.png/150px-Astral_Staff.png',dmg:38,imp:10,sp:1.2,t:'Двуручный',e:'lightning',d:'30.4 физ + 7.6 молния, +7% эфир, +7% мороз, Обожжён, Проклятие',ic:'🪄',dlc:'The Three Brothers'},
 {id:'chalcedony_staff',n:'Chalcedony Staff',ru:'Халцедоновый Посох',img:'https://outward.wiki.gg/images/thumb/8/8e/Chalcedony_Staff.png/150px-Chalcedony_Staff.png',dmg:38,imp:10,sp:1.0,t:'Двуручный',e:'frost',d:'19 физ + 19 мороз, Замедление',ic:'🪄',dlc:'The Three Brothers'},
 {id:'damascene_staff',n:'Damascene Staff',ru:'Дамаскиновый Посох',img:'https://outward.wiki.gg/images/thumb/8/8e/Damascene_Staff.png/150px-Damascene_Staff.png',dmg:40,imp:10,sp:1.0,t:'Двуручный',e:'physical',d:'Увеличивает урон навыков',ic:'🪄',dlc:'The Three Brothers'},
@@ -380,7 +392,8 @@ axes:[
 {id:'vampiric_staff',n:'Vampiric Staff',ru:'Вампирский Посох',img:'https://outward.wiki.gg/images/thumb/8/8e/Vampiric_Staff.png/150px-Vampiric_Staff.png',dmg:50,imp:10,sp:0.9,t:'Двуручный',e:'physical',d:'Высасывает здоровье',ic:'🪄',dlc:'The Soroboreans'},
 {id:'vigilante_staff',n:'Vigilante Staff',ru:'Посох Линчевателя',img:'https://outward.wiki.gg/images/thumb/8/8e/Vigilante_Staff.png/150px-Vigilante_Staff.png',dmg:52,imp:10,sp:0.9,t:'Двуручный',e:'physical',d:'4 защиты',ic:'🪄',dlc:'The Three Brothers'},
 {id:'virgin_staff',n:'Virgin Staff',ru:'Посох Девы',img:'https://outward.wiki.gg/images/thumb/8/8e/Virgin_Staff.png/150px-Virgin_Staff.png',dmg:39,imp:10,sp:1.0,t:'Двуручный',e:'physical',d:'',ic:'🪄',dlc:'The Soroboreans'}
-],gauntlets:[
+,
+{id:'jade_staff',n:'Jade Staff',ru:'Нефритовый Посох',dmg:25,imp:10,sp:1.1,t:'Двуручный',e:'decay',d:'12.5 физ + 12.5 разложение',ic:'🪄'}],gauntlets:[
 {id:'brutal_gauntlets',n:'Brutal Gauntlets',ru:'Жестокие Кастеты',img:'https://outward.wiki.gg/images/thumb/8/8e/Brutal_Gauntlets.png/150px-Brutal_Gauntlets.png',dmg:20,imp:20,sp:1.2,t:'Одноручный',e:'physical',d:'',ic:'👊'},
 {id:'chalcedony_gauntlets',n:'Chalcedony Gauntlets',ru:'Халцедоновые Кастеты',img:'https://outward.wiki.gg/images/thumb/8/8e/Chalcedony_Gauntlets.png/150px-Chalcedony_Gauntlets.png',dmg:35,imp:35,sp:1.0,t:'Одноручный',e:'frost',d:'17.5 физ + 17.5 мороз',ic:'👊',dlc:'The Three Brothers'},
 {id:'damascene_gauntlets',n:'Damascene Gauntlets',ru:'Дамаскиновые Кастеты',img:'https://outward.wiki.gg/images/thumb/8/8e/Damascene_Gauntlets.png/150px-Damascene_Gauntlets.png',dmg:38,imp:43,sp:1.0,t:'Одноручный',e:'physical',d:'Увеличивает урон навыков',ic:'👊',dlc:'The Three Brothers'},
