@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outward — Билдер персонажа</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ow">
+<div class="ow-h"><h1>⚔ Outward</h1><p>Билдер персонажа • Definitive Edition</p></div>
+
+<div class="ow-stats">
+  <h3>📊 Характеристики</h3>
+  <div class="ow-st"><span class="l">❤️ Здоровье</span><span class="v g" id="sHP">100</span></div>
+  <div class="ow-st"><span class="l">⚡ Выносливость</span><span class="v g" id="sST">100</span></div>
+  <div class="ow-st"><span class="l">🔮 Мана</span><span class="v g" id="sMP">0</span></div>
+  <div class="ow-st"><span class="l">⚔️ Физ. урон</span><span class="v" id="sPD">0%</span></div>
+  <div class="ow-st"><span class="l">✨ Элем. урон</span><span class="v" id="sED">0%</span></div>
+  <div class="ow-st"><span class="l">👟 Скорость</span><span class="v" id="sSP">0%</span></div>
+  <div class="ow-st"><span class="l">🛡️ Защита</span><span class="v" id="sDEF">0</span></div>
+  <div class="ow-st"><span class="l">❄️ Холод</span><span class="v" id="sCR">0</span></div>
+  <div class="ow-st"><span class="l">🔥 Жара</span><span class="v" id="sHR">0</span></div>
+  <div class="ow-warn" id="btW" style="display:none">⚠️ 3/3 прорыва!</div>
+  <div class="ow-btns">
+    <button class="ow-b" id="btnCopy">📋 Копировать</button>
+    <button class="ow-b" id="btnReset">🔄 Сброс</button>
+    <button class="ow-b" id="btnRand">🎲 Случайный</button>
+  </div>
+  <div class="ow-sum">
+    <h3>✓ Сводка</h3>
+    <div id="sSum"><i>Ничего не выбрано</i></div>
+  <div id="allBonuses"></div>
+  </div>
+</div>
+
+<div class="ow-panel on" id="pan-slots">
+  <div class="ow-stitle">🎮 Активные слоты</div>
+  <div class="ow-sl">
+    <h3>Экипировка (выбери в вкладке "Броня")</h3>
+    <div class="ow-sr">
+      <div class="ow-slot" id="sl-helmet" data-slot="helmet"><span class="lb">Шлем</span><span class="ic">🪖</span><div class="tp" id="tp-helmet"></div></div>
+      <div class="ow-slot" id="sl-armor" data-slot="armor"><span class="lb">Броня</span><span class="ic">🛡️</span><div class="tp" id="tp-armor"></div></div>
+      <div class="ow-slot" id="sl-boots" data-slot="boots"><span class="lb">Ботинки</span><span class="ic">🥾</span><div class="tp" id="tp-boots"></div></div>
+      <div class="ow-slot" id="sl-backpack" data-slot="backpack"><span class="lb">Рюкзак</span><span class="ic">🎒</span><div class="tp" id="tp-backpack"></div></div>
+      <div class="ow-slot" id="sl-lantern" data-slot="lantern"><span class="lb">Фонарь</span><span class="ic">🏮</span><div class="tp" id="tp-lantern"></div></div>
+    </div>
+    <h3>Оружие</h3>
+    <div class="ow-sr">
+      <div class="ow-slot" id="sl-wmain" data-slot="wmain" style="width:72px;height:72px"><span class="lb">Основная</span><span class="ic">⚔️</span><span class="k">R</span><div class="tp" id="tp-wmain"></div></div>
+      <div class="ow-slot" id="sl-woff" data-slot="woff" style="width:72px;height:72px"><span class="lb">Вторая</span><span class="ic">🛡️</span><span class="k">L</span><div class="tp" id="tp-woff"></div></div>
+    </div>
+  </div>
+  <div class="ow-sl">
+    <h3>Быстрые слоты</h3>
+    <div class="ow-qsets">
+      <div class="ow-qset on" data-set="1">Комплект 1 (1–4)</div>
+      <div class="ow-qset" data-set="2">Комплект 2 (5–8)</div>
+    </div>
+    <div class="ow-sr" id="qslots1">
+      <div class="ow-slot" id="sl-q1" data-slot="q1"><span class="lb">Слот 1</span><span class="ic">·</span><span class="k">1</span><div class="tp" id="tp-q1"></div></div>
+      <div class="ow-slot" id="sl-q2" data-slot="q2"><span class="lb">Слот 2</span><span class="ic">·</span><span class="k">2</span><div class="tp" id="tp-q2"></div></div>
+      <div class="ow-slot" id="sl-q3" data-slot="q3"><span class="lb">Слот 3</span><span class="ic">·</span><span class="k">3</span><div class="tp" id="tp-q3"></div></div>
+      <div class="ow-slot" id="sl-q4" data-slot="q4"><span class="lb">Слот 4</span><span class="ic">·</span><span class="k">4</span><div class="tp" id="tp-q4"></div></div>
+    </div>
+    <div class="ow-sr" id="qslots2" style="display:none">
+      <div class="ow-slot" id="sl-q5" data-slot="q5"><span class="lb">Слот 5</span><span class="ic">·</span><span class="k">5</span><div class="tp" id="tp-q5"></div></div>
+      <div class="ow-slot" id="sl-q6" data-slot="q6"><span class="lb">Слот 6</span><span class="ic">·</span><span class="k">6</span><div class="tp" id="tp-q6"></div></div>
+      <div class="ow-slot" id="sl-q7" data-slot="q7"><span class="lb">Слот 7</span><span class="ic">·</span><span class="k">7</span><div class="tp" id="tp-q7"></div></div>
+      <div class="ow-slot" id="sl-q8" data-slot="q8"><span class="lb">Слот 8</span><span class="ic">·</span><span class="k">8</span><div class="tp" id="tp-q8"></div></div>
+    </div>
+    <div class="ow-info">💡 Кликайте по навыкам и расходникам в других вкладках — они попадут в первый свободный слот. Клик по слоту — очистить.</div>
+    <div class="ow-qb"><h4>Панель (как в игре)</h4><div class="ow-qbs" id="qbP"></div></div>
+  </div>
+</div>
+
+<div class="ow-panel" id="pan-armor">
+  <div class="ow-stitle">🛡️ Экипировка (по слотам)</div>
+  <label class="ow-lb">Шлем</label>
+  <select class="ow-sel" id="selHelmet"><option value="">— Выберите шлем —</option></select>
+  <label class="ow-lb">Броня</label>
+  <select class="ow-sel" id="selArmor"><option value="">— Выберите броню —</option></select>
+  <label class="ow-lb">Ботинки</label>
+  <select class="ow-sel" id="selBoots"><option value="">— Выберите ботинки —</option></select>
+  <label class="ow-lb">Рюкзак</label>
+  <select class="ow-sel" id="selBackpack"><option value="">— Выберите рюкзак —</option></select>
+  <label class="ow-lb">Фонарь</label>
+  <select class="ow-sel" id="selLantern"><option value="">— Выберите фонарь —</option></select>
+  <div id="armorDetail" style="margin-top:14px"></div>
+</div>
+
+<div class="ow-panel" id="pan-weapons">
+  <div class="ow-stitle">⚔️ Оружие</div>
+  <label class="ow-lb">Категория</label>
+  <select class="ow-sel" id="wCat">
+    <option value="swords">Мечи (78 в игре)</option><option value="axes">Топоры (68)</option>
+    <option value="maces">Булавы (71)</option><option value="spears">Копья (40)</option>
+    <option value="daggers">Кинжалы</option><option value="bows">Луки</option>
+    <option value="pistols">Пистолеты</option><option value="staves">Посохи</option>
+    <option value="gauntlets">Кастеты</option><option value="chakrams">Чакрамы</option>
+    <option value="shields">Щиты</option><option value="lexicons">Лексиконы</option>
+  </select>
+  <div class="ow-f" id="wFilters">
+    <button class="ow-fb on" data-f="all">Все</button>
+    <button class="ow-fb" data-f="physical">Физ</button>
+    <button class="ow-fb" data-f="ethereal">Эфир</button>
+    <button class="ow-fb" data-f="decay">Разл</button>
+    <button class="ow-fb" data-f="fire">Огонь</button>
+    <button class="ow-fb" data-f="frost">Мороз</button>
+    <button class="ow-fb" data-f="lightning">Молния</button>
+  </div>
+  <div class="ow-g" id="wGr"></div>
+</div>
+
+<div class="ow-panel" id="pan-skills">
+  <div class="ow-stitle">✨ Навыки</div>
+  <label class="ow-lb">Тренер</label>
+  <select class="ow-sel" id="sTr">
+    <option value="all">Все тренеры</option>
+    <option value="spellblade">Spellblade — Cierzo</option><option value="shaman">Cabal Hermit — Chersonese</option>
+    <option value="hunter">Hunter — Berg</option><option value="monk">Warrior Monk — Monsoon</option>
+    <option value="rogue">Rogue Engineer — Levant</option><option value="mercenary">Mercenary — Levant</option>
+    <option value="rift">Rune Sage — Berg</option><option value="hexmage">Hex Mage — DLC</option>
+    <option value="ritualist">Primal Ritualist — DLC</option><option value="weapon">Weapon Masters</option>
+    <option value="specialist">Specialist — DLC</option>
+  </select>
+  <div class="ow-info">💡 Tier 3: можно выбрать только один из пары. Клик по навыку — в быстрый слот. Занято: <span id="sCn" style="color:#c9a227">0</span>/8</div>
+  <div id="sCt"></div>
+</div>
+
+<div class="ow-panel" id="pan-cons">
+  <div class="ow-stitle">🧪 Расходники</div>
+  <div class="ow-info">💡 Клик — добавить в первый свободный быстрый слот</div>
+  <div class="ow-cg" id="cGr"></div>
+</div>
+
+<div class="ow-panel" id="pan-bt">
+  <div class="ow-stitle">💎 Прорывы</div>
+  <div class="ow-warn">⚠️ Только 3 очка на всю игру! Выбрано: <span id="btCn">0</span>/3</div>
+  <div class="ow-g" id="btGr"></div>
+</div>
+
+<div class="ow-panel" id="pan-fac">
+  <div class="ow-stitle">🏰 Фракция и квестовые бонусы</div>
+  <div class="ow-g" id="facGr" style="margin-bottom:20px"></div>
+  <div class="ow-f" id="qFilters">
+    <button class="ow-fb on" data-f="all">Все</button>
+    <button class="ow-fb" data-f="positive">Позитивные</button>
+    <button class="ow-fb" data-f="negative">Негативные</button>
+    <button class="ow-fb" data-f="special">Особые</button>
+  </div>
+  <div id="qLi"></div>
+</div>
+
+</div>
+
+<div class="ow-tabs">
+  <button class="ow-tab on" data-pan="slots"><span class="ti">🎮</span>Слоты</button>
+  <button class="ow-tab" data-pan="armor"><span class="ti">🛡️</span>Броня</button>
+  <button class="ow-tab" data-pan="weapons"><span class="ti">⚔️</span>Оружие</button>
+  <button class="ow-tab" data-pan="skills"><span class="ti">✨</span>Навыки</button>
+  <button class="ow-tab" data-pan="cons"><span class="ti">🧪</span>Расходн.</button>
+  <button class="ow-tab" data-pan="bt"><span class="ti">💎</span>Прорывы</button>
+  <button class="ow-tab" data-pan="fac"><span class="ti">🏰</span>Фракция</button>
+</div>
+
+<script src="data_helmets.js"></script>
+<script src="data_armors.js"></script>
+<script src="data_boots.js"></script>
+<script src="data_backpacks.js"></script>
+<script src="data_weapons.js"></script>
+<script src="data_skills.js"></script>
+<script src="data_other.js"></script>
+<script src="logic.js"></script>
+</body>
+</html>
