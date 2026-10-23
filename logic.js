@@ -109,7 +109,9 @@ else if(armorFilter==='craft')filtered=items.filter(x=>x.craft);
 else if(armorFilter==='legacy')filtered=items.filter(x=>x.legacy);
 
 // Фильтр по категории
-if(armorCat!=='all'){
+if(armorCat==='legacy'){
+filtered=filtered.filter(x=>x.legacy===true);
+}else if(armorCat!=='all'){
 filtered=filtered.filter(x=>x.cat===armorCat);
 }
 
@@ -192,7 +194,9 @@ const list=WD[cat]||[];
 let f=wF==='all'?list:list.filter(w=>w.e===wF);
 
 // Фильтр по категории
-if(wCat!=='all'){
+if(wCat==='legacy'){
+f=f.filter(w=>w.legacy===true);
+}else if(wCat!=='all'){
 f=f.filter(w=>w.cat===wCat);
 }
 document.getElementById('wGr').innerHTML=f.map(w=>{
