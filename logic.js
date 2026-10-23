@@ -1,5 +1,5 @@
 let S={sl:{q1:null,q2:null,q3:null,q4:null,q5:null,q6:null,q7:null,q8:null,wmain:null,woff:null,helmet:null,armor:null,boots:null,backpack:null,lantern:null},pool:[],bt:[],fc:[],qb:[],skillPairs:{}};
-let wF='all',qF='all';
+let wF='all',qF='all',wCat='all';
 
 function fW(id){for(const k in WD){const f=WD[k].find(w=>w.id===id);if(f)return Object.assign({},f,{cat:k})}return null}
 function fS(id){for(const k in SDD){const f=SDD[k].sk.find(s=>s.id===id);if(f)return f}return null}
@@ -189,7 +189,12 @@ document.getElementById('armorDetail').innerHTML=html;
 function rW(){
 const cat=document.getElementById('wCat').value;
 const list=WD[cat]||[];
-const f=wF==='all'?list:list.filter(w=>w.e===wF);
+let f=wF==='all'?list:list.filter(w=>w.e===wF);
+
+// Фильтр по категории
+if(wCat!=='all'){
+f=f.filter(w=>w.cat===wCat);
+}
 document.getElementById('wGr').innerHTML=f.map(w=>{
 const im=S.sl.wmain&&S.sl.wmain.id===w.id,io=S.sl.woff&&S.sl.woff.id===w.id;
 const isShield=cat==='shields',isLex=cat==='lexicons';
@@ -600,6 +605,16 @@ document.querySelectorAll('#wFilters .ow-fb').forEach(btn=>{
 btn.addEventListener('click',()=>{
 wF=btn.dataset.f;
 document.querySelectorAll('#wFilters .ow-fb').forEach(b=>b.classList.remove('on'));
+btn.classList.add('on');
+rW();
+});
+});
+
+// Фильтр по категориям оружия
+document.querySelectorAll('#wCatFilters .ow-fb').forEach(btn=>{
+btn.addEventListener('click',()=>{
+wCat=btn.dataset.cat;
+document.querySelectorAll('#wCatFilters .ow-fb').forEach(b=>b.classList.remove('on'));
 btn.classList.add('on');
 rW();
 });
