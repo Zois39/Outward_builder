@@ -21,18 +21,15 @@ el.classList.add('has-img');
 // Ищем картинку предмета
 let imgUrl=item.img;
 if(!imgUrl){
-// Ищем в данных
 const allData=[...HELMETS,...ARMORS,...BOOTS,...BACKPACKS,...LANTERNS];
 const found=allData.find(x=>x.id===item.id);
 if(found)imgUrl=found.img;
-// Для оружия
 if(!imgUrl){
 for(const k in WD){
 const w=WD[k].find(x=>x.id===item.id);
 if(w){imgUrl=w.img;break}
 }
 }
-// Для навыков
 if(!imgUrl){
 for(const k in SDD){
 const s=SDD[k].sk.find(x=>x.id===item.id);
@@ -41,18 +38,16 @@ if(s){imgUrl=s.img;break}
 }
 }
 if(imgUrl){
-icEl.innerHTML='<img src="'+imgUrl+'" onerror="this.parentNode.textContent=\''+(item.ic||item.i||'◆')+'\'">';
+icEl.innerHTML='<img src="'+imgUrl+'" onerror="this.parentNode.innerHTML=\'&nbsp;\'">';
 }else{
-icEl.textContent=item.ic||item.i||'◆';
-el.classList.remove('has-img');
+icEl.innerHTML='&nbsp;';
 }
 if(tp)tp.innerHTML='<b style="color:#c9a227">'+esc(item.ru||item.n)+'</b><br><span style="color:#8b7355">'+esc(item.d||item.st||'')+'</span>';
 }
 else{
 el.classList.remove('f');
 el.classList.remove('has-img');
-const d={q1:'·',q2:'·',q3:'·',q4:'·',q5:'·',q6:'·',q7:'·',q8:'·',q9:'·',q10:'·',wmain:'⚔️',woff:'🛡️',helmet:'🪖',armor:'🛡️',boots:'🥾',backpack:'🎒',lantern:'🏮'};
-icEl.textContent=d[slot]||'·';
+icEl.innerHTML='&nbsp;';
 if(tp)tp.innerHTML='';
 }
 }
