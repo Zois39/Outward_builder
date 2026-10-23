@@ -56,21 +56,27 @@
     <h3>Панель навыков (как в игре)</h3>
     <div class="ow-info">💡 Кликайте по навыкам и расходникам в других вкладках — они добавятся в список. Затем разместите их на панели сами.</div>
     <div class="ow-cross" id="skillCross">
-      <div class="ow-cross-row">
-        <div class="ow-slot" data-slot="q1"><span class="lb">1</span><span class="ic">·</span><div class="tp" id="tp-q1"></div></div>
-        <div class="ow-slot" data-slot="q2"><span class="lb">2</span><span class="ic">·</span><div class="tp" id="tp-q2"></div></div>
-        <div class="ow-slot" data-slot="q3"><span class="lb">3</span><span class="ic">·</span><div class="tp" id="tp-q3"></div></div>
-        <div class="ow-slot" data-slot="q4"><span class="lb">4</span><span class="ic">·</span><div class="tp" id="tp-q4"></div></div>
+      <!-- Верх -->
+      <div class="ow-cross-row ow-cross-top">
+        <div class="ow-slot" data-slot="q4"><span class="lb">Y/△</span><span class="ic">·</span><div class="tp" id="tp-q4"></div></div>
       </div>
-      <div class="ow-cross-row">
-        <div class="ow-slot ow-cross-w" data-slot="wmain"><span class="lb">R</span><span class="ic">⚔️</span><div class="tp" id="tp-wmain2"></div></div>
-        <div class="ow-slot" data-slot="q5"><span class="lb">5</span><span class="ic">·</span><div class="tp" id="tp-q5"></div></div>
-        <div class="ow-slot ow-cross-w" data-slot="woff"><span class="lb">L</span><span class="ic">🛡️</span><div class="tp" id="tp-woff2"></div></div>
+      <!-- Середина: X A B + оружие -->
+      <div class="ow-cross-row ow-cross-mid">
+        <div class="ow-slot" data-slot="q3"><span class="lb">X/□</span><span class="ic">·</span><div class="tp" id="tp-q3"></div></div>
+        <div class="ow-slot ow-cross-center" data-slot="q1"><span class="lb">A/✕</span><span class="ic">·</span><div class="tp" id="tp-q1"></div></div>
+        <div class="ow-slot" data-slot="q2"><span class="lb">B/○</span><span class="ic">·</span><div class="tp" id="tp-q2"></div></div>
+        <div class="ow-slot ow-cross-w" data-slot="wmain"><span class="lb">RB/R1</span><span class="ic">⚔️</span><div class="tp" id="tp-wmain2"></div></div>
       </div>
-      <div class="ow-cross-row">
-        <div class="ow-slot" data-slot="q6"><span class="lb">6</span><span class="ic">·</span><div class="tp" id="tp-q6"></div></div>
-        <div class="ow-slot" data-slot="q7"><span class="lb">7</span><span class="ic">·</span><div class="tp" id="tp-q7"></div></div>
-        <div class="ow-slot" data-slot="q8"><span class="lb">8</span><span class="ic">·</span><div class="tp" id="tp-q8"></div></div>
+      <!-- Низ -->
+      <div class="ow-cross-row ow-cross-bot">
+        <div class="ow-slot" data-slot="q5"><span class="lb">LT/L2</span><span class="ic">·</span><div class="tp" id="tp-q5"></div></div>
+        <div class="ow-slot ow-cross-w" data-slot="woff"><span class="lb">LB/L1</span><span class="ic">🛡️</span><div class="tp" id="tp-woff2"></div></div>
+      </div>
+      <!-- Второй набор (по удержанию) -->
+      <div class="ow-cross-row ow-cross-hold">
+        <div class="ow-slot" data-slot="q6"><span class="lb">↑</span><span class="ic">·</span><div class="tp" id="tp-q6"></div></div>
+        <div class="ow-slot" data-slot="q7"><span class="lb">←</span><span class="ic">·</span><div class="tp" id="tp-q7"></div></div>
+        <div class="ow-slot" data-slot="q8"><span class="lb">→</span><span class="ic">·</span><div class="tp" id="tp-q8"></div></div>
       </div>
     </div>
     <div class="ow-pool" id="skillPool"><h4>📦 Выбранные навыки и предметы (клик — на панель)</h4><div class="ow-pool-items" id="poolItems"></div></div>
