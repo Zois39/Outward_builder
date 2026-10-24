@@ -1,0 +1,3 @@
+weapons: 83/370
+armor: 0/287
+last_position: 160

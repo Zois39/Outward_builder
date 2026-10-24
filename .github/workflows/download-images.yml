@@ -1,0 +1,43 @@
+name: Download Images from Wiki
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '.github/workflows/download-images.yml'
+  workflow_dispatch:
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install requests
+
+    - name: Download all images
+      run: |
+        python .github/download_images.py
+
+    - name: Check downloaded files
+      run: |
+        echo "Downloaded files:"
+        find images/ -type f | wc -l
+        du -sh images/
+
+    - name: Commit and push images
+      run: |
+        git config user.name "GitHub Action"
+        git config user.email "action@github.com"
+        git add images/
+        git diff --staged --quiet || git commit -m "Add $(find images/ -type f | wc -l) images from wiki.gg [skip ci]"
+        git push
