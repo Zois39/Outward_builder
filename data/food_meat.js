@@ -1,0 +1,20 @@
+const FOOD_MEAT=[
+{id:'alpha_jerky',cat:'food',n:'Alpha Jerky',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Alpha_Jerky.png/150px-Alpha_Jerky.png',d:'',e:'[[Health Recovery]] 3<br>[[Rage]]'},
+{id:'azure_shrimp',cat:'food',n:'Azure Shrimp',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Azure_Shrimp.png/150px-Azure_Shrimp.png',d:'',e:'[[Indigestion]]<br>[[Mana Ratio Recovery]] 3'},
+{id:'bird_egg',cat:'food',n:'Bird Egg',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Bird_Egg.png/150px-Bird_Egg.png',d:'',e:'[[Health Recovery]] 1<br>[[Stamina Recovery]] 1<br>[[Indigestion]] (40% chance)'},
+{id:'boiled_azure_shrimp',cat:'food',n:'Boiled Azure Shrimp',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Boiled_Azure_Shrimp.png/150px-Boiled_Azure_Shrimp.png',d:'',e:'[[Mana Recovery]] 3'},
+{id:'cooked_alpha_meat',cat:'food',n:'Cooked Alpha Meat',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Cooked_Alpha_Meat.png/150px-Cooked_Alpha_Meat.png',d:'',e:'[[Health Recovery]] 3<br>[[Rage]]'},
+{id:'cooked_bird_egg',cat:'food',n:'Cooked Bird Egg',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Cooked_Bird_Egg.png/150px-Cooked_Bird_Egg.png',d:'',e:'[[Health Recovery]] 1<br>[[Stamina Recovery]] 1'},
+{id:'cooked_jewel_meat',cat:'food',n:'Cooked Jewel Meat',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Cooked_Jewel_Meat.png/150px-Cooked_Jewel_Meat.png',d:'',e:'[[Speed Up]]<br>[[Health Recovery]] 2'},
+{id:'cooked_larva_egg',cat:'food',n:'Cooked Larva Egg',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Cooked_Larva_Egg.png/150px-Cooked_Larva_Egg.png',d:'',e:'[[Health Recovery]] 2<br>[[Stamina Recovery]] 2'},
+{id:'cooked_meat',cat:'food',n:'Cooked Meat',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Cooked_Meat.png/150px-Cooked_Meat.png',d:'',e:'[[Health Recovery]] 2'},
+{id:'egg',cat:'food',n:'Egg',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Egg.png/150px-Egg.png',d:'',e:''},
+{id:'fish',cat:'food',n:'Fish',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Fish.png/150px-Fish.png',d:'',e:''},
+{id:'jerky',cat:'food',n:'Jerky',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Jerky.png/150px-Jerky.png',d:'',e:'[[Health Recovery]] 2'},
+{id:'larva_egg',cat:'food',n:'Larva Egg',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Larva_Egg.png/150px-Larva_Egg.png',d:'',e:'[[Health Recovery]] 2<br>[[Stamina Recovery]] 2<br>Chance for [[Indigestion]]'},
+{id:'meat',cat:'food',n:'Meat',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Meat.png/150px-Meat.png',d:'',e:''},
+{id:'meat_stew',cat:'food',n:'Meat Stew',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Meat_Stew.png/150px-Meat_Stew.png',d:'',e:'[[Health Recovery]] 3'},
+{id:'raw_alpha_meat',cat:'food',n:'Raw Alpha Meat',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Raw_Alpha_Meat.png/150px-Raw_Alpha_Meat.png',d:'',e:'[[Health Recovery]] 3<br>[[Rage]] boon<br>Chance of [[Indigestion]]'},
+{id:'raw_jewel_meat',cat:'food',n:'Raw Jewel Meat',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Raw_Jewel_Meat.png/150px-Raw_Jewel_Meat.png',d:'',e:'[[Speed Up]]<br>[[Health Recovery]] 2'},
+{id:'raw_meat',cat:'food',n:'Raw Meat',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Raw_Meat.png/150px-Raw_Meat.png',d:'',e:'[[Health Recovery]] 2<br>Chance of [[Indigestion]]'}
+];

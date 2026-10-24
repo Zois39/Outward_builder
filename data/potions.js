@@ -1,0 +1,20 @@
+const POTIONS=[
+{id:'antidote',cat:'consumable',n:'Antidote',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Antidote.png/150px-Antidote.png',d:'',e:'Removes all [[Poison]] effects'},
+{id:'astral_potion',cat:'consumable',n:'Astral Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Astral_Potion.png/150px-Astral_Potion.png',d:'',e:'Restores 50% {{mana}} [[Mana]]<br>Restores 20 {{mana}} [[Mana#Burnt_Mana'},
+{id:'blessed_potion',cat:'consumable',n:'Blessed Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Blessed_Potion.png/150px-Blessed_Potion.png',d:'',e:'[[Blessed]]'},
+{id:'cool_potion',cat:'consumable',n:'Cool Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Cool_Potion.png/150px-Cool_Potion.png',d:'',e:'[[Cool'},
+{id:'discipline_potion',cat:'consumable',n:'Discipline Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Discipline_Potion.png/150px-Discipline_Potion.png',d:'',e:'[[Discipline'},
+{id:'endurance_potion',cat:'consumable',n:'Endurance Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Endurance_Potion.png/150px-Endurance_Potion.png',d:'',e:'Restores 70 {{stamina}} [[Stamina]]<br>Restores 10 {{stamina}} [[Stamina#Burnt_Stamina'},
+{id:'geps_drink',cat:'consumable',n:'Gep's Drink',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Gep's_Drink.png/150px-Gep's_Drink.png',d:'',e:'Restores 30 {{health}} [[Health]]<br>Restores 60 {{stamina}} [[Stamina]]<br>Restores 25% {{mana}} [[Mana]]'},
+{id:'great_astral_potion',cat:'consumable',n:'Great Astral Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Great_Astral_Potion.png/150px-Great_Astral_Potion.png',d:'',e:'Restores 100% {{mana}} [[Mana]]<br>Restores 20 {{mana}} [[Mana#Burnt_Mana'},
+{id:'great_endurance_potion',cat:'consumable',n:'Great Endurance Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Great_Endurance_Potion.png/150px-Great_Endurance_Potion.png',d:'',e:'Restores 100 {{stamina}} [[Stamina]]<br>Restores 50 {{stamina}} [[Stamina#Burnt_Stamina'},
+{id:'great_life_potion',cat:'consumable',n:'Great Life Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Great_Life_Potion.png/150px-Great_Life_Potion.png',d:'',e:'Restores 300 {{health}} [[Health]]<br>Restores 20 {{health}} [[Health#Burnt_Health'},
+{id:'hex_cleaner',cat:'consumable',n:'Hex Cleaner',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Hex_Cleaner.png/150px-Hex_Cleaner.png',d:'',e:'Removes [[Effects#Hex'},
+{id:'life_potion',cat:'consumable',n:'Life Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Life_Potion.png/150px-Life_Potion.png',d:'',e:'Restores 50 {{health}} [[Health]]'},
+{id:'mist_potion',cat:'consumable',n:'Mist Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Mist_Potion.png/150px-Mist_Potion.png',d:'',e:'[[Mist]]'},
+{id:'possessed_potion',cat:'consumable',n:'Possessed Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Possessed_Potion.png/150px-Possessed_Potion.png',d:'',e:'[[Possessed]]'},
+{id:'stability_potion',cat:'consumable',n:'Stability Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Stability_Potion.png/150px-Stability_Potion.png',d:'',e:'[[Impact Resistance Up]]'},
+{id:'stealth_potion',cat:'consumable',n:'Stealth Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Stealth_Potion.png/150px-Stealth_Potion.png',d:'',e:'[[Stealth Up]]'},
+{id:'warm_potion',cat:'consumable',n:'Warm Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Warm_Potion.png/150px-Warm_Potion.png',d:'',e:'[[Warm]]'},
+{id:'weather_defense_potion',cat:'consumable',n:'Weather Defense Potion',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Weather_Defense_Potion.png/150px-Weather_Defense_Potion.png',d:'',e:'[[Weather Defense]]'}
+];
