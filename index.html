@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="theme-color" content="#1a1512">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Outward Character Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <h1>⚔ Outward Character Builder</h1>
+      <div class="toolbar">
+        <button id="btn-undo" title="Undo">↩ Undo</button>
+        <button id="btn-redo" title="Redo">↪ Redo</button>
+        <button id="btn-export" title="Copy build JSON">Export</button>
+        <button id="btn-import" title="Import build JSON">Import</button>
+        <button id="btn-reset" title="Reset build">Reset</button>
+      </div>
+    </header>
+
+    <div id="build-stats"></div>
+    <div id="builder-root"></div>
+  </div>
+
+  <!-- Data & Logic -->
+  <script src="js/validation.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui/skillTree.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

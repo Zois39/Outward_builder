@@ -1,0 +1,4680 @@
+{
+  "classes": [
+    {
+      "id": "cabal_hermit",
+      "name": "Cabal Hermit",
+      "description": "skill tree.]] Cabal Hermit Skills are trained by Adalbert the Hermit, at Hermit's House in northeastern Chersonese.",
+      "teacher": "Adalbert the Hermit",
+      "location": "Chersonese",
+      "isDlc": false,
+      "hasBreakthrough": true,
+      "image": "images/class_Cabal_Hermit.png",
+      "skills": {
+        "tier1": [
+          "call_to_elements",
+          "mana_push",
+          "reveal_soul",
+          "weather_tolerance"
+        ],
+        "tier2": [
+          "shamanic_resonance"
+        ],
+        "tier3": [
+          "conjure",
+          "infuse_wind",
+          "sigil_of_wind"
+        ]
+      }
+    },
+    {
+      "id": "kazite_spellblade",
+      "name": "Kazite Spellblade",
+      "description": "skills focus on adaptability in combat and the infusion of elements into weapons. Kazite Spellblade skills are trained by Eto Akiyuki in the city of Cierzo.",
+      "teacher": "Eto Akiyuki",
+      "location": "Cierzo",
+      "isDlc": false,
+      "hasBreakthrough": true,
+      "image": "images/class_Kazite_Spellblade.png",
+      "skills": {
+        "tier1": [
+          "fitness",
+          "shield_charge",
+          "steady_arm"
+        ],
+        "tier2": [
+          "spellblades_awakening"
+        ],
+        "tier3": [
+          "elemental_discharge",
+          "gong_strike",
+          "infuse_fire",
+          "infuse_frost"
+        ]
+      }
+    },
+    {
+      "id": "mercenary",
+      "name": "Mercenary",
+      "description": "skills are trained by Jaimon in Levant.",
+      "teacher": "Jaimon",
+      "location": "Levant",
+      "isDlc": false,
+      "hasBreakthrough": true,
+      "image": "images/class_Mercenary.png",
+      "skills": {
+        "tier1": [
+          "armor_training",
+          "fast_maintenance",
+          "frost_bullet",
+          "shatter_bullet"
+        ],
+        "tier2": [
+          "swift_foot"
+        ],
+        "tier3": [
+          "blood_bullet",
+          "marathoner",
+          "shield_infusion"
+        ]
+      }
+    },
+    {
+      "id": "philosopher",
+      "name": "Philosopher",
+      "description": "skills are trained by Alemmon in the city of Monsoon.",
+      "teacher": "Alemmon",
+      "location": "Monsoon",
+      "isDlc": false,
+      "hasBreakthrough": true,
+      "image": "images/class_Philosopher.png",
+      "skills": {
+        "tier1": [
+          "chakram_arc",
+          "chakram_pierce",
+          "mana_ward",
+          "sigil_of_fire"
+        ],
+        "tier2": [
+          "leyline_connection"
+        ],
+        "tier3": [
+          "chakram_dance",
+          "fire_affinity",
+          "sigil_of_ice"
+        ]
+      }
+    },
+    {
+      "id": "rogue_engineer",
+      "name": "Rogue Engineer",
+      "description": "skills are taught by Styx in the Slums of Levant.",
+      "teacher": "Styx",
+      "location": "Levant",
+      "isDlc": false,
+      "hasBreakthrough": true,
+      "image": "images/class_Rogue_Engineer.png",
+      "skills": {
+        "tier1": [
+          "backstab",
+          "opportunist_stab",
+          "pressure_plate_training",
+          "sweep_kick"
+        ],
+        "tier2": [
+          "feather_dodge"
+        ],
+        "tier3": [
+          "pressure_plate_expertise",
+          "serpents_parry",
+          "stealth_training"
+        ]
+      }
+    },
+    {
+      "id": "rune_sage",
+      "name": "Rune Sage",
+      "description": "skills are trained by Flase, Sage Trainer in the city of Berg.",
+      "teacher": "Flase",
+      "location": "Berg",
+      "isDlc": false,
+      "hasBreakthrough": true,
+      "image": "images/class_Rune_Sage.png",
+      "skills": {
+        "tier1": [
+          "rune_dez",
+          "rune_egoth",
+          "rune_fal",
+          "rune_shim"
+        ],
+        "tier2": [
+          "well_of_mana"
+        ],
+        "tier3": [
+          "arcane_syntax",
+          "internalized_lexicon",
+          "runic_prefix"
+        ]
+      }
+    },
+    {
+      "id": "warrior_monk",
+      "name": "Warrior Monk",
+      "description": "Skills give both defensive and offensive power in combat, utilising counters to gain the Discipline boon which in turn allows the usage of powerful attacks. Warrior Monk skills are trained by Galira in the city of Monsoon.",
+      "teacher": "Galira",
+      "location": "Monsoon",
+      "isDlc": false,
+      "hasBreakthrough": true,
+      "image": "images/class_Warrior_Monk.png",
+      "skills": {
+        "tier1": [
+          "brace",
+          "focus",
+          "slow_metabolism"
+        ],
+        "tier2": [
+          "steadfast_ascetic"
+        ],
+        "tier3": [
+          "counterstrike",
+          "flash_onslaught",
+          "master_of_motion",
+          "perfect_strike"
+        ]
+      }
+    },
+    {
+      "id": "wild_hunter",
+      "name": "Wild Hunter",
+      "description": "Skills are trained by Ture in the city of Berg.",
+      "teacher": "Ture",
+      "location": "Berg",
+      "isDlc": false,
+      "hasBreakthrough": true,
+      "image": "images/class_Wild_Hunter.png",
+      "skills": {
+        "tier1": [
+          "enrage",
+          "evasion_shot",
+          "hunters_eye",
+          "sniper_shot"
+        ],
+        "tier2": [
+          "survivors_resilience"
+        ],
+        "tier3": [
+          "feral_strikes",
+          "piercing_shot",
+          "predator_leap"
+        ]
+      }
+    },
+    {
+      "id": "hex_mage",
+      "name": "Hex Mage",
+      "description": "Skills are trained by Ella Lockwell in the city of Harmattan. These skills are exclusive to The Soroboreans DLC.",
+      "teacher": "Ella Lockwell",
+      "location": "Harmattan",
+      "isDlc": true,
+      "hasBreakthrough": true,
+      "image": "images/class_Hex_Mage.png",
+      "skills": {
+        "tier1": [
+          "jinx",
+          "nightmares",
+          "torment"
+        ],
+        "tier2": [
+          "bloodlust"
+        ],
+        "tier3": [
+          "blood_sigil",
+          "cleanse",
+          "lockwells_revelation",
+          "rupture"
+        ]
+      }
+    },
+    {
+      "id": "primal_ritualist",
+      "name": "Primal Ritualist",
+      "description": "Skills are trained by Sinai, the Primal Ritualist at the Ritualist's hut in Caldera. These skills are exclusive to The Three Brothers DLC.",
+      "teacher": "Sinai, the Primal Ritualist",
+      "location": "Ritualist's hut",
+      "isDlc": true,
+      "hasBreakthrough": true,
+      "image": "images/class_Primal_Ritualist.png",
+      "skills": {
+        "tier1": [
+          "haunting_beat",
+          "miasmic_tolerance",
+          "welkin_ring"
+        ],
+        "tier2": [
+          "sacred_fumes"
+        ],
+        "tier3": [
+          "battle_rhythm",
+          "harmony_and_melody",
+          "nurturing_echo",
+          "reverberation"
+        ]
+      }
+    },
+    {
+      "id": "specialist",
+      "name": "Specialist",
+      "description": "Skills trained by Justin Garnet through the Gladiator's Arena in New Sirocco. Exclusive to The Three Brothers DLC. This teacher has NO breakthrough point — all skills are accessible once the teacher is unlocked. Skills are purchased with Conqueror's Medals.",
+      "teacher": "Justin Garnet, Specialist Trainer",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "hasBreakthrough": false,
+      "image": "images/class_Specialist.png",
+      "skills": {
+        "tier1": [
+          "acrobatics",
+          "brains",
+          "brawns",
+          "cruelty",
+          "patience",
+          "unsealed"
+        ],
+        "tier2": [],
+        "tier3": []
+      }
+    },
+    {
+      "id": "the_speedster",
+      "name": "The Speedster",
+      "description": "Skills are trained by Serge Battleborn in the city of Harmattan. These skills are exclusive to The Soroboreans DLC.",
+      "teacher": "Serge Battleborn",
+      "location": "Harmattan",
+      "isDlc": true,
+      "hasBreakthrough": true,
+      "image": "images/class_The_Speedster.png",
+      "skills": {
+        "tier1": [
+          "efficiency",
+          "metabolic_purge",
+          "probe"
+        ],
+        "tier2": [
+          "daredevil"
+        ],
+        "tier3": [
+          "anticipation",
+          "blitz",
+          "prime",
+          "unerring_read"
+        ]
+      }
+    },
+    {
+      "id": "weapon_master",
+      "name": "Weapon Master",
+      "description": "Skills trained by Bea Battleborn through the Gladiator's Arena in New Sirocco. Exclusive to The Three Brothers DLC. This teacher has NO breakthrough point — all skills are accessible once the teacher is unlocked. Skills are purchased with Conqueror's Medals.",
+      "teacher": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "hasBreakthrough": false,
+      "image": "images/class_Weapon_Master.png",
+      "skills": {
+        "tier1": [
+          "crescendo",
+          "dispersion",
+          "moment_of_truth",
+          "scalp_collector",
+          "splitter",
+          "strafing_run",
+          "the_technique",
+          "vicious_cycle",
+          "vital_crash",
+          "warriors_vein"
+        ],
+        "tier2": [],
+        "tier3": []
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": "call_to_elements",
+      "name": "Call to Elements",
+      "description": "Grants a Boon depending on location",
+      "effects": "grants a different Boon depending on your current location. For locations with no associated boon, Rage will be granted by default.",
+      "tier": 1,
+      "parentClass": "Cabal Hermit",
+      "skillType": "Active",
+      "subtype": "Boon",
+      "image": "images/skill_Call_to_Elements.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Adalbert the Hermit",
+      "location": "Hermit's House",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Call_to_Elements",
+      "manaCost": "5",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "mana_push",
+      "name": "Mana Push",
+      "description": "",
+      "effects": "Push a powerful gust of wind forward with short range * Deals 1 physical damage * Deals 100 impact",
+      "tier": 1,
+      "parentClass": "Cabal Hermit",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Mana_Push.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Adalbert the Hermit",
+      "location": "Hermit's House",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Mana_Push",
+      "manaCost": "5",
+      "cooldown": "15 seconds"
+    },
+    {
+      "id": "reveal_soul",
+      "name": "Reveal Soul",
+      "description": "Reveals nearby Soul Spots",
+      "effects": "Reveals the Soul Spots (blue orbs, see below) on fallen human enemies, and corpses. You may also find orbs on certain grave stones, as well as random skeleton corpses that cannot be interacted with. Casting a secondary spell near these blue orbs produces combination effects.",
+      "tier": 1,
+      "parentClass": "Cabal Hermit",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Reveal_Soul.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Adalbert the Hermit",
+      "location": "Hermit's House",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Reveal_Soul",
+      "manaCost": "5",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "weather_tolerance",
+      "name": "Weather Tolerance",
+      "description": "+8 Hot weather def; +8 Cold weather def; +5 decay resistance",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Cabal Hermit",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Weather_Tolerance.png",
+      "cost": {
+        "silver": 100,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "call_to_elements"
+        ],
+        "logic": "all",
+        "raw": "Call to Elements"
+      },
+      "trainer": "Adalbert the Hermit",
+      "location": "Hermit's House",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Weather_Tolerance"
+    },
+    {
+      "id": "jinx",
+      "name": "Jinx",
+      "description": "Inflicts a random Hex debuff on the target.",
+      "effects": "= * Will randomly inflict one of: Chill, Curse, Doom, Haunted or Scorched (equal random chance) on the target enemy * The spell can only be blocked by terrain and walls, it cannot be blocked or resisted by characters.",
+      "tier": 1,
+      "parentClass": "Hex Mage",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Jinx.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Ella Lockwell",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Jinx",
+      "manaCost": "8",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "nightmares",
+      "name": "Nightmares",
+      "description": "Reduces Max Mana burn from sleeping by 25%; Reduces Max Stamina burn recovery by 25%",
+      "effects": "= * Reduces the rate at which max Mana is burnt when Resting by 25% * Reduces the rate at which burnt Stamina is recovered when Resting by 25%",
+      "tier": 1,
+      "parentClass": "Hex Mage",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Nightmares.png",
+      "cost": {
+        "silver": 100,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Ella Lockwell",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Nightmares"
+    },
+    {
+      "id": "torment",
+      "name": "Torment",
+      "description": "Triggers a related reaction in all nearby enemies afflicted with a Hex",
+      "effects": "= Triggers a related reaction for every Hex inflicted on all nearby Enemies: * Chill: 25 Frost damage, inflicts Slow Down * Curse: 20 Decay damage, inflicts Poisoned * Doomed: 20 Lightning damage, inflicts Weaken * Haunted: 20 Ethereal damage, inflicts Sapped * Scorched: 20 Fire damage, inflicts Burning * Pain: 10 Ethereal damage, inflicts Bleeding * Confusion: 0 damage, 50 Impact, re-applies Confusion",
+      "tier": 1,
+      "parentClass": "Hex Mage",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Torment.png",
+      "cost": {
+        "silver": 100,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "jinx"
+        ],
+        "logic": "all",
+        "raw": "Jinx"
+      },
+      "trainer": "Ella Lockwell",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Torment",
+      "manaCost": "10",
+      "cooldown": "10 seconds"
+    },
+    {
+      "id": "fitness",
+      "name": "Fitness",
+      "description": "+25 max Health; +20% health restored while Resting",
+      "effects": "* +25 maximum health * +20% health restored from Resting",
+      "tier": 1,
+      "parentClass": "Kazite Spellblade",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Fitness.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "None"
+      },
+      "trainer": "Eto Akiyuki",
+      "location": "Cierzo",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Fitness"
+    },
+    {
+      "id": "shield_charge",
+      "name": "Shield Charge",
+      "description": "",
+      "effects": "* Charge forward with Shield * Hits twice, once at the start of the animation and once at the end * Deals the damage and impact from the equipped Shield, as well as any Effects on the shield",
+      "tier": 1,
+      "parentClass": "Kazite Spellblade",
+      "skillType": "Active",
+      "subtype": "Shield",
+      "image": "images/skill_Shield_Charge.png",
+      "cost": {
+        "silver": 100,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "steady_arm"
+        ],
+        "logic": "all",
+        "raw": "Steady Arm"
+      },
+      "trainer": "Eto Akiyuki",
+      "location": "Cierzo",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Shield_Charge",
+      "staminaCost": "15",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "steady_arm",
+      "name": "Steady Arm",
+      "description": "+10 Impact resist on block",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Kazite Spellblade",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Steady_Arm.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "None"
+      },
+      "trainer": "Eto Akiyuki",
+      "location": "Cierzo",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Steady_Arm"
+    },
+    {
+      "id": "armor_training",
+      "name": "Armor Training",
+      "description": "-50% armor penalty for Stamina cost and Movement Speed",
+      "effects": "* Reduces Equipment movement penalties by 50%. ** Importantly, this only applies to the attributes \"Movement Speed\" and \"Stamina Use\" on equipment. It does not apply to general weight burdens from wearing too much heavy equipment.",
+      "tier": 1,
+      "parentClass": "Mercenary",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Armor_Training.png",
+      "cost": {
+        "silver": 100,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "fast_maintenance"
+        ],
+        "logic": "all",
+        "raw": "Fast Maintenance"
+      },
+      "trainer": "Jaimon",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Armor_Training"
+    },
+    {
+      "id": "fast_maintenance",
+      "name": "Fast Maintenance",
+      "description": "+50% Repair while Resting",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Mercenary",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Fast_Maintenance.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "None"
+      },
+      "trainer": "Jaimon",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Fast_Maintenance"
+    },
+    {
+      "id": "frost_bullet",
+      "name": "Frost Bullet",
+      "description": "Frost Bullet Imbue",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Mercenary",
+      "skillType": "Active",
+      "subtype": "Pistol",
+      "image": "images/skill_Frost_Bullet.png",
+      "cost": {
+        "silver": 100,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "shatter_bullet"
+        ],
+        "logic": "all",
+        "raw": "Shatter Bullet"
+      },
+      "trainer": "Jaimon",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Frost_Bullet",
+      "cooldown": "None"
+    },
+    {
+      "id": "shatter_bullet",
+      "name": "Shatter Bullet",
+      "description": "Shatter Bullet Imbue",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Mercenary",
+      "skillType": "Active",
+      "subtype": "Pistol",
+      "image": "images/skill_Shatter_Bullet.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Jaimon",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Shatter_Bullet",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "chakram_arc",
+      "name": "Chakram Arc",
+      "description": "Close-range sweep attack",
+      "effects": "* Close-ranged sweeping attack * Damage multiplier: 1.5x * Impact multiplier: 4.0x",
+      "tier": 1,
+      "parentClass": "Philosopher",
+      "skillType": "Active",
+      "subtype": "Chakram",
+      "image": "images/skill_Chakram_Arc.png",
+      "cost": {
+        "silver": 100,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "chakram_pierce"
+        ],
+        "logic": "all",
+        "raw": "Chakram Pierce"
+      },
+      "trainer": "Alemmon",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Chakram_Arc",
+      "manaCost": "8",
+      "cooldown": "12 seconds"
+    },
+    {
+      "id": "chakram_pierce",
+      "name": "Chakram Pierce",
+      "description": "Hits twice",
+      "effects": "* Can hit twice * Pierces through all targets",
+      "tier": 1,
+      "parentClass": "Philosopher",
+      "skillType": "Active",
+      "subtype": "Chakram",
+      "image": "images/skill_Chakram_Pierce.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Alemmon",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Chakram_Pierce",
+      "manaCost": "5",
+      "cooldown": "6 seconds"
+    },
+    {
+      "id": "mana_ward",
+      "name": "Mana Ward",
+      "description": "Force Bubble",
+      "effects": "*The caster is granted the Force Bubble status for the duration of the effect. *While this spell protects the user from most damage, it does not prevent Impact, meaning you can still be staggered or knocked down during the effect.",
+      "tier": 1,
+      "parentClass": "Philosopher",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Mana_Ward.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Alemmon",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Mana_Ward",
+      "manaCost": "7",
+      "cooldown": "20 seconds"
+    },
+    {
+      "id": "sigil_of_fire",
+      "name": "Sigil of Fire",
+      "description": "Creates a Sigil of Fire, enabling spell combos.",
+      "effects": "* Raises the player's Temperature Stage by 3 (heats the player up). In neutral temperature environments this increases the player's temperature delta by +28 .",
+      "tier": 1,
+      "parentClass": "Philosopher",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Sigil_of_Fire.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Alemmon",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Sigil_of_Fire",
+      "manaCost": "7",
+      "cooldown": "None"
+    },
+    {
+      "id": "haunting_beat",
+      "name": "Haunting Beat",
+      "description": "Deploys Ghost Drums on the ground, and causes Haunted in a small radius.",
+      "effects": "= * Deploy the Ghost Drum * Cannot be placed within 30 meters of another totem, unless you have Harmony and Melody * Continuously deals Haunted to enemies inside the ring. * You can strike the instrument once every 3 seconds to send out blasts. * Picking up the Ghost Drum will reset the charges to 0. If an enemy is in range, hitting the Drums with a weapon will: * Add a charge to the instrument when a blast hits an enemy, increasing the instrument's power. * Send out a blast dealing 10 Ethereal damage to nearby targets, and an additional 3 damage per charge on the instrument with a maximum of 40 base damage. The blast also inflicts Aetherbomb on enemies. **The Aetherbomb buildup starts at 20% and increases by an additional 6% per charge, with a cap of 100% at 14 charges. **The Drum's damage is affected by equipment and boons of the player who placed the drum at the time the projectile hits the enemy.",
+      "tier": 1,
+      "parentClass": "Primal Ritualist",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Haunting_Beat.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Sinai, the Primal Ritualist",
+      "location": "Ritualist's hut",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Haunting_Beat",
+      "staminaCost": "20",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "miasmic_tolerance",
+      "name": "Miasmic Tolerance",
+      "description": "Increase Status Effect resistance by 15% when well rested.",
+      "effects": "= * When you have a Sleep Effect you gain 15% Status Resistance.",
+      "tier": 1,
+      "parentClass": "Primal Ritualist",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Miasmic_Tolerance.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Sinai, the Primal Ritualist",
+      "location": "Ritualist's hut",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Miasmic_Tolerance"
+    },
+    {
+      "id": "welkin_ring",
+      "name": "Welkin Ring",
+      "description": "Deploys the Sky Chimes and causes Doom in a small radius.",
+      "effects": "= * Deploy the Sky Chimes * Cannot be placed within 30 meters of another totem, unless you have Harmony and Melody * Continuously deals Doomed to enemies inside the ring. * You can strike the instrument once every 3 seconds to send out blasts. * Picking up the Sky Chimes will reset the charges to 0. If an enemy is in range, hitting the Chimes with a weapon will: * Add a charge to the instrument when a blast hits an enemy, increasing the instrument's power. * Send out a blast dealing 10 Lightning damage to nearby targets, and an additional 3 damage per charge on the instrument with a maximum of 40 base damage. The blast also inflicts Holy Blaze on enemies who are afflicted with Burning. **The Holy Blaze buildup starts at 20% and increases by an additional 6% per charge, with a cap of 100% at 14 charges. **The Chimes' damage is affected by equipment and boons of the player who placed the drum at the time the projectile hits the enemy.",
+      "tier": 1,
+      "parentClass": "Primal Ritualist",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Welkin_Ring.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Sinai, the Primal Ritualist",
+      "location": "Ritualist's hut",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Welkin_Ring",
+      "staminaCost": "20",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "backstab",
+      "name": "Backstab",
+      "description": "Dagger attack",
+      "effects": "*If the skill hits the enemy's back, it will deal quadruple damage and impact (4.0x). *If the skill does not strike the enemy in the back, it does the same damage as Dagger Slash. *The extra damage If the skill hits the enemy's back is processed as separate hit, which also triggers any Status Effects on the dagger again. This makes it possible to inflict statuses with one cast of Backstab.",
+      "tier": 1,
+      "parentClass": "Rogue Engineer",
+      "skillType": "Active",
+      "subtype": "Dagger",
+      "image": "images/skill_Backstab.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Styx",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Backstab",
+      "staminaCost": "5",
+      "cooldown": "15 seconds"
+    },
+    {
+      "id": "opportunist_stab",
+      "name": "Opportunist Stab",
+      "description": "Inflicts Dagger damage",
+      "effects": "* Deals the damage from the player's equipped Dagger. * If the enemy has Pain or Confusion, Damage and Impact are 3.0x times stronger * If the enemy has Pain and Confusion, Damage and Impact are 6.0x times stronger * This skill will remove Pain and Confusion hexes from the enemy if they have them * Effects from the Dagger are inflicted on hit",
+      "tier": 1,
+      "parentClass": "Rogue Engineer",
+      "skillType": "Active",
+      "subtype": "Dagger",
+      "image": "images/skill_Opportunist_Stab.png",
+      "cost": {
+        "silver": 100,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "backstab"
+        ],
+        "logic": "all",
+        "raw": "Backstab"
+      },
+      "trainer": "Styx",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Opportunist_Stab",
+      "staminaCost": "5",
+      "cooldown": "10 seconds"
+    },
+    {
+      "id": "pressure_plate_training",
+      "name": "Pressure Plate Training",
+      "description": "Can deploy Pressure Plate Trap",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Rogue Engineer",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Pressure_Plate_Training.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "None"
+      },
+      "trainer": "Styx",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Pressure_Plate_Training"
+    },
+    {
+      "id": "sweep_kick",
+      "name": "Sweep Kick",
+      "description": "High impact against Confused targets; Area of Effect Radius",
+      "effects": "* A stronger version of Push Kick, dealing 20 physical and 85 Impact * If the target has Confusion, they will receive 99999 Impact, which is a guaranteed knockdown unless they have 100% Impact resist * Hits all targets in a small area-of-effect radius",
+      "tier": 1,
+      "parentClass": "Rogue Engineer",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Sweep_Kick.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Styx",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Sweep_Kick",
+      "staminaCost": "12",
+      "cooldown": "15 seconds"
+    },
+    {
+      "id": "rune_dez",
+      "name": "Rune: Dez",
+      "description": "",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Rune Sage",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Rune_Dez.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Flase, Sage Trainer",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Rune%3A_Dez",
+      "manaCost": "8",
+      "cooldown": "2 seconds"
+    },
+    {
+      "id": "rune_egoth",
+      "name": "Rune: Egoth",
+      "description": "",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Rune Sage",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Rune_Egoth.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Flase, Sage Trainer",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Rune%3A_Egoth",
+      "manaCost": "8",
+      "cooldown": "2 seconds"
+    },
+    {
+      "id": "rune_fal",
+      "name": "Rune: Fal",
+      "description": "",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Rune Sage",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Rune_Fal.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Flase, Sage Trainer",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Rune%3A_Fal",
+      "manaCost": "8",
+      "cooldown": "2 seconds"
+    },
+    {
+      "id": "rune_shim",
+      "name": "Rune: Shim",
+      "description": "",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Rune Sage",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Rune_Shim.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Flase, Sage Trainer",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Rune%3A_Shim",
+      "manaCost": "8",
+      "cooldown": "2 seconds"
+    },
+    {
+      "id": "acrobatics",
+      "name": "Acrobatics",
+      "description": "Unhampered Dodge Rolls have increased range. Stamina cost of Dodge Rolls increased by 50%",
+      "effects": "= * Unhampered Dodge Rolls have increased range (hampered rolls are when you have a backpack that restricts your dodge) * Stamina cost of Dodge Rolls increased by 50% (from 6 to 9)",
+      "tier": 1,
+      "parentClass": "Specialist",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Acrobatics.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Justin Garnet, Specialist Trainer",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Acrobatics"
+    },
+    {
+      "id": "brains",
+      "name": "Brains",
+      "description": "Increases Elemental Damage by 15%, but lowers physical damage by 25% and increases Stamina costs by 15%",
+      "effects": "= * Increases Elemental damage dealt by 15% * Reduces Physical damage dealt by 25% * Increases Stamina cost of actions by 15%",
+      "tier": 1,
+      "parentClass": "Specialist",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Brains.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Justin Garnet, Specialist Trainer",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Brains"
+    },
+    {
+      "id": "brawns",
+      "name": "Brawns",
+      "description": "Increase Physical Damage by 25% and increase max stamina by 25, but lowers elemental damage by 40%.",
+      "effects": "= * Increases Physical damage dealt by 25% * Increases max Stamina by 25 * Reduces Elemental damage dealt by 40%",
+      "tier": 1,
+      "parentClass": "Specialist",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Brawns.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Justin Garnet, Specialist Trainer",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Brawns"
+    },
+    {
+      "id": "cruelty",
+      "name": "Cruelty",
+      "description": "Increases the damage of DoTs, but reduces Status Resistance and Physical resistance",
+      "effects": "= * Increases damage by 50% for: Burning, Poisoned and Extreme Poison * Increases damage by 30% for: Bleeding, Extreme Bleeding, Blood Leech Victim, Blaze, Holy Blaze and Plague. * Lowers Status Resistance by 50% and Physical resistance by 10%.",
+      "tier": 1,
+      "parentClass": "Specialist",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Cruelty.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Justin Garnet, Specialist Trainer",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Cruelty"
+    },
+    {
+      "id": "patience",
+      "name": "Patience",
+      "description": "Increases damage of Weapon Skills by 30%. Lowers damage of normal and special weapon attacks by 20%.",
+      "effects": "= * Increases damage of Main-Weapon Skills by 30%. This also includes Gong Strike, Shield Charge, Elemental Discharge, Bow skills and Dagger skills, as well as Push Kick, Sweep Kick and Frost Kick. * Reduces damage of normal and special attacks on weapons by 20%. ** It also reduces damage from combination attacks such as Standard > Special. ** It does not reduce damage from running attacks.",
+      "tier": 1,
+      "parentClass": "Specialist",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Patience.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Justin Garnet, Specialist Trainer",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Patience"
+    },
+    {
+      "id": "unsealed",
+      "name": "Unsealed",
+      "description": "* In the Vanilla game (NOT Definitive Edition), the skill is bugged and does not extend Sigil durations. Category:Pages which list bugs",
+      "effects": "= * Increases the speed at which you places Sigils, and extends their duration by 20 seconds. * Lowers your max Health by 25.",
+      "tier": 1,
+      "parentClass": "Specialist",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Unsealed.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Justin Garnet, Specialist Trainer",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Unsealed"
+    },
+    {
+      "id": "efficiency",
+      "name": "Efficiency",
+      "description": "Maximum Stamina increased by 25.",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "The Speedster",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Efficiency.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Serge Battleborn",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Efficiency"
+    },
+    {
+      "id": "metabolic_purge",
+      "name": "Metabolic Purge",
+      "description": "{{description|Passive skill that increases Corruption resistance by 10%.}}",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "The Speedster",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Metabolic_Purge.png",
+      "cost": {
+        "silver": 100,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Serge Battleborn",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Metabolic_Purge"
+    },
+    {
+      "id": "probe",
+      "name": "Probe",
+      "description": "A weak attack that increases Alertness level on hit.; Evolves into stronger forms as Alertness level rises.",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "The Speedster",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Probe.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Serge Battleborn",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Probe",
+      "staminaCost": "0.75",
+      "cooldown": "0.5 seconds"
+    },
+    {
+      "id": "brace",
+      "name": "Brace",
+      "description": "Blocks attack. If successful:",
+      "effects": "Blocks an attack (can be melee, magic or ranged). If successful: * Restores Stability * Nearby enemies are knocked back, and the attacker's Stability is reduced to 50% The effects of Brace only apply if an attack was successfully countered. If no attack was blocked, Brace goes on cooldown and no effects are gained.",
+      "tier": 1,
+      "parentClass": "Warrior Monk",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Brace.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Galira",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Brace",
+      "cooldown": "200 seconds"
+    },
+    {
+      "id": "focus",
+      "name": "Focus",
+      "description": "Grants Discipline",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Warrior Monk",
+      "skillType": "Active",
+      "subtype": "Boon",
+      "image": "images/skill_Focus.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Galira",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Focus",
+      "cooldown": "500 seconds"
+    },
+    {
+      "id": "slow_metabolism",
+      "name": "Slow Metabolism",
+      "description": "Slower Hunger, Drink, Sleep decay",
+      "effects": "The values with which this skill affects your stats are: * Drink deplete rate: -20% * Sleep deplete rate: -20% * Food deplete rate: -15%",
+      "tier": 1,
+      "parentClass": "Warrior Monk",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Slow_Metabolism.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "None"
+      },
+      "trainer": "Galira",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Slow_Metabolism"
+    },
+    {
+      "id": "crescendo",
+      "name": "Crescendo",
+      "description": "Quick attack which grants Craze on successful hits.",
+      "effects": "= * Quick attack, dealing 1.0x Damage and Impact. * Successful hits grant a stack of Craze.",
+      "tier": 1,
+      "parentClass": "Weapon Master",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Crescendo.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Crescendo",
+      "staminaCost": "7",
+      "cooldown": "3 seconds"
+    },
+    {
+      "id": "dispersion",
+      "name": "Dispersion",
+      "description": "Create an AoE shockwave which destabilizes yourself. Effect varies depending on Imbue.",
+      "effects": "= Create an AoE shockwave on the ground. * Deals 2.0x weapon Damage and 1.5x weapon Impact * Reduces your Stability to 0, but does not stagger you. If you have a Melee Imbue on the weapon, the effects will vary: * Fire imbues: Damage overrides to Fire, inflicts Scorched. * Frost imbues: Damage overrides to Frost, inflicts Chill. * Lightning and Light imbues: Damage overrides to Lightning, inflicts Doomed. * Ethereal and Wind imbues: Damage overrides to Ethereal, inflicts Haunted. * Decay and Poison imbues: Damage overrides to Decay, inflicts Curse.",
+      "tier": 1,
+      "parentClass": "Weapon Master",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Dispersion.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Dispersion",
+      "staminaCost": "30",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "moment_of_truth",
+      "name": "Moment of Truth",
+      "description": "High damage strike which ignores 50% of enemy resistances, player receives Drawback.",
+      "effects": "= * High damage strike which deals 3.5x Damage and 0.5x Impact. * The attack ignores 50% of the enemy's Damage Resistance (not Protection or Barrier). Examples: An enemy with 30% damage resistances would take damage as if they have 15% damage resistances, and an enemy with 95% damage resistance would take damage as if they had 47.5% damage resistances. Additionally, if the resistance is below 0%, then the effect is deactivated. ** Note: Resistance modifiers (such as Pain) are applied before the halving effect of .",
+      "tier": 1,
+      "parentClass": "Weapon Master",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Moment_of_Truth.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Moment_of_Truth",
+      "staminaCost": "12",
+      "cooldown": "15 seconds"
+    },
+    {
+      "id": "scalp_collector",
+      "name": "Scalp Collector",
+      "description": "Inflicts Bleeding on hit. Kills with this attack grant Kill Streak.",
+      "effects": "= * Strike with the axe, dealing 1.2x Damage and 0.1x Impact * Kills with this attack grant Kill Streak",
+      "tier": 1,
+      "parentClass": "Weapon Master",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Scalp_Collector.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Scalp_Collector",
+      "staminaCost": "8",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "splitter",
+      "name": "Splitter",
+      "description": "Leaping strike that grants short immunity and increases in power as the enemy's life % decreases.",
+      "effects": "= * Leaping strike, granting immunity during the animation. * Impact is multiplied by 1.5x regardless of enemy Health. * Damage is multiplied by up to 6.0x depending on target enemy's Health %. For example, if enemy is at 100% health it deals 1.0x damage, and at 0% health it would deal 6.0x Damage if the target wasn't already dead. * If your weapon is imbued, grants +15 bonus damage of the element of the imbue. * Burns 5 Stamina and 5 Health",
+      "tier": 1,
+      "parentClass": "Weapon Master",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Splitter.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Splitter",
+      "staminaCost": "15",
+      "cooldown": "45 seconds"
+    },
+    {
+      "id": "strafing_run",
+      "name": "Strafing Run",
+      "description": "Shoot the bow 5 times rapidly, while strafing left or right.",
+      "effects": "= * As the description states, simply run to the left or right while rapidly shooting 5 shots from your Bow.",
+      "tier": 1,
+      "parentClass": "Weapon Master",
+      "skillType": "Active",
+      "subtype": "Bow",
+      "image": "images/skill_Strafing_Run.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Strafing_Run",
+      "staminaCost": "25",
+      "cooldown": "100"
+    },
+    {
+      "id": "the_technique",
+      "name": "The Technique",
+      "description": "Unleash a flurry of 6 rapid strikes. Burns 10 Stamina.",
+      "effects": "= * Rapidly strike 6 times with the sword, dealing 0.8x Damage and 0.25x Impact per hit * Burns 10 Stamina (in addition to the natural Stamina burn from the 30 stamina cost of activation)",
+      "tier": 1,
+      "parentClass": "Weapon Master",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_The_Technique.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/The_Technique",
+      "staminaCost": "30",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "vicious_cycle",
+      "name": "Vicious Cycle",
+      "description": "High impact strike, inflicts Crippled and Slow Down.",
+      "effects": "= * High impact strike dealing 2.0x Damage and 3.0x Impact",
+      "tier": 1,
+      "parentClass": "Weapon Master",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Vicious_Cycle.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Vicious_Cycle",
+      "staminaCost": "15",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "vital_crash",
+      "name": "Vital Crash",
+      "description": "Long distance tackle, dealing more damage and impact the more health and stamina you have. Inflicts Pain and Confusion on the player.",
+      "effects": "= * A long-distance running tackle. * Damage multiplied by 0.03x, and then multiplied by your Character's current Health. For example at 100 health it would be 3.0x Damage. At 200 Health, it would be 6.0x damage. This is not %-based as the description indicates, but a direct multiplier from your current health. * Impact uses the same multiplier as Damage, but based on your current Stamina. *Player receives 100% buildup for both Pain and Confusion. *The player won't get the statuses from this ability alone if they have any amount of Status Resistance.",
+      "tier": 1,
+      "parentClass": "Weapon Master",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Vital_Crash.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Vital_Crash",
+      "staminaCost": "10",
+      "cooldown": "60 seconds"
+    },
+    {
+      "id": "warriors_vein",
+      "name": "Warrior's Vein",
+      "description": "Counter an attack. If successful, strike back with high damage and impact, and inflict Extreme Bleeding on yourself and the enemy.",
+      "effects": "= * Counter deals 2.0x Damage and 2.5x Impact. *Applies 100% buildup for Extreme Bleeding to both the player and the target. *The player won't get the status from this ability alone if they have any amount of Status Resistance.",
+      "tier": 1,
+      "parentClass": "Weapon Master",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Warriors_Vein.png",
+      "cost": {
+        "silver": 3,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bea Battleborn, Weapons Master",
+      "location": "New Sirocco",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Warrior%27s_Vein",
+      "staminaCost": "12",
+      "cooldown": "50 seconds"
+    },
+    {
+      "id": "enrage",
+      "name": "Enrage",
+      "description": "Grants Rage",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Wild Hunter",
+      "skillType": "Active",
+      "subtype": "Boon",
+      "image": "images/skill_Enrage.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Ture",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Enrage",
+      "cooldown": "500 seconds"
+    },
+    {
+      "id": "evasion_shot",
+      "name": "Evasion Shot",
+      "description": "Jumps backwards and shoot an arrow; Inflicts Cripple on target",
+      "effects": "* Shoot while jumping backwards",
+      "tier": 1,
+      "parentClass": "Wild Hunter",
+      "skillType": "Active",
+      "subtype": "Bow",
+      "image": "images/skill_Evasion_Shot.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Ture",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Evasion_Shot",
+      "staminaCost": "12",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "hunters_eye",
+      "name": "Hunter's Eye",
+      "description": "* The effect grants you double (2.0x) bow range. It has no effect on non-bow targeting range, however you can cast skills while locked with a bow.",
+      "effects": "",
+      "tier": 1,
+      "parentClass": "Wild Hunter",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Hunters_Eye.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Ture",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Hunter%27s_Eye"
+    },
+    {
+      "id": "sniper_shot",
+      "name": "Sniper Shot",
+      "description": "Long-range shot",
+      "effects": "* Long-range sniper shot * Damage multiplier: 2.5x * Impact multiplier: 3.0x",
+      "tier": 1,
+      "parentClass": "Wild Hunter",
+      "skillType": "Active",
+      "subtype": "Bow",
+      "image": "images/skill_Sniper_Shot.png",
+      "cost": {
+        "silver": 100,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "hunters_eye"
+        ],
+        "logic": "all",
+        "raw": "Hunter's Eye"
+      },
+      "trainer": "Ture",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Sniper_Shot",
+      "staminaCost": "15",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "shamanic_resonance",
+      "name": "Shamanic Resonance",
+      "description": "Boon effects increased",
+      "effects": "{| class=\"wikitable\" !Boon !Amplified Effects |- |frameless|60x60px; Rage | +35% all Impact |- |frameless|60x60px; Discipline | +30% Physical damage |- |frameless|60x60px; Mist | +30% Ethereal damage and resistance |- |frameless|60x60px; Possessed | +30% Decay damage and resistance |- |frameless|60x60px; Blessed | +30% Lightning damage and resistance |- |frameless|60x60px; Cool | +30% Frost damage and resistance +16 hot resistance |- |frameless|60x60px; Warm | +30% Fire damage and resistance +16 cold resistance |} *Boons that are increased by this effect will have \"Amplified\" added to their name in the Status Effects menu.",
+      "tier": 2,
+      "parentClass": "Cabal Hermit",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Shamanic_Resonance.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Adalbert the Hermit",
+      "location": "Hermit's House",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Shamanic_Resonance"
+    },
+    {
+      "id": "bloodlust",
+      "name": "Bloodlust",
+      "description": "For every death around the caster, recover 5 max Health, Stamina and Mana burn.",
+      "effects": "",
+      "tier": 2,
+      "parentClass": "Hex Mage",
+      "skillType": "Passive",
+      "subtype": "Breakthrough",
+      "image": "images/skill_Bloodlust.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Ella Lockwell",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Bloodlust"
+    },
+    {
+      "id": "spellblades_awakening",
+      "name": "Spellblade's Awakening",
+      "description": "Max Health +15; Max Stamina +15; Max Mana +15",
+      "effects": "",
+      "tier": 2,
+      "parentClass": "Kazite Spellblade",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Spellblades_Awakening.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Eto Akiyuki",
+      "location": "Cierzo",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Spellblade%27s_Awakening"
+    },
+    {
+      "id": "swift_foot",
+      "name": "Swift Foot",
+      "description": "Movement Speed +10%",
+      "effects": "* Passively increases the player's Movement Speed by 10%.",
+      "tier": 2,
+      "parentClass": "Mercenary",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Swift_Foot.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Jaimon",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Swift_Foot"
+    },
+    {
+      "id": "leyline_connection",
+      "name": "Leyline Connection",
+      "description": "+0.34 mana per second",
+      "effects": "",
+      "tier": 2,
+      "parentClass": "Philosopher",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Leyline_Connection.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Alemmon",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Leyline_Connection"
+    },
+    {
+      "id": "sacred_fumes",
+      "name": "Sacred Fumes",
+      "description": "Increases Barrier by 7.",
+      "effects": "= * Increases Barrier by 7.",
+      "tier": 2,
+      "parentClass": "Primal Ritualist",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Sacred_Fumes.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Sinai, the Primal Ritualist",
+      "location": "Ritualist's hut",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Sacred_Fumes"
+    },
+    {
+      "id": "feather_dodge",
+      "name": "Feather Dodge",
+      "description": "Dodge stamina cost -50%; Unimpeded dodging with any backpack",
+      "effects": "",
+      "tier": 2,
+      "parentClass": "Rogue Engineer",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Feather_Dodge.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [
+          "opportunist_stab"
+        ],
+        "logic": "all",
+        "raw": "Opportunist Stab"
+      },
+      "trainer": "Styx",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Feather_Dodge"
+    },
+    {
+      "id": "well_of_mana",
+      "name": "Well of Mana",
+      "description": "+40 maximum Mana",
+      "effects": "",
+      "tier": 2,
+      "parentClass": "Rune Sage",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Well_of_Mana.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "None"
+      },
+      "trainer": "Flase",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Well_of_Mana"
+    },
+    {
+      "id": "daredevil",
+      "name": "Daredevil",
+      "description": "Per Alert level: +10% Cooldown Reduction-5% All damage resists",
+      "effects": "= Per Alert level: +10% Cooldown Reduction-5% All damage resists",
+      "tier": 2,
+      "parentClass": "The Speedster",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Daredevil.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Serge Battleborn",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Daredevil"
+    },
+    {
+      "id": "steadfast_ascetic",
+      "name": "Steadfast Ascetic",
+      "description": "Max Stamina +40",
+      "effects": "",
+      "tier": 2,
+      "parentClass": "Warrior Monk",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Steadfast_Ascetic.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "None"
+      },
+      "trainer": "Galira",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Steadfast_Ascetic"
+    },
+    {
+      "id": "survivors_resilience",
+      "name": "Survivor's Resilience",
+      "description": "Max Health +40.",
+      "effects": "",
+      "tier": 2,
+      "parentClass": "Wild Hunter",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Survivors_Resilience.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": true
+      },
+      "requirements": {
+        "skills": [
+          "sniper_shot"
+        ],
+        "logic": "all",
+        "raw": "Sniper Shot"
+      },
+      "trainer": "Ture",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Survivor%27s_Resilience"
+    },
+    {
+      "id": "conjure",
+      "name": "Conjure",
+      "description": "Combination only",
+      "effects": "Conjure must be combined with other skills to produce effects.",
+      "tier": 3,
+      "parentClass": "Cabal Hermit",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Conjure.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "infuse_wind",
+          "sigil_of_wind"
+        ],
+        "logic": "any",
+        "raw": "Infuse Wind or Sigil of Wind"
+      },
+      "trainer": "Adalbert the Hermit",
+      "location": "Hermit's House",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Conjure",
+      "exclusiveGroup": "hermit_wind",
+      "manaCost": "10",
+      "cooldown": "8 seconds"
+    },
+    {
+      "id": "infuse_wind",
+      "name": "Infuse Wind",
+      "description": "Wind Imbue",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Cabal Hermit",
+      "skillType": "Active",
+      "subtype": "Melee Imbue",
+      "image": "images/skill_Infuse_Wind.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "shamanic_resonance"
+        ],
+        "logic": "all",
+        "raw": "Shamanic Resonance"
+      },
+      "trainer": "Adalbert the Hermit",
+      "location": "Hermit's House",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Infuse_Wind",
+      "exclusiveGroup": "hermit_wind",
+      "manaCost": "15",
+      "cooldown": "240 seconds"
+    },
+    {
+      "id": "sigil_of_wind",
+      "name": "Sigil of Wind",
+      "description": "Creates a Sigil of Wind, enabling spell combos.",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Cabal Hermit",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Sigil_of_Wind.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "shamanic_resonance"
+        ],
+        "logic": "all",
+        "raw": "Shamanic Resonance"
+      },
+      "trainer": "Adalbert the Hermit",
+      "location": "Hermit's House",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Sigil_of_Wind",
+      "exclusiveGroup": "hermit_wind",
+      "manaCost": "10",
+      "cooldown": "100 seconds"
+    },
+    {
+      "id": "blood_sigil",
+      "name": "Blood Sigil",
+      "description": "Creates a Sigil of Blood, enabling spell combos. Increases Corruption by 5%",
+      "effects": "= * Increases Corruption by 5% on cast * Raises the player's Temperature Stage by 3 (heats the player up). In neutral temperature environments this increases the player's temperature delta by +28 .",
+      "tier": 3,
+      "parentClass": "Hex Mage",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Blood_Sigil.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "bloodlust"
+        ],
+        "logic": "all",
+        "raw": "Bloodlust"
+      },
+      "trainer": "Ella Lockwell",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Blood_Sigil",
+      "exclusiveGroup": "hex_blood",
+      "manaCost": "7",
+      "cooldown": "None"
+    },
+    {
+      "id": "cleanse",
+      "name": "Cleanse",
+      "description": "{{description|Requires 50% Corruption and a Mana Stone. Creates a Dark Stone, removes 30% Corruption, suffer Extreme Bleeding and 65 Decay damage.}}",
+      "effects": "= * Requires at least 50% Corruption, and a Mana Stone * Consumes the Mana Stone and -30% Corruption to create a Dark Stone * Receive 65 Decay damage",
+      "tier": 3,
+      "parentClass": "Hex Mage",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Cleanse.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Ella Lockwell",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Cleanse",
+      "cooldown": "None"
+    },
+    {
+      "id": "lockwells_revelation",
+      "name": "Lockwell's Revelation",
+      "description": "* Note: \"elemental\" refers to Ethereal, Decay, Lightning, Frost and Fire",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Hex Mage",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Lockwells_Revelation.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Ella Lockwell",
+      "location": "",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Lockwell%27s_Revelation"
+    },
+    {
+      "id": "rupture",
+      "name": "Rupture",
+      "description": "Detonate all Hexes on nearby enemies, and all souls, for related damage.",
+      "effects": "= Detonates all Hexes on all nearby Enemies for related effects. Removes Hexes from enemies (except Confusion), and consumes Revealed Souls. The detonations are AoE blasts, and the damage and impact of the blast depends on the Hex: * Chill: 50 Frost damage and 33 Impact * Curse: 50 Decay damage and 33 Impact * Doomed: 50 Lightning damage and 33 Impact * Haunted: 50 Ethereal damage and 33 Impact * Scorched: 50 Fire damage and 33 Impact * Pain: 50 Physical damage, 0 Impact * Confusion: 0 damage, 50 Impact",
+      "tier": 3,
+      "parentClass": "Hex Mage",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Rupture.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "bloodlust"
+        ],
+        "logic": "all",
+        "raw": "Bloodlust"
+      },
+      "trainer": "Ella Lockwell",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Rupture",
+      "exclusiveGroup": "hex_blood",
+      "manaCost": "10",
+      "cooldown": "10 seconds"
+    },
+    {
+      "id": "elemental_discharge",
+      "name": "Elemental Discharge",
+      "description": "Elemental projectile (varies)",
+      "effects": "Fires an elemental projectile at the targeted enemy, or straight ahead if not locked on. Depending on the current weapon imbue, Elemental Discharge produces different projectiles: Fire Imbues: * 60 damage * 60 impact Frost Imbues: * 60 damage * 60 impact Ethereal Imbues: * 60 damage * 60 impact Decay and Poison Imbues: * 60 damage * 60 impact Lightning and Light Imbues: * 60 damage * 60 impact Wind Imbues: * 30 damage * 140 impact",
+      "tier": 3,
+      "parentClass": "Kazite Spellblade",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Elemental_Discharge.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "infuse_frost",
+          "infuse_fire"
+        ],
+        "logic": "any",
+        "raw": "Infuse Frost or Infuse Fire"
+      },
+      "trainer": "Eto Akiyuki",
+      "location": "Cierzo",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Elemental_Discharge",
+      "exclusiveGroup": "strike_choice",
+      "manaCost": "15",
+      "cooldown": "10 seconds"
+    },
+    {
+      "id": "gong_strike",
+      "name": "Gong Strike",
+      "description": "Elemental explosion",
+      "effects": "Consumes the current weapon imbue to create a short-range but wide area of effect explosion of the consumed element. The damage and impact of the skill is based on the Shield stats, however any Effects on the shield are not applied here, they are only applied to Shield Charge. Depending on the current weapon imbue, Gong Strike produces different effects: Fire Imbues: * Damage overrides to Fire * Damage multiplier: 2.2x * Impact multiplier: 1.4x Frost Imbues: * Damage overrides to Frost * Damage multiplier: 2.2x * Impact multiplier: 1.4x Ethereal Imbues: * Damage overrides to Ethereal * Damage multiplier: 2.6x * Impact multiplier: 1.6x Decay Imbues: * Damage overrides to Decay * Damage multiplier: 2.6x * Impact multiplier: 1.6x Poison Imbues: * Damage overrides to Decay * Damage multiplier: 2.0x * Impact multiplier: 1.0x Lightning Imbues: * Damage overrides to Lightning * Damage multiplier: 2.3x * Impact multiplier: 1.9x Wind Imbues: * No damage * Guaranteed to knock all affected targets down (deals 99x impact)",
+      "tier": 3,
+      "parentClass": "Kazite Spellblade",
+      "skillType": "Active",
+      "subtype": "Shield",
+      "image": "images/skill_Gong_Strike.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "infuse_frost",
+          "infuse_fire"
+        ],
+        "logic": "any",
+        "raw": "Infuse Frost or Infuse Fire"
+      },
+      "trainer": "Eto Akiyuki",
+      "location": "Cierzo",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Gong_Strike",
+      "exclusiveGroup": "strike_choice",
+      "staminaCost": "11",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "infuse_fire",
+      "name": "Infuse Fire",
+      "description": "Mystic Fire Imbue",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Kazite Spellblade",
+      "skillType": "Active",
+      "subtype": "Melee Imbue",
+      "image": "images/skill_Infuse_Fire.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "spellblades_awakening"
+        ],
+        "logic": "all",
+        "raw": "Spellblade's Awakening"
+      },
+      "trainer": "Eto Akiyuki",
+      "location": "Cierzo",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Infuse_Fire",
+      "exclusiveGroup": "infuse_choice",
+      "manaCost": "15",
+      "cooldown": "None"
+    },
+    {
+      "id": "infuse_frost",
+      "name": "Infuse Frost",
+      "description": "Mystic Frost Imbue",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Kazite Spellblade",
+      "skillType": "Active",
+      "subtype": "Melee Imbue",
+      "image": "images/skill_Infuse_Frost.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "spellblades_awakening"
+        ],
+        "logic": "all",
+        "raw": "Spellblade's Awakening"
+      },
+      "trainer": "Eto Akiyuki",
+      "location": "Cierzo",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Infuse_Frost",
+      "exclusiveGroup": "infuse_choice",
+      "manaCost": "15",
+      "cooldown": "None"
+    },
+    {
+      "id": "blood_bullet",
+      "name": "Blood Bullet",
+      "description": "On successful hit:Restores 40 HealthGrants Blood Bullet Imbue",
+      "effects": "* Fires an instant, long-range shot which deals 40 Decay damage, and applies equipped pistol's effects. If this instant shot hits: * Heals the caster for 40 health",
+      "tier": 3,
+      "parentClass": "Mercenary",
+      "skillType": "Active",
+      "subtype": "Pistol",
+      "image": "images/skill_Blood_Bullet.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Jaimon",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Blood_Bullet",
+      "manaCost": "12",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "marathoner",
+      "name": "Marathoner",
+      "description": "Sprinting consumes 40% less Stamina.",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Mercenary",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Marathoner.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "swift_foot"
+        ],
+        "logic": "all",
+        "raw": "Swift Foot"
+      },
+      "trainer": "Jaimon",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Marathoner",
+      "exclusiveGroup": "merc_marathon"
+    },
+    {
+      "id": "shield_infusion",
+      "name": "Shield Infusion",
+      "description": "Block an elemental attack; Shield Imbue",
+      "effects": "Activating this skill starts a blocking animation, during which you can block any type of attack (including magical blasts). If you block an attack which deals elemental (non- physical) damage during the animation, you gain a Shield Imbue of that element. In the case of multiple elements on one attack, the priority is first by which element dealt the most damage, but in the case of equal damage, the priority is then > > > > . When you have a Shield Imbue, the next blocked melee attack will create an area-of-effect explosion. The damage of the explosion is: * 1.3x equipped Shield damage as Ethereal damage * 2.0x equipped Shield damage as the element of the imbue (either ) * 2.0x equipped shield Impact damage See also: * Ethereal Shield Imbue * Decay Shield Imbue * Lightning Shield Imbue * Frost Shield Imbue * Fire Shield Imbue",
+      "tier": 3,
+      "parentClass": "Mercenary",
+      "skillType": "Active",
+      "subtype": "Shield",
+      "image": "images/skill_Shield_Infusion.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Jaimon",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Shield_Infusion",
+      "staminaCost": "5",
+      "cooldown": "60 seconds"
+    },
+    {
+      "id": "chakram_dance",
+      "name": "Chakram Dance",
+      "description": "Dodge backwards; Hits five times",
+      "effects": "* Hits five times in a several sweeping attacks * Impact is multiplied by 0.8x",
+      "tier": 3,
+      "parentClass": "Philosopher",
+      "skillType": "Active",
+      "subtype": "Chakram",
+      "image": "images/skill_Chakram_Dance.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "leyline_connection",
+          "chakram_arc"
+        ],
+        "logic": "all",
+        "raw": "Leyline Connection, Chakram Arc"
+      },
+      "trainer": "Alemmon",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Chakram_Dance",
+      "exclusiveGroup": "philosopher_chakram",
+      "manaCost": "20",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "fire_affinity",
+      "name": "Fire Affinity",
+      "description": "Fire resistance +20%; Fire damage dealt +15%",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Philosopher",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Fire_Affinity.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "leyline_connection"
+        ],
+        "logic": "all",
+        "raw": "Leyline Connection"
+      },
+      "trainer": "Alemmon",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Fire_Affinity",
+      "exclusiveGroup": "philosopher_fire"
+    },
+    {
+      "id": "sigil_of_ice",
+      "name": "Sigil of Ice",
+      "description": "Creates a Sigil of Ice, enabling spell combos.",
+      "effects": "* Lowers the player's Temperature Stage by 3 (cools the player down). In neutral temperature environments this decreases the player's temperature delta by -30 .",
+      "tier": 3,
+      "parentClass": "Philosopher",
+      "skillType": "Active",
+      "subtype": "Combination",
+      "image": "images/skill_Sigil_of_Ice.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "leyline_connection"
+        ],
+        "logic": "all",
+        "raw": "Leyline Connection"
+      },
+      "trainer": "Alemmon",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Sigil_of_Ice",
+      "exclusiveGroup": "philosopher_ice",
+      "manaCost": "7",
+      "cooldown": "None"
+    },
+    {
+      "id": "battle_rhythm",
+      "name": "Battle Rhythm",
+      "description": "Your deployed Sky Chimes increase Barrier by 5 and Ghost Drums increase Protection by 5 when within 8 meters. This bonus also applies to your allies",
+      "effects": "= When within 8 meters of an Instrument totem: * Haunting Beat increases Protection by 5 (through Ghost of Rhythm status) * Welkin Ring increases Barrier by 5 (through Sky Rhythm status) This effect also applies to allies and Summoned Ghost. {{SkillCombo | name = Welkin Rhythm | prereq = | action0 = | action1 = Battle Rhythm | action2 = Welkin Ring | effects = When within 8 meters of a Welkin Ring, the Sky Chimes increase Barrier by 5 }} {{SkillCombo | name = Ghost Rhythm | prereq = | action0 = | action1 = Battle Rhythm | action2 = Haunting Beat | effects = When within 8 meters of a Haunting Beat, the Ghost Drum increases Protection by 5 }}",
+      "tier": 3,
+      "parentClass": "Primal Ritualist",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Battle_Rhythm.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Sinai, the Primal Ritualist",
+      "location": "Ritualist's hut",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Battle_Rhythm"
+    },
+    {
+      "id": "harmony_and_melody",
+      "name": "Harmony and Melody",
+      "description": "Allows you to have both a Sky Chimes totem and a Ghost Drums totem active in close proximity of each other at the same time.",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Primal Ritualist",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Harmony_and_Melody.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Sinai, the Primal Ritualist",
+      "location": "Ritualist's hut",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Harmony_and_Melody"
+    },
+    {
+      "id": "nurturing_echo",
+      "name": "Nurturing Echo",
+      "description": "Generates a bubble around nearby Totems that provide restoration of some kind. Lasts longer depending on how many Charges the Totem has built up.",
+      "effects": "= The effect duration is determined by the number of Charges on the instrument, each charge grants 2 seconds to the duration with a maximum of 16 seconds (8 charges). * On Ghost Drum: Restores 5 Stamina and 5 Mana per second. * On Sky Chimes: Restores 5 Health and reduces buildup of status effects by 10% per second. {{SkillCombo | name = Nurturing Welkin Ring | prereq = | action0 = | action1 = Welkin Ring | action2 = Nurturing Echo | effects = Restores 5 Health and reduces buildup of status effects by 10% per second, for between 2 to 16 seconds depending on the number of charges. }} {{SkillCombo | name = Nurturing Ghost Drum | prereq = | action0 = | action1 = Haunting Beat | action2 = Nurturing Echo | effects = Restores 5 Stamina and 5 Mana per second, for between 2 to 16 seconds depending on the number of charges. }}",
+      "tier": 3,
+      "parentClass": "Primal Ritualist",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Nurturing_Echo.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Sinai, the Primal Ritualist",
+      "location": "Ritualist's hut",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Nurturing_Echo",
+      "staminaCost": "20",
+      "cooldown": "240 seconds"
+    },
+    {
+      "id": "reverberation",
+      "name": "Reverberation",
+      "description": "Recalls a deployed totem to your inventory, and generates a zone of recurring damage. The size, damage type and duration depend on the Totem and how many Charges it has built up.",
+      "effects": "= In all cases despite which totems it is and despite how charged they are: * An initial blast dealing 55 impact damage. With Haunting Beat, sends out pulses which deal Ethereal damage and 10 Impact once per second: * 0-3 Charges: Lasts 10 seconds, pulse deals 15 damage * 4-6 Charges: Lasts 15 seconds, pulse deals 15 damage * 7+ Charges: Lasts 15 seconds, pulse deals 25 damage With Welkin Ring, sends out pulses which deal Lightning damage and 10 Impact once per second: * 0-3 Charges: Lasts 10 seconds, pulse deals 15 damage * 4-6 Charges: Lasts 15 seconds, pulse deals 15 damage * 7+ Charges: Lasts 15 seconds, pulse deals 25 damage {{SkillCombo | name = Welkin Reverberation | prereq = | action0 = | action1 = Welkin Ring | action2 = Reverberation | effects = Recalls the Sky Chimes and creates a series of damaging pulses in their place.Pulses once per second for between 10 and 15 secondsPulses deal between 15 and 25 Lightning damage, 10 Impact }} {{SkillCombo | name = Ghost Reverberation | prereq = | action0 = | action1 = Haunting Beat | action2 = Reverberation | effects = Recalls the Ghost Drum and creates a series of damaging pulses in its place.Pulses once per second for between 10 and 15 secondsPulses deal between 15 and 25 Ethereal damage, 10 Impact }}",
+      "tier": 3,
+      "parentClass": "Primal Ritualist",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Reverberation.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Sinai, the Primal Ritualist",
+      "location": "Ritualist's hut",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Reverberation",
+      "staminaCost": "25",
+      "cooldown": "10 seconds"
+    },
+    {
+      "id": "pressure_plate_expertise",
+      "name": "Pressure Plate Expertise",
+      "description": "Increased Pressure Plate Trap power; Pressure Plate Traps are not consumed when triggered",
+      "effects": "All Pressure Plate traps can be re-used after being triggered, however the armed item is still destroyed. Bug 5/18/21 - Traps can still be destroyed on PS4 when using any trap. Higher chance of waste on Nerve Gas traps. Toxic Trap and Incendiary Trap: (same for \"Improved\" versions) * Add 30 Physical damage * Add 30 Impact Nerve Gas Trap: * Also inflicts Confusion Shock Trap: * Add 45 Lightning damage Flash Trap: * Add 30 Lightning damage Frost Trap: * Add 40 Frost damage Ethereal Trap: * Add 30 Ethereal damage Sapped Trap: * Adds 45 Lightning damage",
+      "tier": 3,
+      "parentClass": "Rogue Engineer",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Pressure_Plate_Expertise.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "serpents_parry"
+        ],
+        "logic": "all",
+        "raw": "Serpent's Parry"
+      },
+      "trainer": "Styx",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Pressure_Plate_Expertise"
+    },
+    {
+      "id": "serpents_parry",
+      "name": "Serpent's Parry",
+      "description": "Counters attack; Confused targets are stunned; Targets with Pain receive Extreme Bleeding",
+      "effects": "* Successfully countering an attack and parrying will deal double damage and impact (2.0x) * Targets inflicted with Confusion will be stunned for 4 seconds * Targets inflicted with Pain will be inflicted with Extreme Bleeding",
+      "tier": 3,
+      "parentClass": "Rogue Engineer",
+      "skillType": "Active",
+      "subtype": "Dagger",
+      "image": "images/skill_Serpents_Parry.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "feather_dodge",
+          "opportunist_stab"
+        ],
+        "logic": "all",
+        "raw": "Feather Dodge, Opportunist Stab"
+      },
+      "trainer": "Styx",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Serpent%27s_Parry",
+      "exclusiveGroup": "rogue_parry",
+      "staminaCost": "7",
+      "cooldown": "100 seconds"
+    },
+    {
+      "id": "stealth_training",
+      "name": "Stealth Training",
+      "description": "Increased stealth",
+      "effects": "* Increases the player's Stealth (by about 30%). This is greater than the effects of Stealth Up. * Has a hidden effect of reducing the slow-down on movement speed when Crouching from -42.5% to -25%.",
+      "tier": 3,
+      "parentClass": "Rogue Engineer",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Stealth_Training.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "feather_dodge",
+          "serpents_parry"
+        ],
+        "logic": "all",
+        "raw": "Feather Dodge; Serpent's Parry"
+      },
+      "trainer": "Styx",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Stealth_Training",
+      "exclusiveGroup": "rogue_parry"
+    },
+    {
+      "id": "arcane_syntax",
+      "name": "Arcane Syntax",
+      "description": "Unlock more Rune Magic combinations",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Rune Sage",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Arcane_Syntax.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "well_of_mana"
+        ],
+        "logic": "all",
+        "raw": "Well of Mana"
+      },
+      "trainer": "Flase",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Arcane_Syntax"
+    },
+    {
+      "id": "internalized_lexicon",
+      "name": "Internalized Lexicon",
+      "description": "Removes need for Lexicon to cast Rune Magic",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Rune Sage",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Internalized_Lexicon.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "arcane_syntax"
+        ],
+        "logic": "all",
+        "raw": "Arcane Syntax"
+      },
+      "trainer": "Flase, Sage Trainer",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Internalized_Lexicon"
+    },
+    {
+      "id": "runic_prefix",
+      "name": "Runic Prefix",
+      "description": "Runic spells are more powerful or have added effects",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "Rune Sage",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Runic_Prefix.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "arcane_syntax"
+        ],
+        "logic": "all",
+        "raw": "Arcane Syntax"
+      },
+      "trainer": "Flase, Sage Trainer",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Runic_Prefix"
+    },
+    {
+      "id": "anticipation",
+      "name": "Anticipation",
+      "description": "Increases physical protection stat by 2 per Alertness level.",
+      "effects": "= * Increases Protection by 2 per Alert level",
+      "tier": 3,
+      "parentClass": "The Speedster",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Anticipation.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "daredevil"
+        ],
+        "logic": "all",
+        "raw": "Daredevil"
+      },
+      "trainer": "Serge Battleborn",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Anticipation",
+      "exclusiveGroup": "speed_anticipation"
+    },
+    {
+      "id": "blitz",
+      "name": "Blitz",
+      "description": "Increses Sprinting speed by 5% and running attack damage by 10% per Alertness level.",
+      "effects": "",
+      "tier": 3,
+      "parentClass": "The Speedster",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Blitz.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "daredevil"
+        ],
+        "logic": "all",
+        "raw": "Daredevil"
+      },
+      "trainer": "Serge Battleborn",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Blitz",
+      "exclusiveGroup": "speed_blitz"
+    },
+    {
+      "id": "prime",
+      "name": "Prime",
+      "description": "Instantly resets the cooldown of the next skill used in the next 3 minutes.",
+      "effects": "= * Removes 2 Alert levels - instantly reset the cooldown of the next skill used in the next 3 minutes",
+      "tier": 3,
+      "parentClass": "The Speedster",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Prime.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "daredevil"
+        ],
+        "logic": "all",
+        "raw": "Daredevil"
+      },
+      "trainer": "Serge Battleborn",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Prime",
+      "exclusiveGroup": "speed_prime",
+      "cooldown": "500 seconds"
+    },
+    {
+      "id": "unerring_read",
+      "name": "Unerring Read",
+      "description": "Cancels the next hit received in the next 20 seconds.",
+      "effects": "= * Removes 1 Alert level",
+      "tier": 3,
+      "parentClass": "The Speedster",
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Unerring_Read.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "daredevil"
+        ],
+        "logic": "all",
+        "raw": "Daredevil"
+      },
+      "trainer": "Serge Battleborn",
+      "location": "Harmattan",
+      "isDlc": true,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Unerring_Read",
+      "exclusiveGroup": "speed_read",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "counterstrike",
+      "name": "Counterstrike",
+      "description": "Parry an attack. If successful, strike back for high damage and impact.",
+      "effects": "Block an attack. If successful: * Strike back for high damage and impact * Damage multiplier: 2.5x * Impact multiplier: 3.0x",
+      "tier": 3,
+      "parentClass": "Warrior Monk",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Counterstrike.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "master_of_motion",
+          "perfect_strike"
+        ],
+        "logic": "any",
+        "raw": "Master of Motion or Perfect Strike"
+      },
+      "trainer": "Galira",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Counterstrike",
+      "exclusiveGroup": "monk_counter",
+      "staminaCost": "12",
+      "cooldown": "100 seconds"
+    },
+    {
+      "id": "flash_onslaught",
+      "name": "Flash Onslaught",
+      "description": "Hits multiple targets; Inflicts Confusion",
+      "effects": "* Multiplies weapon damage by 1.65x and adds 57 Damage, and also multiplies impact by 2.0x * Hits all targets in close range simultaneously * Makes the player completely invulnerable during the attack",
+      "tier": 3,
+      "parentClass": "Warrior Monk",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Flash_Onslaught.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "perfect_strike",
+          "master_of_motion"
+        ],
+        "logic": "any",
+        "raw": "Perfect Strike or Master of Motion"
+      },
+      "trainer": "Galira",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Flash_Onslaught",
+      "exclusiveGroup": "monk_counter",
+      "staminaCost": "25",
+      "cooldown": "240 seconds"
+    },
+    {
+      "id": "master_of_motion",
+      "name": "Master of Motion",
+      "description": "Active Discipline grants:; +10 Impact Resistance; +10 All Damage resistance",
+      "effects": "While the Discipline boon is active, you receive: * +10 resistance to all elements * +10 impact resistance Has no interaction with Shamanic Resonance.",
+      "tier": 3,
+      "parentClass": "Warrior Monk",
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Master_of_Motion.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "None"
+      },
+      "trainer": "Galira",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Master_of_Motion",
+      "exclusiveGroup": "monk_choice"
+    },
+    {
+      "id": "perfect_strike",
+      "name": "Perfect Strike",
+      "description": "Inflicts Pain; Ignores all Resistance and Blocking",
+      "effects": "* Damage is multiplied by 2.0 and converted to Raw (ignores resistance and protection) * 25 raw damage is added * Lunges the player forward, breaking the guard of any targets that are blocking",
+      "tier": 3,
+      "parentClass": "Warrior Monk",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Perfect_Strike.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "steadfast_ascetic"
+        ],
+        "logic": "all",
+        "raw": "Steadfast Ascetic"
+      },
+      "trainer": "Galira",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Perfect_Strike",
+      "exclusiveGroup": "monk_choice",
+      "staminaCost": "10",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "feral_strikes",
+      "name": "Feral Strikes",
+      "description": "Hits twice; Inflicts Pain; Inflicts Extreme Bleeding",
+      "effects": "* Hits twice * Damage and Impact multiplier: 1.75x",
+      "tier": 3,
+      "parentClass": "Wild Hunter",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Feral_Strikes.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "predator_leap",
+          "piercing_shot"
+        ],
+        "logic": "any",
+        "raw": "Predator Leap or Piercing Shot"
+      },
+      "trainer": "Ture",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Feral_Strikes",
+      "exclusiveGroup": "hunter_feral",
+      "staminaCost": "10",
+      "cooldown": "8 seconds"
+    },
+    {
+      "id": "piercing_shot",
+      "name": "Piercing Shot",
+      "description": "Inflicts Extreme Bleeding; Pierces multiple targets",
+      "effects": "* Pierces multiple targets * Damage multiplier: 1.5x * Impact multiplier: 0.5x",
+      "tier": 3,
+      "parentClass": "Wild Hunter",
+      "skillType": "Active",
+      "subtype": "Bow",
+      "image": "images/skill_Piercing_Shot.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "hunters_eye"
+        ],
+        "logic": "all",
+        "raw": "Hunter's Eye"
+      },
+      "trainer": "Ture",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Piercing_Shot",
+      "exclusiveGroup": "hunter_pierce",
+      "staminaCost": "15",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "predator_leap",
+      "name": "Predator Leap",
+      "description": "Leap forward, area-of-effect blast",
+      "effects": "Player leaps forward and causes an area-of-effect shockwave upon landing. * Damage is multiplied by 1.5, Impact is multiplied by 2.0, and 30 bonus impact is added * Affects all enemies hit by the blast",
+      "tier": 3,
+      "parentClass": "Wild Hunter",
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Predator_Leap.png",
+      "cost": {
+        "silver": 600,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [
+          "survivors_resilience"
+        ],
+        "logic": "all",
+        "raw": "Survivor's Resilience"
+      },
+      "trainer": "Ture",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Predator_Leap",
+      "exclusiveGroup": "hunter_leap",
+      "staminaCost": "13",
+      "cooldown": "40 seconds"
+    },
+    {
+      "id": "acceptance",
+      "name": "Acceptance",
+      "description": "Cold defense +8; Hot defense +8",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Acceptance.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Truth and Purpose",
+        "quest": "Truth and Purpose"
+      },
+      "trainer": "Oliele",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Acceptance"
+    },
+    {
+      "id": "alchemical_experiment",
+      "name": "Alchemical Experiment",
+      "description": "+15% all damage",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Alchemical_Experiment.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Mouths to Feed",
+        "quest": "Mouths to Feed"
+      },
+      "trainer": "Calixa",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Alchemical_Experiment"
+    },
+    {
+      "id": "ancestors_memories",
+      "name": "Ancestors' Memories",
+      "description": "+25 max Mana",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Ancestors_Memories.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Whispering Bones",
+        "quest": "Whispering Bones"
+      },
+      "trainer": "Whispering Bones (Lich)",
+      "location": "Necropolis",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Ancestors%27_Memories"
+    },
+    {
+      "id": "blade_puppy",
+      "name": "Blade Puppy",
+      "description": "Summons a pet Blade Dancer that follows you around",
+      "effects": "= * Summons a pet Blade Dancer that follows you around",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Blade_Puppy.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Plague Doctor",
+      "location": "Dark Ziggurat",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Blade_Puppy",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "blessed",
+      "name": "Blessed",
+      "description": "Blessed",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Boon",
+      "image": "images/skill_Blessed.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Mofat",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Blessed_%28skill%29",
+      "manaCost": "8",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "blood_of_giants",
+      "name": "Blood of Giants",
+      "description": "+40 maximum Health",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Blood_of_Giants.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Ash Giants",
+        "quest": "Ash Giants"
+      },
+      "trainer": "Highlord Cyr",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Blood_of_Giants"
+    },
+    {
+      "id": "chill_hex",
+      "name": "Chill Hex",
+      "description": "Inflicts Chill on touch and 25 Impact",
+      "effects": "=",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Hex",
+      "image": "images/skill_Chill_Hex.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Skeleton at Wendigo Lair (1x Raw Meat)",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Chill_Hex",
+      "manaCost": "5",
+      "cooldown": "3 seconds"
+    },
+    {
+      "id": "cool",
+      "name": "Cool",
+      "description": "Cool",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Boon",
+      "image": "images/skill_Cool.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Second Watcher",
+      "location": "Conflux Mountain",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Cool_%28skill%29",
+      "manaCost": "8",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "curse_hex",
+      "name": "Curse Hex",
+      "description": "Inflicts Curse on touch and 25 Impact",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Hex",
+      "image": "images/skill_Curse_Hex.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Bloody Business",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Curse_Hex",
+      "manaCost": "5",
+      "cooldown": "3 seconds"
+    },
+    {
+      "id": "cutthroat_pearlbird_pet",
+      "name": "Cutthroat Pearlbird Pet",
+      "description": "Summons a pet Pearlbird Cutthroat that follows you around",
+      "effects": "* Summons a pet Pearlbird Cutthroat that follows you around",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Cutthroat_Pearlbird_Pet.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Black Pearlbird Egg",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Cutthroat_Pearlbird_Pet",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "dagger_slash",
+      "name": "Dagger Slash",
+      "description": "Deals Dagger damage",
+      "effects": "* Simply deals the damage and effects from the player's equipped Dagger.",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Dagger",
+      "image": "images/skill_Dagger_Slash.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Dagger_Slash",
+      "staminaCost": "2",
+      "cooldown": "0.5 seconds"
+    },
+    {
+      "id": "daughter_medyse",
+      "name": "Daughter Medyse",
+      "description": "Summons a pet Medyse",
+      "effects": "= * Summon a pet Drifting Medyse that follows you around.",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Daughter_Medyse.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Injected with Medyse egg",
+      "location": "Sulphuric Caverns",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Daughter_Medyse",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "divine_assistance",
+      "name": "Divine Assistance",
+      "description": "Stamina cost -10%; Mana cost -10%",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Divine_Assistance.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Doubts and Secrets",
+        "quest": "Doubts and Secrets"
+      },
+      "trainer": "Elatt",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Divine_Assistance"
+    },
+    {
+      "id": "doom_hex",
+      "name": "Doom Hex",
+      "description": "Inflicts Doom on touch and 25 Impact",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Hex",
+      "image": "images/skill_Doom_Hex.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Headmaster Raul Salaberry",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Doom_Hex",
+      "manaCost": "5",
+      "cooldown": "3 seconds"
+    },
+    {
+      "id": "elatts_intervention",
+      "name": "Elatt's Intervention",
+      "description": "Increases Barrier by 2 and Protection by 5",
+      "effects": "= * Increases Protection by 5 and Barrier by 2",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Elatts_Intervention.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Paul, Disciple",
+      "location": "New Sirocco",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Elatt%27s_Intervention"
+    },
+    {
+      "id": "exalted",
+      "name": "Exalted",
+      "description": "Receive Life Drain; +100% Damage Bonus to all damage types; -30% Stamina and Mana Cost; +10% All damage resist",
+      "effects": "* Receive Life Drain sickness * +100% Damage Bonus * -30% Mana and Stamina costs * +10% all Damage Resistances (including Raw)",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Exalted.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Hallowed Peacemaker",
+        "quest": "Hallowed Peacemaker"
+      },
+      "trainer": "Elatt",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Exalted"
+    },
+    {
+      "id": "execution",
+      "name": "Execution",
+      "description": "Forward-lunging strike with high damage and impact",
+      "effects": "* Deals 1.5 x Damage and Impact. * If the target is knocked down, it deals 3.0 x Damage and Impact.",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Execution.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Sagard Battleborn",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Execution",
+      "staminaCost": "12",
+      "cooldown": "15 seconds"
+    },
+    {
+      "id": "fire_and_reload",
+      "name": "Fire and Reload",
+      "description": "Inflicts Pistol damage and effects",
+      "effects": "If the pistol is unloaded, this skill will try to load a bullet, should the player have one. Loading a pistol takes a few seconds, and the player cannot move while doing so. If a bullet or imbued bullet is loaded, it will fire at the targeted enemy. The standard bullet will deal the damage from your equipped Pistol. See also: *Blood Bullet *Frost Bullet *Shatter Bullet",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Pistol",
+      "image": "images/skill_Fire_and_Reload.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Fire_and_Reload",
+      "cooldown": "None"
+    },
+    {
+      "id": "fireworks",
+      "name": "Fireworks",
+      "description": "Shoots Fireworks",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Fireworks.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Early purchase bonus",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Fireworks",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "flamethrower",
+      "name": "Flamethrower",
+      "description": "Varies",
+      "effects": "The effects vary depending on the Lantern used with the skill. However, all variations will deal 2.65 impact per hit and last for 2.5 seconds, applying the effects once every 100ms (0.1 seconds). For most lanterns, the \"Fire\" effects are produced.",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Flamethrower.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "First Watcher",
+      "location": "Conflux Chambers",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Flamethrower",
+      "manaCost": "15",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "garg",
+      "name": "Garg",
+      "description": "Throws a Bomb and inflicts Poisoned",
+      "effects": "Throw a toxic Bomb-like explosive, which requires 1 Thick Oil per cast. * Deals 15 Decay damage and 30 Impact",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Troglodyte",
+      "image": "images/skill_Garg.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Troglodyte (Player)",
+        "quest": "Troglodyte (Player)"
+      },
+      "trainer": "",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Garg",
+      "cooldown": "6 seconds"
+    },
+    {
+      "id": "golden_watcher",
+      "name": "Golden Watcher",
+      "description": "Summons a pet Golden Specter that follows you around",
+      "effects": "= * Summons a pet Golden Specter that follows you around",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Golden_Watcher.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Light Mender",
+      "location": "Spire of Light",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Golden_Watcher",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "grog",
+      "name": "Grog",
+      "description": "Heals nearby allies and buffs with Rage and Discipline",
+      "effects": "* Sends out up to 6 buff projectiles which will find nearby Allies (and the caster), max 1 per character * Projectile restores 30 Health and grants Rage and Discipline",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Troglodyte",
+      "image": "images/skill_Grog.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Troglodyte (Player)",
+        "quest": "Troglodyte (Player)"
+      },
+      "trainer": "",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Grog",
+      "cooldown": "300 seconds"
+    },
+    {
+      "id": "gurg",
+      "name": "Gurg",
+      "description": "Debuffs nearby enemies with Pain and Confusion",
+      "effects": "* Sends out up to 6 Hex projectiles which will find nearby Enemies, max 1 per enemy",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Troglodyte",
+      "image": "images/skill_Gurg.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Gurg",
+      "cooldown": "240 seconds"
+    },
+    {
+      "id": "haunt_hex",
+      "name": "Haunt Hex",
+      "description": "Inflicts Haunted on touch and 25 Impact",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Hex",
+      "image": "images/skill_Haunt_Hex.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Robyn Garnet, Alchemist",
+      "location": "Harmattan",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Haunt_Hex",
+      "manaCost": "5",
+      "cooldown": "3 seconds"
+    },
+    {
+      "id": "house_hippo",
+      "name": "House Hippo",
+      "description": "Summons a pet Boreo that follows you around",
+      "effects": "* Summons a pet Boreo that follows you around",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_House_Hippo.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Reward for purchasing The Three Brothers",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/House_Hippo",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "infuse_blood",
+      "name": "Infuse Blood",
+      "description": "Infuse Blood (Imbue)",
+      "effects": "=",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Imbue",
+      "image": "images/skill_Infuse_Blood.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Anthony Berthelot, Krypteia Scholar",
+      "location": "New Sirocco",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Infuse_Blood",
+      "healthCost": "20",
+      "cooldown": "240 seconds"
+    },
+    {
+      "id": "infuse_light",
+      "name": "Infuse Light",
+      "description": "Divine Light Imbue",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Imbue",
+      "image": "images/skill_Infuse_Light.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Looking to the Future (join the Holy Mission)",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Infuse_Light",
+      "manaCost": "12",
+      "cooldown": "None"
+    },
+    {
+      "id": "infuse_mana",
+      "name": "Infuse Mana",
+      "description": "Infuse Mana (Imbue)",
+      "effects": "=",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Imbue",
+      "image": "images/skill_Infuse_Mana.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Samantha Turnbull, Head Enchanter",
+      "location": "New Sirocco",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Infuse_Mana",
+      "manaCost": "35",
+      "cooldown": "240 seconds"
+    },
+    {
+      "id": "juggernaut",
+      "name": "Juggernaut",
+      "description": "Slow melee attack; Inflicts Confusion; Increased Impact resistance",
+      "effects": "* Damage multiplier: 3.0x * +100 impact damage * Increases Impact Resistance by a flat +50% during the skill's animation",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Juggernaut.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Soeran",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Juggernaut",
+      "staminaCost": "10",
+      "cooldown": "20 seconds"
+    },
+    {
+      "id": "kid_calygrey",
+      "name": "Kid Calygrey",
+      "description": "Summons a pet Calygrey that follows you around",
+      "effects": "= * Summons a pet Calygrey that follows you around",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Kid_Calygrey.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Calygrey Colosseum",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Kid_Calygrey",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "kirouacs_breakthrough",
+      "name": "Kirouac's Breakthrough",
+      "description": "Increases max Health by 25 and Physical damage by 15%",
+      "effects": "= * Increases max Health by 25 * Increases Physical damage by 15%",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Kirouacs_Breakthrough.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Yan, Levantine Alchemist",
+      "location": "New Sirocco",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Kirouac%27s_Breakthrough"
+    },
+    {
+      "id": "logistics_expert",
+      "name": "Logistics Expert",
+      "description": "+10% Cooldown Reduction; +5% Movement Speed; +5 Pouch Capacity",
+      "effects": "= * +10% Cooldown Reduction * +5% Movement Speed * +5 Pouch Capacity",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Logistics_Expert.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Cloak and Dagger",
+        "quest": "Cloak and Dagger"
+      },
+      "trainer": "Gregory Turnbull, Dean of the Arcane",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Logistics_Expert"
+    },
+    {
+      "id": "mace_infusion",
+      "name": "Mace Infusion",
+      "description": "Block an elemental attack; Gain a Weapon imbue",
+      "effects": "When you cast this skill, there is a brief animation in which you can block any kind of attack. If the blocked attack deals any elemental (non- physical) damage, you gain a Boon and an Imbue of that element on your Mace. If you have a dagger in your off-hand while casting, you also gain the same Imbue on it. In the case of multiple elements on one attack, the priority is first by which element dealt the most damage, but in the case of equal damage, the priority is then > > > > . The Imbue and Boon that you receive depend on the first element in the priority order that you blocked: Fire: Frost: Lightning: Decay: Ethereal:",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Mace_Infusion.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Taleron",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Mace_Infusion",
+      "staminaCost": "5",
+      "cooldown": "20 seconds"
+    },
+    {
+      "id": "mini_manticore",
+      "name": "Mini Manticore",
+      "description": "Summons a pet Manticore that follows you around",
+      "effects": "* Summons a pet Manticore that follows you around",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Mini_Manticore.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Manticore Egg",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Mini_Manticore",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "mist",
+      "name": "Mist",
+      "description": "Mist",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Boon",
+      "image": "images/skill_Mist.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Cyril Turnbull",
+      "location": "Berg",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Mist_%28skill%29",
+      "manaCost": "8",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "moon_swipe",
+      "name": "Moon Swipe",
+      "description": "Double sweeping attack",
+      "effects": "* Two wide sweeps, hitting a large area around the player. * Without Rage or Discipline, base damage is multiplied by 0.8x, and impact by 1.5x * Having Rage or Discipline active each increase the damage multiplier by +0.5. * With both effects active, the total damage bonus is 1.8x * The extra damage from Rage and Discipline are processed as separate hits, which also triggers any Effects (such as status effect buildup, on-hit explosion, damage from imbues, etc.) on the weapon again. This makes it possible to inflict statuses with one cast of Moon Swipe, which would not normally be possible from two standard hits.",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Moon_Swipe.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Wandering Mercenary",
+      "location": "Monsoon",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Moon_Swipe",
+      "staminaCost": "15",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "painful_sacrifice",
+      "name": "Painful Sacrifice",
+      "description": "Decreases maximum Stamina by 15",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Painful_Sacrifice.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Questions and Corruption",
+        "quest": "Questions and Corruption"
+      },
+      "trainer": "",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Painful_Sacrifice"
+    },
+    {
+      "id": "peacemaker_elixir",
+      "name": "Peacemaker Elixir",
+      "description": "+20 Max Health; +20 Max Stamina; +20 Max Mana",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Peacemaker_Elixir.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Success in Faction quest-line",
+        "quest": "Success in Faction quest-line"
+      },
+      "trainer": "",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Peacemaker_Elixir_%28skill%29"
+    },
+    {
+      "id": "pet_crescent_shark",
+      "name": "Pet Crescent Shark",
+      "description": "Summons a pet Shark",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Pet_Crescent_Shark.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Pet Shark Puzzle",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Pet_Crescent_Shark",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "pet_pearlbird",
+      "name": "Pet Pearlbird",
+      "description": "Summons a pet Pearlbird",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Pet_Pearlbird.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Early purchase bonus",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Pet_Pearlbird",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "pommel_counter",
+      "name": "Pommel Counter",
+      "description": "Counters attack; Inflicts Confusion",
+      "effects": "* Counter an attack * Damage multiplier: 1.25x * Impact multiplier: 3.5x",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Pommel_Counter.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Burac",
+      "location": "Cierzo",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Pommel_Counter",
+      "staminaCost": "10",
+      "cooldown": "100 seconds"
+    },
+    {
+      "id": "possessed",
+      "name": "Possessed",
+      "description": "Possessed",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Boon",
+      "image": "images/skill_Possessed.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Friendly Immaculate",
+      "location": "Immaculate's Camp",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Possessed_%28skill%29",
+      "manaCost": "8",
+      "cooldown": "120 seconds"
+    },
+    {
+      "id": "preferential_treatment",
+      "name": "Preferential Treatment",
+      "description": "All items are -15% cheaper to buy, and sell for 15% more",
+      "effects": "= * All items are -15% cheaper to buy, and sell for 15% more",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Preferential_Treatment.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Purifier",
+        "quest": "Purifier"
+      },
+      "trainer": "Headmaster Raul Salaberry",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Preferential_Treatment"
+    },
+    {
+      "id": "prismatic_flurry",
+      "name": "Prismatic Flurry",
+      "description": "Does an extra hit for each Elemental Boon active.",
+      "effects": "= * Performs a quick hammer-fist attack, which damages the enemy once for each active Boon on the player, not including Discipline or Rage * Can hit up to 6 times (once guaranteed, and up to 5 more times depending on elemental boons). Each hit does 0.8x damage of the Gauntlets. * The 5 boons that this skill checks for are Blessed, Cool, Mist, Possessed and Warm. * The subsequent \"hits\" apply at a delay, and the player can continue to move and attack in this time.",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Prismatic_Flurry.png",
+      "cost": {
+        "silver": 1,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Mavith",
+      "location": "Harmattan",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Prismatic_Flurry",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "puncture",
+      "name": "Puncture",
+      "description": "Inflicts Pain",
+      "effects": "* Close-range melee attack * Damage multiplier: 2.0x * Impact multiplier: 2.0x",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Puncture.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Markus",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Puncture",
+      "staminaCost": "12",
+      "cooldown": "10 seconds"
+    },
+    {
+      "id": "purified",
+      "name": "Purified",
+      "description": "Decay resistance +20",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Purified.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Questions and Corruption",
+        "quest": "Questions and Corruption"
+      },
+      "trainer": "Elatt",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Purified"
+    },
+    {
+      "id": "push_kick",
+      "name": "Push Kick",
+      "description": "",
+      "effects": "* Deals 10 Physical damage and 65 impact.",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Push_Kick.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Push_Kick",
+      "staminaCost": "9",
+      "cooldown": "15 seconds"
+    },
+    {
+      "id": "sacrifice",
+      "name": "Sacrifice",
+      "description": "Decreases maximum Stamina by 7",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Sacrifice.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Questions and Corruption",
+        "quest": "Questions and Corruption"
+      },
+      "trainer": "",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Sacrifice"
+    },
+    {
+      "id": "sanctified_assistance",
+      "name": "Sanctified Assistance",
+      "description": "Stamina cost -5%; Mana cost -5%",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Sanctified_Assistance.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Doubts and Secrets",
+        "quest": "Doubts and Secrets"
+      },
+      "trainer": "Ellinara",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Sanctified_Assistance"
+    },
+    {
+      "id": "sanctified_protection",
+      "name": "Sanctified Protection",
+      "description": "Protection +2",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Sanctified_Protection.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Truth and Purpose",
+        "quest": "Truth and Purpose"
+      },
+      "trainer": "Ellinara",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Sanctified_Protection"
+    },
+    {
+      "id": "scorch_hex",
+      "name": "Scorch Hex",
+      "description": "Inflicts Scorched on touch and 25 Impact",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Hex",
+      "image": "images/skill_Scorch_Hex.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "The 9th Watcher",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Scorch_Hex",
+      "manaCost": "5",
+      "cooldown": "3 seconds"
+    },
+    {
+      "id": "severed_obsidian",
+      "name": "Severed Obsidian",
+      "description": "Summons a pet Obsidian Elemental that follows you around",
+      "effects": "* Summons a pet Obsidian Elemental that follows you around",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Severed_Obsidian.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "New Sirocco Mines",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Severed_Obsidian",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "simeons_gambit",
+      "name": "Simeon's Gambit",
+      "description": "Counters attack",
+      "effects": "If the attack is countered: * Block the attack * Damage multiplier: 2.0x * Impact multiplier: 3.5x If the attack is not countered: * Damage multiplier: 0.8x * Impact multiplier: 1.0x",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Simeons_Gambit.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "King Simeon",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Simeon%27s_Gambit",
+      "staminaCost": "25",
+      "cooldown": "100 seconds"
+    },
+    {
+      "id": "spark",
+      "name": "Spark",
+      "description": "",
+      "effects": "Creates a short-range magical spark * Deals 10 fire damage and 40 impact * Can be used to light campfires",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Spark.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Obtained when acquiring Mana",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Spark",
+      "manaCost": "5",
+      "cooldown": "3 seconds"
+    },
+    {
+      "id": "spiritual_communion",
+      "name": "Spiritual Communion",
+      "description": "Ethereal damage +10%; Lightning damage +10% ; Decay damage +10%",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Passive",
+      "subtype": "",
+      "image": "images/skill_Spiritual_Communion.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": "Doubts and Secrets",
+        "quest": "Doubts and Secrets"
+      },
+      "trainer": "Ellinara",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Spiritual_Communion"
+    },
+    {
+      "id": "summon_veaber",
+      "name": "Summon Veaber",
+      "description": "Summons a pet Veaber",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Cosmetic",
+      "image": "images/skill_Summon_Veaber.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "The Soroboreans DLC Bonus",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Summon_Veaber",
+      "cooldown": "5 seconds"
+    },
+    {
+      "id": "talus_cleaver",
+      "name": "Talus Cleaver",
+      "description": "Inflicts Pain and Cripple",
+      "effects": "* Damage multiplier: 1.25x",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Melee Weapon",
+      "image": "images/skill_Talus_Cleaver.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Oda",
+      "location": "Cierzo",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Talus_Cleaver",
+      "staminaCost": "10",
+      "cooldown": "30 seconds"
+    },
+    {
+      "id": "throw_lantern",
+      "name": "Throw Lantern",
+      "description": "Inflicts Burning",
+      "effects": "* Inflicts an initial 25 fire damage and 60 Impact * Creates a zone of fire which deals 5 damage every second for 4 seconds, for up to 20 damage",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Basic",
+      "image": "images/skill_Throw_Lantern.png",
+      "cost": {
+        "silver": 0,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "",
+      "location": "",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Throw_Lantern",
+      "staminaCost": "4",
+      "cooldown": "None"
+    },
+    {
+      "id": "warm",
+      "name": "Warm",
+      "description": "Warm",
+      "effects": "",
+      "tier": "special",
+      "parentClass": null,
+      "skillType": "Active",
+      "subtype": "Boon",
+      "image": "images/skill_Warm.png",
+      "cost": {
+        "silver": 50,
+        "breakthrough": false
+      },
+      "requirements": {
+        "skills": [],
+        "logic": "all",
+        "raw": ""
+      },
+      "trainer": "Smooth",
+      "location": "Levant",
+      "isDlc": false,
+      "sourceUrl": "https://outward.wiki.gg/wiki/Warm_%28skill%29",
+      "manaCost": "8",
+      "cooldown": "120 seconds"
+    }
+  ],
+  "specialSkills": [
+    "acceptance",
+    "alchemical_experiment",
+    "ancestors_memories",
+    "blade_puppy",
+    "blessed",
+    "blood_of_giants",
+    "chill_hex",
+    "cool",
+    "curse_hex",
+    "cutthroat_pearlbird_pet",
+    "dagger_slash",
+    "daughter_medyse",
+    "divine_assistance",
+    "doom_hex",
+    "elatts_intervention",
+    "exalted",
+    "execution",
+    "fire_and_reload",
+    "fireworks",
+    "flamethrower",
+    "garg",
+    "golden_watcher",
+    "grog",
+    "gurg",
+    "haunt_hex",
+    "house_hippo",
+    "infuse_blood",
+    "infuse_light",
+    "infuse_mana",
+    "juggernaut",
+    "kid_calygrey",
+    "kirouacs_breakthrough",
+    "logistics_expert",
+    "mace_infusion",
+    "mini_manticore",
+    "mist",
+    "moon_swipe",
+    "painful_sacrifice",
+    "peacemaker_elixir",
+    "pet_crescent_shark",
+    "pet_pearlbird",
+    "pommel_counter",
+    "possessed",
+    "preferential_treatment",
+    "prismatic_flurry",
+    "puncture",
+    "purified",
+    "push_kick",
+    "sacrifice",
+    "sanctified_assistance",
+    "sanctified_protection",
+    "scorch_hex",
+    "severed_obsidian",
+    "simeons_gambit",
+    "spark",
+    "spiritual_communion",
+    "summon_veaber",
+    "talus_cleaver",
+    "throw_lantern",
+    "warm"
+  ],
+  "tiers": [
+    {
+      "tier": 1,
+      "label": "Tier 1 (Basic / Universal Skills)",
+      "mechanics": "No restriction to buying them all. Usually costs 50 or 100 silver. Available from Teachers without learning the class Breakthrough.",
+      "costs_breakthrough": false
+    },
+    {
+      "tier": 2,
+      "label": "Tier 2 (Breakthrough Skill)",
+      "mechanics": "A Breakthrough Point is spent when learning these. Player has only 3 Breakthrough Points per character, and specialization choice is permanent. Required to access Tier 3 skills in that tree.",
+      "costs_breakthrough": true
+    },
+    {
+      "tier": 3,
+      "label": "Tier 3 (Specialization / Advanced Skills)",
+      "mechanics": "Can only be bought from a tree once you've unlocked that tree's Breakthrough skill. Paired skills (side by side in the tree) are mutually exclusive — choosing one locks out the other.",
+      "costs_breakthrough": false,
+      "unlock_requirement": "Requires Tier 2 (Breakthrough) in the same tree"
+    },
+    {
+      "tier": "special",
+      "label": "Special / Quest / Trainer Skills",
+      "mechanics": "Skills learned from Trainers (usually 50 silver), quest rewards, or faction-exclusive rewards. Not part of a class Breakthrough tree.",
+      "costs_breakthrough": false
+    }
+  ]
+}
