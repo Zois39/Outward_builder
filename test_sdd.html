@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDD Builder Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ow">
+    <div class="ow-h"><h1>⚔ SDD Builder Test</h1></div>
+
+    <div class="ow-panel on" id="pan-skills">
+      <div class="ow-stitle">🗡 Навыки</div>
+      <label class="ow-lb">Тренер</label>
+      <select class="ow-sel" id="sTr">
+        <option value="all">Все тренеры</option>
+      </select>
+      <div class="ow-info">💡 Tier 3: взаимоисключающие навыки. Выбрано: <span id="sCn" style="color:#c9a227">0</span></div>
+      <div id="sCt"></div>
+
+      <div class="ow-stitle" style="margin-top:20px">⚡ Прорывы</div>
+      <div class="ow-warn">⚠️ Всего 3 очка прорыва на персонажа! Выбрано: <span id="btCn">0</span>/3</div>
+      <div class="ow-g" id="btGr"></div>
+    </div>
+  </div>
+
+  <script src="data/skills.json" type="application/json" id="skills-data"></script>
+  <script>
+    // Inline test: load JSON and build SDD
+    fetch('data/skills.json')
+      .then(r => r.json())
+      .then(data => {
+        console.log('Data loaded:', data);
+
+        // Build SDD
+        const SDD = {};
+        data.classes.forEach(cls => {
+          SDD[cls.id] = {
+            name: cls.name,
+            ru: cls.teacher || cls.name,
+            tr: cls.location || '',
+            sk: []
+          };
+
+          ['tier1', 'tier2', 'tier3'].forEach((tierKey, idx) => {
+            cls.skills[tierKey].forEach(skillId => {
+              const skill = data.skills.find(s => s.id === skillId);
+              if (skill) {
+                SDD[cls.id].sk.push({
+                  id: skill.id,
+                  n: skill.name,
+                  ru: skill.description || '',
+                  img: skill.image || '',
+                  t: idx + 1,
+                  c: skill.cost?.silver ? skill.cost.silver + 's' : '',
+                  d: skill.effects || skill.description || '',
+                  tr: skill.trainer || '',
+                  pair: skill.exclusiveGroup || null,
+                  active: skill.skillType === 'Active',
+                  passive: skill.skillType === 'Passive'
+                });
+              }
+            });
+          });
+        });
+
+        console.log('SDD built:', SDD);
+
+        // Populate trainer select
+        const select = document.getElementById('sTr');
+        Object.keys(SDD).forEach(key => {
+          const opt = document.createElement('option');
+          opt.value = key;
+          opt.textContent = SDD[key].name;
+          select.appendChild(opt);
+        });
+
+        // Render skills
+        function renderSkills(trainerKey) {
+          const container = document.getElementById('sCt');
+          container.innerHTML = '';
+
+          const trainers = trainerKey === 'all' ? Object.keys(SDD) : [trainerKey];
+
+          trainers.forEach(key => {
+            const trainer = SDD[key];
+            const div = document.createElement('div');
+            div.className = 'ow-tree';
+            div.innerHTML = `
+              <h4>${trainer.name}</h4>
+              <div class="tr">${trainer.tr}</div>
+            `;
+
+            // Group by tier
+            const tiers = { 1: [], 2: [], 3: [] };
+            trainer.sk.forEach(s => {
+              if (tiers[s.t]) tiers[s.t].push(s);
+            });
+
+            Object.entries(tiers).forEach(([tier, skills]) => {
+              if (skills.length === 0) return;
+
+              const tierLabel = document.createElement('div');
+              tierLabel.style.cssText = 'color:#8b7355;font-size:.7em;margin:8px 0 4px';
+              tierLabel.textContent = `TIER ${tier}`;
+              div.appendChild(tierLabel);
+
+              skills.forEach(s => {
+                const sk = document.createElement('div');
+                sk.className = `ow-sk tier-${s.t}`;
+                sk.innerHTML = `
+                  <div class="ic">${s.img ? `<img src="${s.img}" width="24" height="24">` : '⚔'}</div>
+                  <div class="in">
+                    <div class="nm">${s.n}</div>
+                    <div class="ds">${s.d.substring(0, 60)}...</div>
+                  </div>
+                  <span class="tb t${s.t}">T${s.t}</span>
+                  <span class="cs">${s.c}</span>
+                `;
+                div.appendChild(sk);
+              });
+            });
+
+            container.appendChild(div);
+          });
+        }
+
+        renderSkills('all');
+
+        select.addEventListener('change', () => {
+          renderSkills(select.value);
+        });
+      })
+      .catch(err => console.error('Error:', err));
+  </script>
+</body>
+</html>
