@@ -92,10 +92,13 @@ alert('Все 8 слотов заняты!');
 }
 
 function rArmor(){
-const slot=document.getElementById('armorSlot').value;
-armorSlot=slot;
+const slot=armorSlot;
 let items=[];
-if(slot==='helmet')items=HELMETS;
+if(slot==='all'){
+  // Combine all armor types
+  items=[...HELMETS.map(x=>({...x,_slot:'helmet'})),...ARMORS.map(x=>({...x,_slot:'armor'})),...BOOTS.map(x=>({...x,_slot:'boots'})),...BACKPACKS.map(x=>({...x,_slot:'backpack'})),...LANTERNS.map(x=>({...x,_slot:'lantern'}))];
+}
+else if(slot==='helmet')items=HELMETS;
 else if(slot==='armor')items=ARMORS;
 else if(slot==='boots')items=BOOTS;
 else if(slot==='backpack')items=BACKPACKS;
@@ -157,7 +160,15 @@ rArmor();uStats();
 });
 }
 
-document.getElementById('armorSlot').addEventListener('change',rArmor);
+// Armor slot buttons
+document.querySelectorAll('#armorSlotBtns .ow-fb').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    armorSlot=btn.dataset.slot;
+    document.querySelectorAll('#armorSlotBtns .ow-fb').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    rArmor();
+  });
+});
 document.querySelectorAll('#armorFilters .ow-fb').forEach(btn=>{
 btn.addEventListener('click',()=>{
 armorFilter=btn.dataset.af;
@@ -189,8 +200,16 @@ document.getElementById('armorDetail').innerHTML=html;
 }
 
 function rW(){
-const cat=document.getElementById('wCat').value;
-const list=WD[cat]||[];
+const cat=wCat;
+let list=[];
+if(cat==='all'){
+  // Combine all weapon categories
+  Object.keys(WD).forEach(k=>{
+    WD[k].forEach(w=>list.push({...w,_cat:k}));
+  });
+}else{
+  list=WD[cat]||[];
+}
 let f=wF==='all'?list:list.filter(w=>w.e===wF);
 
 // Фильтр по категории
@@ -313,13 +332,36 @@ S.pool.push({id:s.id,n:s.n,ru:s.ru,ic:s.i||'✨',d:s.d,src:'skill'});
 rS();rPool();
 }
 
+let consType='all';
 function rC(){
-document.getElementById('cGr').innerHTML=CSD.map(c=>{
+let filtered=CSD;
+if(consType!=='all'){
+  filtered=CSD.filter(c=>{
+    const t=(c.t||'').toLowerCase();
+    if(consType==='potion')return t.includes('potion')||t.includes('зелье');
+    if(consType==='elixir')return t.includes('elixir')||t.includes('эликсир');
+    if(consType==='food')return t.includes('food')||t.includes('еда')||t.includes('meat')||t.includes('fish')||t.includes('plant');
+    if(consType==='drink')return t.includes('drink')||t.includes('напиток')||t.includes('water')||t.includes('wine')||t.includes('beer');
+    if(consType==='misc')return !t.includes('potion')&&!t.includes('elixir')&&!t.includes('food')&&!t.includes('drink')&&!t.includes('meat')&&!t.includes('fish')&&!t.includes('plant')&&!t.includes('water')&&!t.includes('wine')&&!t.includes('beer');
+    return true;
+  });
+}
+document.getElementById('cGr').innerHTML=filtered.map(c=>{
 const ins=Object.keys(S.sl).some(k=>S.sl[k]&&S.sl[k].id===c.id);
 return '<div class="ow-cc'+(ins?' sel':'')+'" data-cid="'+c.id+'">'
 +'<div class="ic">'+esc(c.ic)+'</div><h5>'+esc(c.ru||c.n)+'</h5><p>'+esc(c.d)+'</p></div>'}).join('');
 document.querySelectorAll('#cGr .ow-cc').forEach(el=>{el.addEventListener('click',()=>pC(el.dataset.cid))});
 }
+
+// Consumable type filter buttons
+document.querySelectorAll('#consTypeBtns .ow-fb').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    consType=btn.dataset.ctype;
+    document.querySelectorAll('#consTypeBtns .ow-fb').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    rC();
+  });
+});
 
 function pC(id){
 const c=fC(id);
@@ -602,7 +644,15 @@ clS(slot);
 });
 });
 
-document.getElementById('wCat').addEventListener('change',rW);
+// Weapon category buttons
+document.querySelectorAll('#wCatBtns .ow-fb').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    wCat=btn.dataset.wcat;
+    document.querySelectorAll('#wCatBtns .ow-fb').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    rW();
+  });
+});
 document.getElementById('sTr').addEventListener('change',rS);
 
 document.querySelectorAll('#wFilters .ow-fb').forEach(btn=>{

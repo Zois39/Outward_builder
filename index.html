@@ -103,14 +103,14 @@
 
 <div class="ow-panel" id="pan-armor">
   <div class="ow-stitle">🛡️ Экипировка</div>
-  <label class="ow-lb">Слот</label>
-  <select class="ow-sel" id="armorSlot">
-    <option value="helmet">🪖 Шлем</option>
-    <option value="armor">🛡️ Броня</option>
-    <option value="boots">🥾 Ботинки</option>
-    <option value="backpack">🎒 Рюкзак</option>
-    <option value="lantern">🏮 Фонарь</option>
-  </select>
+  <div class="ow-f" id="armorSlotBtns">
+    <button class="ow-fb on" data-slot="all">🔹 Все</button>
+    <button class="ow-fb" data-slot="helmet">🪖 Шлем</button>
+    <button class="ow-fb" data-slot="armor">🛡️ Броня</button>
+    <button class="ow-fb" data-slot="boots">🥾 Ботинки</button>
+    <button class="ow-fb" data-slot="backpack">🎒 Рюкзак</button>
+    <button class="ow-fb" data-slot="lantern">🏮 Фонарь</button>
+  </div>
   <div class="ow-f" id="armorFilters">
     <button class="ow-fb on" data-af="all">Все</button>
     <button class="ow-fb" data-af="set">Сеты</button>
@@ -132,15 +132,21 @@
 
 <div class="ow-panel" id="pan-weapons">
   <div class="ow-stitle">⚔️ Оружие</div>
-  <label class="ow-lb">Категория</label>
-  <select class="ow-sel" id="wCat">
-    <option value="swords">Мечи</option><option value="axes">Топоры</option>
-    <option value="maces">Булавы</option><option value="spears">Копья</option>
-    <option value="daggers">Кинжалы</option><option value="bows">Луки</option>
-    <option value="pistols">Пистолеты</option><option value="staves">Посохи</option>
-    <option value="gauntlets">Кастеты</option><option value="chakrams">Чакрамы</option>
-    <option value="shields">Щиты</option><option value="lexicons">Лексиконы</option>
-  </select>
+  <div class="ow-f" id="wCatBtns">
+    <button class="ow-fb on" data-wcat="all">🔹 Все</button>
+    <button class="ow-fb" data-wcat="swords">⚔️ Мечи</button>
+    <button class="ow-fb" data-wcat="axes">🪓 Топоры</button>
+    <button class="ow-fb" data-wcat="maces">🔨 Булавы</button>
+    <button class="ow-fb" data-wcat="spears">🔱 Копья</button>
+    <button class="ow-fb" data-wcat="daggers">🗡️ Кинжалы</button>
+    <button class="ow-fb" data-wcat="bows">🏹 Луки</button>
+    <button class="ow-fb" data-wcat="pistols">🔫 Пистолеты</button>
+    <button class="ow-fb" data-wcat="staves">🪄 Посохи</button>
+    <button class="ow-fb" data-wcat="gauntlets">👊 Кастеты</button>
+    <button class="ow-fb" data-wcat="chakrams">💫 Чакрамы</button>
+    <button class="ow-fb" data-wcat="shields">🛡️ Щиты</button>
+    <button class="ow-fb" data-wcat="lexicons">📖 Лексиконы</button>
+  </div>
   <div class="ow-f" id="wFilters">
     <button class="ow-fb on" data-f="all">Все</button>
     <button class="ow-fb" data-f="physical">Физ</button>
@@ -185,6 +191,14 @@
 
 <div class="ow-panel" id="pan-cons">
   <div class="ow-stitle">🧪 Расходники</div>
+  <div class="ow-f" id="consTypeBtns">
+    <button class="ow-fb on" data-ctype="all">🔹 Все</button>
+    <button class="ow-fb" data-ctype="potion">🧪 Зелья</button>
+    <button class="ow-fb" data-ctype="elixir">⚗️ Эликсиры</button>
+    <button class="ow-fb" data-ctype="food">🍖 Еда</button>
+    <button class="ow-fb" data-ctype="drink">🍺 Напитки</button>
+    <button class="ow-fb" data-ctype="misc">📦 Прочее</button>
+  </div>
   <div class="ow-info">💡 Клик — добавить в первый свободный быстрый слот</div>
   <div class="ow-cg" id="cGr"></div>
 </div>

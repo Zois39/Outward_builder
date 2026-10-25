@@ -282,14 +282,23 @@
     const select = document.getElementById('sTr');
     const filter = select ? select.value : 'all';
 
+    // Check if all breakthroughs used
+    const btUsed = SkillState.breakthroughs.size;
+    const btMaxed = btUsed >= 3;
+
     let html = '';
     const trainers = filter === 'all' ? Object.keys(SkillState.sdd) : [filter];
 
     trainers.forEach(key => {
       const trainer = SkillState.sdd[key];
-      const isLocked = false; // TODO: trainer lock logic
 
-      html += `<div class="ow-tree${isLocked ? ' trainer-locked' : ''}">`;
+      // Check if this trainer has a selected tier 2
+      const hasTier2 = trainer.sk.some(s => s.t === 2 && SkillState.selected.has(s.id));
+
+      // If breakthroughs maxed and no tier 2 selected, hide tier 2 and 3
+      const hideAdvanced = btMaxed && !hasTier2;
+
+      html += `<div class="ow-tree${hideAdvanced ? ' trainer-locked' : ''}">`;
       html += `<h4>${esc(trainer.name)}</h4>`;
       html += `<div class="tr">${esc(trainer.tr)}</div>`;
 
@@ -299,6 +308,12 @@
         const t = s.t === 'special' ? 'special' : s.t;
         if (tiers[t]) tiers[t].push(s);
       });
+
+      // Hide tier 2 and 3 if needed
+      if (hideAdvanced) {
+        tiers[2] = [];
+        tiers[3] = [];
+      }
 
       // Render tiers
       const tierLabels = { 1: 'TIER 1', 2: 'TIER 2 — BREAKTHROUGH', 3: 'TIER 3', special: 'SPECIAL' };

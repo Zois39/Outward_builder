@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Debug</title></head>
+<body>
+<div id="errors"></div>
+<script>
+window.onerror = function(msg, url, line) {
+  document.getElementById('errors').innerHTML += 
+    '<div style="color:red">ERROR: ' + msg + ' at ' + url + ':' + line + '</div>';
+};
+</script>
+<script src="data_helmets.js"></script>
+<script src="data_armors.js"></script>
+<script src="data_boots.js"></script>
+<script src="data_backpacks.js"></script>
+<script src="data_weapons.js"></script>
+<script src="data_skills.js"></script>
+<script src="data_other.js"></script>
+<script src="data/potions.js"></script>
+<script src="data/elixirs.js"></script>
+<script src="data/food_meat.js"></script>
+<script src="data/food_plants.js"></script>
+<script src="data/drinks.js"></script>
+<script src="data/food_dlc.js"></script>
+<script src="data/food_fish.js"></script>
+<script src="data/misc.js"></script>
+<script src="data/consumables.js"></script>
+<script>
+  document.getElementById('errors').innerHTML += '<div style="color:green">Data loaded OK</div>';
+  document.getElementById('errors').innerHTML += '<div>CSD: ' + (typeof CSD !== 'undefined' ? CSD.length + ' items' : 'NOT DEFINED') + '</div>';
+  document.getElementById('errors').innerHTML += '<div>BTDD: ' + (typeof BTDD !== 'undefined' ? BTDD.length + ' items' : 'NOT DEFINED') + '</div>';
+  document.getElementById('errors').innerHTML += '<div>FCD: ' + (typeof FCD !== 'undefined' ? FCD.length + ' items' : 'NOT DEFINED') + '</div>';
+</script>
+<script src="logic.js"></script>
+<script>
+  document.getElementById('errors').innerHTML += '<div style="color:green">Logic loaded OK</div>';
+</script>
+<script src="js/sdd_builder.js"></script>
+<script>
+  document.getElementById('errors').innerHTML += '<div style="color:green">SDD Builder loaded OK</div>';
+  setTimeout(() => {
+    document.getElementById('errors').innerHTML += '<div>SDD: ' + (typeof SDD !== 'undefined' ? Object.keys(SDD).length + ' trainers' : 'NOT DEFINED') + '</div>';
+  }, 500);
+</script>
+</body>
+</html>
