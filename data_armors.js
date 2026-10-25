@@ -53,7 +53,7 @@ const ARMORS=[
 {id:'master_desert_tunic',cat:'loot',n:'Master Desert Tunic',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Master_Desert_Tunic.png/150px-Master_Desert_Tunic.png',ph:22.0,im:17.0,co:0,he:0,bo:'',d:'',src:'Master Desert Set'},
 {id:'master_kazite_armor',cat:'loot',n:'Master Kazite Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Master_Kazite_Armor.png/150px-Master_Kazite_Armor.png',ph:21.0,im:17.0,co:0,he:0,bo:'+10.0 разложение',d:'',src:'Master Kazite Set'},
 {id:'master_trader_garb',cat:'loot',n:'Master Trader Garb',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Master_Trader_Garb.png/150px-Master_Trader_Garb.png',ph:13.0,im:7.0,co:0,he:0,bo:'',d:'',src:'Master Trader Set'},
-{id:'mertons_ribcage',cat:'loot',n:'Merton's Ribcage',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Merton's_Ribcage.png/150px-Merton's_Ribcage.png',ph:0,im:0.0,co:0,he:0,bo:'',d:'',src:'Merton's Bones'},
+{id:'mertons_ribcage',cat:'loot',n:'Merton\'s Ribcage',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Merton\'s_Ribcage.png/150px-Merton\'s_Ribcage.png',ph:0,im:0.0,co:0,he:0,bo:'',d:'',src:'Merton\'s Bones'},
 {id:'militia_armor',cat:'loot',n:'Militia Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Militia_Armor.png/150px-Militia_Armor.png',ph:20.0,im:14.0,co:0,he:0,bo:'',d:'Prevents [[Burning]]',dlc:'The Three Brothers',src:'Militia Set'},
 {id:'miner_armor',cat:'loot',n:'Miner Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Miner_Armor.png/150px-Miner_Armor.png',ph:10.0,im:11.0,co:0,he:0,bo:'',d:'Prevents [[Burning]]',dlc:'The Three Brothers',src:'Miner Set'},
 {id:'noble_clothes',cat:'loot',n:'Noble Clothes',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Noble_Clothes.png/150px-Noble_Clothes.png',ph:9.0,im:5.0,co:0,he:0,bo:'+20.0 эфир, +20.0 разложение',d:'',dlc:'The Three Brothers',src:'Noble Set'},
@@ -83,7 +83,7 @@ const ARMORS=[
 {id:'shadow_light_kazite_shirt',cat:'loot',n:'Shadow Light Kazite Shirt',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Shadow_Light_Kazite_Shirt.png/150px-Shadow_Light_Kazite_Shirt.png',ph:20.0,im:14.0,co:0,he:0,bo:'',d:'',dlc:'The Soroboreans',src:'Shadow Kazite Set'},
 {id:'shock_armor',cat:'loot',n:'Shock Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Shock_Armor.png/150px-Shock_Armor.png',ph:21.0,im:25.0,co:0,he:0,bo:'',d:'10% [[Impact]] bonus',src:'Shock Set'},
 {id:'silver_armor',cat:'loot',n:'Silver Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Silver_Armor.png/150px-Silver_Armor.png',ph:19.0,im:13.0,co:0,he:0,bo:'+30.0 разложение',d:'',src:'Silver Set'},
-{id:'slayers_armor',cat:'loot',n:'Slayer's Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Slayer's_Armor.png/150px-Slayer's_Armor.png',ph:22.0,im:9.0,co:0,he:0,bo:'',d:'',dlc:'The Three Brothers',src:'Slayer's Set'},
+{id:'slayers_armor',cat:'loot',n:'Slayer\'s Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Slayer\'s_Armor.png/150px-Slayer\'s_Armor.png',ph:22.0,im:9.0,co:0,he:0,bo:'',d:'',dlc:'The Three Brothers',src:'Slayer\'s Set'},
 {id:'squire_attire',cat:'loot',n:'Squire Attire',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Squire_Attire.png/150px-Squire_Attire.png',ph:18.0,im:12.0,co:0,he:0,bo:'+15.0 эфир',d:'',src:'Squire Set'},
 {id:'striped_garb',cat:'loot',n:'Striped Garb',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Striped_Garb.png/150px-Striped_Garb.png',ph:3.0,im:2.0,co:0,he:0,bo:'',d:''},
 {id:'tattered_attire',cat:'loot',n:'Tattered Attire',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Tattered_Attire.png/150px-Tattered_Attire.png',ph:2.0,im:2.0,co:0,he:0,bo:'',d:'',src:'Tattered Set'},
@@ -98,5 +98,5 @@ const ARMORS=[
 {id:'wolf_mage_armor',cat:'loot',n:'Wolf Mage Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Wolf_Mage_Armor.png/150px-Wolf_Mage_Armor.png',ph:9.0,im:20.0,co:0,he:0,bo:'',d:'',dlc:'The Soroboreans',src:'Wolf Mage Set'},
 {id:'wolf_medic_armor',cat:'loot',n:'Wolf Medic Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Wolf_Medic_Armor.png/150px-Wolf_Medic_Armor.png',ph:20.0,im:14.0,co:0,he:0,bo:'',d:'Recover +0.1 {{health}} [[Health]] per second',dlc:'The Soroboreans',src:'Wolf Medic Set'},
 {id:'wolf_plate_armor',cat:'loot',n:'Wolf Plate Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Wolf_Plate_Armor.png/150px-Wolf_Plate_Armor.png',ph:26.0,im:20.0,co:0,he:0,bo:'+30.0 эфир',d:'',src:'Wolf Plate Set'},
-{id:'zagis_armor',cat:'loot',n:'Zagis' Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Zagis'_Armor.png/150px-Zagis'_Armor.png',ph:25.0,im:17.0,co:0,he:0,bo:'',d:'',src:'Zagis' Set'}
+{id:'zagis_armor',cat:'loot',n:'Zagis\' Armor',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Zagis\'_Armor.png/150px-Zagis\'_Armor.png',ph:25.0,im:17.0,co:0,he:0,bo:'',d:'',src:'Zagis\' Set'}
 ];

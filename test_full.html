@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Outward Builder - Full Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ow">
+    <div class="ow-h"><h1>⚔ Full Test</h1></div>
+
+    <div id="test-results"></div>
+
+    <!-- All original panels -->
+    <div class="ow-panel on" id="pan-slots">
+      <div class="ow-stitle">⚔ Слоты</div>
+      <div id="poolItems"></div>
+    </div>
+
+    <div class="ow-panel" id="pan-armor">
+      <div class="ow-stitle">🛡 Броня</div>
+      <div id="armorGrid"></div>
+    </div>
+
+    <div class="ow-panel" id="pan-weapons">
+      <div class="ow-stitle">⚔ Оружие</div>
+      <div id="wGr"></div>
+    </div>
+
+    <div class="ow-panel" id="pan-skills">
+      <div class="ow-stitle">🗡 Навыки</div>
+      <select id="sTr"><option value="all">Все</option></select>
+      <div id="sCt"></div>
+      <div id="btGr"></div>
+    </div>
+
+    <div class="ow-panel" id="pan-cons">
+      <div class="ow-stitle">🧪 Расходники</div>
+      <div id="cGr"></div>
+    </div>
+
+    <div class="ow-panel" id="pan-fac">
+      <div class="ow-stitle">🏴 Фракции</div>
+      <div id="facGr"></div>
+    </div>
+  </div>
+
+  <!-- Load all scripts in order -->
+  <script src="data_helmets.js"></script>
+  <script src="data_armors.js"></script>
+  <script src="data_boots.js"></script>
+  <script src="data_backpacks.js"></script>
+  <script src="data_weapons.js"></script>
+  <script src="data_skills.js"></script>
+  <script src="data_other.js"></script>
+  <script src="data/potions.js"></script>
+  <script src="data/elixirs.js"></script>
+  <script src="data/food_meat.js"></script>
+  <script src="data/food_plants.js"></script>
+  <script src="data/drinks.js"></script>
+  <script src="data/food_dlc.js"></script>
+  <script src="data/food_fish.js"></script>
+  <script src="data/misc.js"></script>
+  <script src="data/consumables.js"></script>
+  <script src="logic.js"></script>
+  <script src="js/sdd_builder.js"></script>
+
+  <script>
+    // Test all data loaded
+    const tests = [
+      ['HELMETS', typeof HELMETS !== 'undefined' && HELMETS.length > 0],
+      ['ARMORS', typeof ARMORS !== 'undefined' && ARMORS.length > 0],
+      ['BOOTS', typeof BOOTS !== 'undefined' && BOOTS.length > 0],
+      ['BACKPACKS', typeof BACKPACKS !== 'undefined' && BACKPACKS.length > 0],
+      ['WD (weapons)', typeof WD !== 'undefined' && Object.keys(WD).length > 0],
+      ['SKILLS', typeof SKILLS !== 'undefined' && SKILLS.length > 0],
+      ['CSD (consumables)', typeof CSD !== 'undefined' && CSD.length > 0],
+      ['POTIONS', typeof POTIONS !== 'undefined'],
+      ['ELIXIRS', typeof ELIXIRS !== 'undefined'],
+      ['FOOD_MEAT', typeof FOOD_MEAT !== 'undefined'],
+      ['FOOD_PLANTS', typeof FOOD_PLANTS !== 'undefined'],
+      ['DRINKS', typeof DRINKS !== 'undefined'],
+      ['FOOD_DLC', typeof FOOD_DLC !== 'undefined'],
+      ['FOOD_FISH', typeof FOOD_FISH !== 'undefined'],
+      ['MISC', typeof MISC !== 'undefined'],
+      ['CONSUMABLES', typeof CONSUMABLES !== 'undefined'],
+    ];
+
+    const resultsDiv = document.getElementById('test-results');
+    let html = '<h2>Data Loading Test</h2>';
+
+    tests.forEach(([name, ok]) => {
+      html += `<div style="color:${ok ? '#6a9a5a' : '#c0392b'}">${ok ? '✅' : '❌'} ${name}</div>`;
+    });
+
+    resultsDiv.innerHTML = html;
+
+    // Check SDD
+    setTimeout(() => {
+      const sddOk = typeof SDD !== 'undefined' && Object.keys(SDD).length > 0;
+      resultsDiv.innerHTML += `<div style="color:${sddOk ? '#6a9a5a' : '#c0392b'};margin-top:10px">${sddOk ? '✅' : '❌'} SDD (${typeof SDD !== 'undefined' ? Object.keys(SDD).length : 0} trainers)</div>`;
+    }, 1000);
+  </script>
+</body>
+</html>

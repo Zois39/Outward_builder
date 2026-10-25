@@ -23,7 +23,7 @@ const MISC_ITEMS=[
 {id:'marshmelon_jelly',cat:'food',n:'Marshmelon Jelly',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Marshmelon_Jelly.png/150px-Marshmelon_Jelly.png',d:'',e:'[[Stamina Recovery]] 5'},
 {id:'marshmelon_tartine',cat:'food',n:'Marshmelon Tartine',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Marshmelon_Tartine.png/150px-Marshmelon_Tartine.png',d:'',e:'[[Stamina Recovery]] 5'},
 {id:'miasmapod',cat:'food',n:'Miasmapod',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Miasmapod.png/150px-Miasmapod.png',d:'',e:'Restores 75 {{health}} [[Health]]<br>[[Extreme Poison]]<br>Cures [[Infection]]'},
-{id:'miners_omelet',cat:'food',n:'Miner's Omelet',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Miner's_Omelet.png/150px-Miner's_Omelet.png',d:'',e:'[[Health Recovery]] 1<br>[[Stamina Recovery]] 3'},
+{id:'miners_omelet',cat:'food',n:'Miner\'s Omelet',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Miner\'s_Omelet.png/150px-Miner\'s_Omelet.png',d:'',e:'[[Health Recovery]] 1<br>[[Stamina Recovery]] 3'},
 {id:'ocean_fricassee',cat:'food',n:'Ocean Fricassee',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Ocean_Fricassee.png/150px-Ocean_Fricassee.png',d:'',e:'[[Mana Ratio Recovery]] 2<br>[[Health Recovery]] 2<br>[[Stamina Recovery]] 3'},
 {id:'pot_au_feu_du_pirate',cat:'food',n:'Pot-au-Feu du Pirate',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Pot-au-Feu_du_Pirate.png/150px-Pot-au-Feu_du_Pirate.png',d:'',e:'[[Mana Ratio Recovery]] 3<br>[[Health Recovery]] 2'},
 {id:'poutine',cat:'food',n:'Poutine',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Poutine.png/150px-Poutine.png',d:'',e:'Adds 25% [[Fatigue]]<br>[[Cold Weather Def Up]]<br>[[Impact Up]]<br>[[Physical Attack Up]]'},

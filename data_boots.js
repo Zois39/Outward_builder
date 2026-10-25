@@ -36,7 +36,7 @@ const BOOTS=[
 {id:'master_desert_boots',cat:'loot',n:'Master Desert Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Master_Desert_Boots.png/150px-Master_Desert_Boots.png',ph:14.0,im:11.0,co:0,he:0,bo:'',d:'',src:'Master Desert Set'},
 {id:'master_kazite_boots',cat:'loot',n:'Master Kazite Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Master_Kazite_Boots.png/150px-Master_Kazite_Boots.png',ph:12.0,im:12.0,co:0,he:0,bo:'+5.0 разложение',d:'',src:'Master Kazite Set'},
 {id:'master_trader_boots',cat:'loot',n:'Master Trader Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Master_Trader_Boots.png/150px-Master_Trader_Boots.png',ph:7.0,im:6.0,co:0,he:0,bo:'',d:'',src:'Master Trader Set'},
-{id:'mertons_shinbones',cat:'loot',n:'Merton's Shinbones',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Merton's_Shinbones.png/150px-Merton's_Shinbones.png',ph:0,im:0.0,co:0,he:0,bo:'',d:'',src:'Merton's Bones'},
+{id:'mertons_shinbones',cat:'loot',n:'Merton\'s Shinbones',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Merton\'s_Shinbones.png/150px-Merton\'s_Shinbones.png',ph:0,im:0.0,co:0,he:0,bo:'',d:'',src:'Merton\'s Bones'},
 {id:'militia_boots',cat:'loot',n:'Militia Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Militia_Boots.png/150px-Militia_Boots.png',ph:13.0,im:9.0,co:0,he:0,bo:'',d:'Prevents [[Hampered]]',dlc:'The Three Brothers',src:'Militia Set'},
 {id:'miner_boots',cat:'loot',n:'Miner Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Miner_Boots.png/150px-Miner_Boots.png',ph:5.0,im:7.0,co:0,he:0,bo:'',d:'Prevents [[Hampered]].',dlc:'The Three Brothers',src:'Miner Set'},
 {id:'noble_shoes',cat:'loot',n:'Noble Shoes',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Noble_Shoes.png/150px-Noble_Shoes.png',ph:4.0,im:3.0,co:0,he:0,bo:'+10.0 эфир, +10.0 разложение',d:'',dlc:'The Three Brothers',src:'Noble Set'},
@@ -58,7 +58,7 @@ const BOOTS=[
 {id:'shock_boots',cat:'loot',n:'Shock Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Shock_Boots.png/150px-Shock_Boots.png',ph:12.0,im:15.0,co:0,he:0,bo:'',d:'10% [[Impact]] bonus',src:'Shock Set'},
 {id:'silver_boots',cat:'loot',n:'Silver Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Silver_Boots.png/150px-Silver_Boots.png',ph:13.0,im:8.0,co:0,he:0,bo:'+15.0 разложение',d:'',src:'Silver Set'},
 {id:'simple_shoes',cat:'loot',n:'Simple Shoes',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Simple_Shoes.png/150px-Simple_Shoes.png',ph:1.0,im:1.0,co:0,he:0,bo:'',d:''},
-{id:'slayers_boots',cat:'loot',n:'Slayer's Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Slayer's_Boots.png/150px-Slayer's_Boots.png',ph:14.0,im:7.0,co:0,he:0,bo:'',d:'',dlc:'The Three Brothers',src:'Slayer's Set'},
+{id:'slayers_boots',cat:'loot',n:'Slayer\'s Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Slayer\'s_Boots.png/150px-Slayer\'s_Boots.png',ph:14.0,im:7.0,co:0,he:0,bo:'',d:'',dlc:'The Three Brothers',src:'Slayer\'s Set'},
 {id:'squire_boots',cat:'loot',n:'Squire Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Squire_Boots.png/150px-Squire_Boots.png',ph:9.0,im:12.0,co:0,he:0,bo:'',d:'',src:'Squire Set'},
 {id:'tattered_boots',cat:'loot',n:'Tattered Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Tattered_Boots.png/150px-Tattered_Boots.png',ph:1.0,im:1.0,co:0,he:0,bo:'',d:'',src:'Tattered Set'},
 {id:'tenebrous_boots',cat:'loot',n:'Tenebrous Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Tenebrous_Boots.png/150px-Tenebrous_Boots.png',ph:9.0,im:7.0,co:0,he:0,bo:'',d:'',src:'Tenebrous Set'},
@@ -72,5 +72,5 @@ const BOOTS=[
 {id:'wolf_medic_boots',cat:'loot',n:'Wolf Medic Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Wolf_Medic_Boots.png/150px-Wolf_Medic_Boots.png',ph:13.0,im:9.0,co:0,he:0,bo:'',d:'Recover +0.05 {{health}} [[Health]] per second',dlc:'The Soroboreans',src:'Wolf Medic Set'},
 {id:'wolf_plate_boots',cat:'loot',n:'Wolf Plate Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Wolf_Plate_Boots.png/150px-Wolf_Plate_Boots.png',ph:18.0,im:12.0,co:0,he:0,bo:'+15.0 эфир',d:'',src:'Wolf Plate Set'},
 {id:'worker_boots',cat:'loot',n:'Worker Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Worker_Boots.png/150px-Worker_Boots.png',ph:1.0,im:1.0,co:0,he:0,bo:'',d:'',src:'Worker Set'},
-{id:'zagis_boots',cat:'loot',n:'Zagis' Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Zagis'_Boots.png/150px-Zagis'_Boots.png',ph:15.0,im:13.0,co:0,he:0,bo:'',d:'',src:'Zagis' Set'}
+{id:'zagis_boots',cat:'loot',n:'Zagis\' Boots',ru:'',img:'https://outward.wiki.gg/images/thumb/8/8e/Zagis\'_Boots.png/150px-Zagis\'_Boots.png',ph:15.0,im:13.0,co:0,he:0,bo:'',d:'',src:'Zagis\' Set'}
 ];
